@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Player25D.unity
     guid: 535ebe6244888b44bb5c0f1fce0795ca
+  - enabled: 1
+    path: Assets/Scenes/shopMagic.unity
+    guid: ded44e51d2375fb46bf60aa89ff46ad4
+  - enabled: 1
+    path: Assets/Scenes/shopRange.unity
+    guid: 2f4aa0081fbe2f649aa59f510ed93f18
   m_configObjects: {}
