@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/shopRange.unity
     guid: 2f4aa0081fbe2f649aa59f510ed93f18
+  - enabled: 1
+    path: Assets/Scenes/bestiary.unity
+    guid: d105c7ca8bba724489ea106126779e92
   m_configObjects: {}
