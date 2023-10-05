@@ -2207,6 +2207,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Item template
       objectReference: {fileID: 0}
+    - target: {fileID: 1127216695448326509, guid: 099e568b51dc63c4183a0b4554dde9c2, type: 3}
+      propertyPath: m_text
+      value: 100 coins
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127216695448326509, guid: 099e568b51dc63c4183a0b4554dde9c2, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127216695448326509, guid: 099e568b51dc63c4183a0b4554dde9c2, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127216695448326509, guid: 099e568b51dc63c4183a0b4554dde9c2, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127216695448326509, guid: 099e568b51dc63c4183a0b4554dde9c2, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544716109003330658, guid: 099e568b51dc63c4183a0b4554dde9c2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 677fa14f18917004c925384f386c7cee, type: 3}
     - target: {fileID: 2232708459069728605, guid: 099e568b51dc63c4183a0b4554dde9c2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2290,6 +2314,18 @@ PrefabInstance:
     - target: {fileID: 2232708459069728605, guid: 099e568b51dc63c4183a0b4554dde9c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094650722879723741, guid: 099e568b51dc63c4183a0b4554dde9c2, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094650722879723741, guid: 099e568b51dc63c4183a0b4554dde9c2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a6ea73ef19f26046849b37052266760, type: 3}
+    - target: {fileID: 6810345144663998437, guid: 099e568b51dc63c4183a0b4554dde9c2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 7662415336740699640, guid: 099e568b51dc63c4183a0b4554dde9c2, type: 3}
       propertyPath: m_AnchoredPosition.y
