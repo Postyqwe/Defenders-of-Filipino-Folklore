@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class cameramovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Camera cam;
+    private Vector3 dragOrigin;
+
+
+    private void update()
     {
-        
+        PanCamera();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void PanCamera()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+            dragOrigin = cam.ScreenToWorldPoint(Input.mousePosition);
+
+        if(Input.GetMouseButton(0))
+        {
+            Vector3 difference = dragOrigin - cam.ScreenToWorldPoint(Input.mousePosition);
+            print("origin" + dragOrigin + cam.ScreenToWorldPoint(Input.mousePosition) + " =difference" + difference);
+
+            cam.transform.position += difference;
+        }
     }
+
 }
