@@ -28,6 +28,19 @@ public class GameManager : MonoBehaviour
                     emptyLocation = (size * size) - 1;
                     piece.gameObject.SetActive(false);
                 }
+                else
+                {
+                    float gap = gapThickness / 2;
+                    Mesh mesh = piece.GetComponent<MeshFilter>().mesh;
+                    Vector2[] uv = new Vector2[4];
+
+                    uv[0] = new Vector2((width * col) + gap, 1 - ((width * (row + 1)) - gap));
+                    uv[1] = new Vector2((width * (col + 1)) - gap, 1 - ((width + (row + 1)) - gap));
+                    uv[2] = new Vector2((width * col) + gap, 1 - ((width * row) + gap));
+                    uv[3] = new Vector2((width * (col + 1)) - gap, 1 - ((width * row) + gap));
+
+                    mesh.uv = uv;
+                }
             }
         }
     }
