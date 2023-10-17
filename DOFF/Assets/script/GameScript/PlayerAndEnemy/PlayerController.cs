@@ -12,16 +12,12 @@ public class PlayerController : MonoBehaviour
     public int PlayerMaxHealth = 100; //Player max health
     public int currentHealth; //Variable that updates current health of the player
     public bool Dead = false;
-
     public LayerMask terrainLayer;
     private Rigidbody rb;
     public Animator animator;
     public FixedJoystick movementJoystick;
     public Behaviour script , scripta , scriptb;// , scriptc , scriptd; //To disable a script
-    
-    
     public HealthBarScript healthBar; //Health bar to show how much health of the player have
-    //public Text mainText; //Temporary Game Over screen
     public static int coins;
     public TextMeshProUGUI coinText;
     public GameObject mainText; //Temporary Game Over screen
@@ -50,30 +46,29 @@ public class PlayerController : MonoBehaviour
                 movePos.y = hit.point.y + groundDist;
                 transform.position = movePos;
             }
-        }
-        
-        //THIS IS FOR KEYBOARD INPUT IF YOU GUYS WANT TO TRY JUST COMMENT OUT THE FIXED UPDATE AND UNCOMMENT THIS
-        /*moveInput.x = Input.GetAxis("Horizontal");
-        moveInput.y = Input.GetAxis("Vertical");
-        moveInput.Normalize();
-        rb.velocity = new Vector3(moveInput.x * speed, rb.velocity.y, moveInput.y *speed);
-
-        
-
-        if(moveInput.x < 0)
-        {
-            animator.Play("left");
-            
-        }
-        else if(moveInput.x > 0)
-        {
-            animator.Play("right");
-            
-        }*/
-        
+        }       
     }
     void FixedUpdate()
     {
+        /*if(movementJoystick.joystickVec.y != 0)
+        {
+            rb.velocity = new Vector2(movementJoystick.joystickVec.x * speed, movementJoystick.joystickVec.y * speed);
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+        }
+        if(movementJoystick.joystickVec.x > 0) //If the joystick moving towards the right side
+        {
+            animator.Play("right"); //Plays the animation
+    
+        }
+        else if(movementJoystick.joystickVec.x < 0) //If the joystick moving towards the left side
+        {
+            animator.Play("left"); //Plays the animation
+            turnedLeft = true;
+            
+        }*/
         float x = movementJoystick.Horizontal; //To get the x axis of the joystick
         float z = movementJoystick.Vertical; //To get the y axis of the joystick
         Vector3 direction = new Vector3(x,0,z).normalized; //This just normalize the value of x and y so its not a bunch of numbers
@@ -94,26 +89,45 @@ public class PlayerController : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Enemy"))//If the player and enemy collide this get trigger
+        if(collision.gameObject.CompareTag("Enemy")||collision.gameObject.CompareTag("Boss")||collision.gameObject.CompareTag("EnemyRange"))//If the player and enemy collide this get trigger
         {
-            transform.GetChild(0).gameObject.SetActive(true); //this just indicate that the player got hit so a blood sprite get activated
-            currentHealth -= collision.gameObject.GetComponent<EnemyScript>().GetHitDamage(); //Calculation for the player current health if it got hit by the enemy
-            //currentHealth -= collision.gameObject.GetComponent<BossScript>().GetHitDamage();
-            if(currentHealth < 1)
+            if(collision.gameObject.GetComponent<EnemyScript>())
             {
-                GetComponent<Rigidbody>().velocity = Vector3.zero; //This just makes the player sprite not slide when it dies mid movement animation
-                mainText.SetActive(true); //This show the Game over text on the screen
-                Die();
-                Dead = true;
+                TakeDamage(collision.gameObject.GetComponent<EnemyScript>().GetHitDamage()); //Calculation for the player current health if it got hit by the enemy
             }
-            healthBar.SetHealth(currentHealth); 
-           // Invoke("HidePlayerBlood", 0.25f); //this indicate how long the blood sprite last
+            if(collision.gameObject.GetComponent<Boss>())
+            {
+                TakeDamage(collision.gameObject.GetComponent<Boss>().GetHitDamage());
+            }
+            if(collision.gameObject.GetComponent<BossShooting>())
+            {
+                TakeDamage(collision.gameObject.GetComponent<BossShooting>().GetHitDamage());
+            }
+            if(collision.gameObject.GetComponent<EnemyShooting>())
+            {
+                TakeDamage(collision.gameObject.GetComponent<EnemyShooting>().GetHitDamage()); //Calculation for the player current health if it got hit by the enemy
+            }
+            if(collision.gameObject.GetComponent<EnemyShootingScript>())
+            {
+                TakeDamage(collision.gameObject.GetComponent<EnemyShootingScript>().GetHitDamage()); //Calculation for the player current health if it got hit by the enemy
+            }
+            
         }
     }
-    /*void HidePlayerBlood() //To hide the blood sprite
+
+    public void TakeDamage(int amount)
     {
-        transform.GetChild(0).gameObject.SetActive(false);
-    }*/
+        Debug.Log("Player took damage: " + amount);
+        currentHealth -= amount;
+        if(currentHealth < 1)
+        {
+            GetComponent<Rigidbody>().velocity = Vector3.zero; //This just makes the player sprite not slide when it dies mid movement animation
+            mainText.SetActive(true); //This show the Game over text on the screen
+            Die();
+            Dead = true;
+        }
+        healthBar.SetHealth(currentHealth); 
+    }
 
     private void Die() //to disable the movement in the game when the player die
     {

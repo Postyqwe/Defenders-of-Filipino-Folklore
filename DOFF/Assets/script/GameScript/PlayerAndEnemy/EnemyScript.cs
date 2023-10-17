@@ -9,11 +9,11 @@ public class EnemyScript : MonoBehaviour
     public Transform target; //Enemy going towards
     private Rigidbody rb;
     private Animator animator;
-    private float minDistance = 230.0f; //If the player get outside of this range it doesnt follow 
+    private float minDistance = 200.0f; //If the player get outside of this range it doesnt follow 
     private bool targetCollision = false;
-    private float speed = 35.0f; //Enemy base movement speed
+    private float speed = 25.0f; //Enemy base movement speed
     public float groundDist;
-    private float Push = 90f; //How long it will get push
+    private float Push = 80f; //How long it will get push
     public int EnemyHealth = 6; //Enemy health
     private int hitdamage = 10; //Enemy damage to the player health
     //public Behaviour script; //To disabling a script
@@ -21,7 +21,7 @@ public class EnemyScript : MonoBehaviour
     
 
     //public Sprite[] sprites;
-    private bool isDead = false; //For checking if the its still alive
+    public bool isDefeated = false; //For checking if the its still alive
 
     void Start()
     {
@@ -45,7 +45,7 @@ public class EnemyScript : MonoBehaviour
         }
         
         range = Vector2.Distance(transform.position, target.position); //To calculate how for the position to the player
-        if(range < minDistance && !isDead) // if range of enemy towards the player is less than the minimum distance, and if the sprite is still alive its true the enemy go towards the enemy
+        if(range < minDistance && !isDefeated) // if range of enemy towards the player is less than the minimum distance, and if the sprite is still alive its true the enemy go towards the enemy
         {
             if(!targetCollision)
             {
@@ -110,10 +110,8 @@ public class EnemyScript : MonoBehaviour
     {
         EnemyHealth -= amount; //If it get hit enemy health gets lower
         transform.GetChild(0).gameObject.SetActive(true); //This activate the blood sprite
-        if(EnemyHealth<0) //To check if enemy is still alive or not
+        if(EnemyHealth<1) //To check if enemy is still alive or not
         {
-            
-            isDead = true; //To indicate that the enemy is dead
             GetComponent<Rigidbody>().velocity = Vector3.zero; //To make sure that it doesnt slide/move still when it dies
             transform.GetChild(0).gameObject.SetActive(false); //To in-activate the blood
             animator.SetTrigger("death");
@@ -136,6 +134,10 @@ public class EnemyScript : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void DefeatEnemy()
+    {
+        isDefeated = true; //To indicate that the enemy is dead
+    }
     public int GetHitDamage() //Public function that return the enemy damage
     {
         return hitdamage;

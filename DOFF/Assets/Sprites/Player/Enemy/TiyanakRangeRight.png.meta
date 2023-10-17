@@ -1,0 +1,794 @@
+fileFormatVersion: 2
+guid: 544c818f900681c46b2e7e694ec36a40
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TiyanakRangeRight_0
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 746
+        width: 75
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d911a0417c2136f4da8e899f6c1d0da1
+      internalID: 1461881033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_1
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 746
+        width: 76
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e1396b8056d8544a51deded431a068
+      internalID: 299374329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_2
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 746
+        width: 77
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a081358c15dda548b1d50317f2be303
+      internalID: 1785925843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_3
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 746
+        width: 76
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17d0bb1f3371bc4c96e5881a1261f9d
+      internalID: 557705227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_4
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 746
+        width: 77
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9110df62fcdff9e42b4fe1b158d989c6
+      internalID: 563256053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_5
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 746
+        width: 76
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b54c028c7e161742bcf10f6e2352dd5
+      internalID: -1183224675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_6
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 746
+        width: 77
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53adabbedcafb804ea661c956d1e08f1
+      internalID: 1464047660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_7
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 519
+        width: 70
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af456cbd5d70a2e4b98defe7a0daab46
+      internalID: -276422230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_8
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 519
+        width: 72
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac561e29b027d743bc0aec8615d2d9f
+      internalID: 1745471419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_9
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 519
+        width: 71
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dcc0394fe569b949bcdf2385aed3af7
+      internalID: 65358394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_10
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 519
+        width: 72
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a302884bc682cb74d979515005800215
+      internalID: -490325745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_11
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 519
+        width: 81
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76dc146a356648544a43cfd88f750cde
+      internalID: -655979644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_12
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 519
+        width: 72
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b097d7645143a0489529df2077af712
+      internalID: 2085045112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_13
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 519
+        width: 70
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d56f262177cd349abfcea555a1787f
+      internalID: -38528668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_14
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 519
+        width: 72
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b812e997b4dfc4295b0630e0ac9a37
+      internalID: 2061952420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_15
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 291
+        width: 71
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8806fe490d23df94c8da79afcfe12ec7
+      internalID: -2119344200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_16
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 291
+        width: 72
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abdc2ceb717d6e43924b2231788afd1
+      internalID: 1249821538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_17
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 291
+        width: 84
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8fe157660387d94abc2f9632e3d9595
+      internalID: -1632980012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_18
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 291
+        width: 94
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b393273b7c5ab44a16f308cf45880b
+      internalID: -1248780449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_19
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 291
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589fa29bced26434b9416b78eedf27ff
+      internalID: -25416124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_20
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 291
+        width: 81
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95924838fc35bc74fba6b97241b7f29c
+      internalID: 158072909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_21
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 291
+        width: 77
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c4c3329b3e2434a89d5d3587f38680
+      internalID: 353502580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_22
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 291
+        width: 76
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc69e38b05a50e845b31c2915c74994d
+      internalID: -732951728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_23
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 291
+        width: 72
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18353b5cecaf6c94f988f87e763d5342
+      internalID: 739010815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_29
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 64
+        width: 67
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecbbfc68ffd8b44186ba258bd18bbef
+      internalID: 1779437789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_30
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 64
+        width: 65
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cb0549bd5fd2949a2cbca6a1776eb7
+      internalID: 1746033916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_31
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 64
+        width: 72
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f0e5c89595b2040943e4c9718d2cb7
+      internalID: 1026744074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_37
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 64
+        width: 55
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefe219b2f0082d448309251bfd14d28
+      internalID: -1274654146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_39
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 64
+        width: 77
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc9c1acf60eac3418d5ab16a3667836
+      internalID: -2007690457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiyanakRangeRight_40
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 64
+        width: 60
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f453e1be66477b743a4d1d7145121102
+      internalID: -1194106162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TiyanakRangeRight_0: 1461881033
+      TiyanakRangeRight_1: 299374329
+      TiyanakRangeRight_10: -490325745
+      TiyanakRangeRight_11: -655979644
+      TiyanakRangeRight_12: 2085045112
+      TiyanakRangeRight_13: -38528668
+      TiyanakRangeRight_14: 2061952420
+      TiyanakRangeRight_15: -2119344200
+      TiyanakRangeRight_16: 1249821538
+      TiyanakRangeRight_17: -1632980012
+      TiyanakRangeRight_18: -1248780449
+      TiyanakRangeRight_19: -25416124
+      TiyanakRangeRight_2: 1785925843
+      TiyanakRangeRight_20: 158072909
+      TiyanakRangeRight_21: 353502580
+      TiyanakRangeRight_22: -732951728
+      TiyanakRangeRight_23: 739010815
+      TiyanakRangeRight_24: -470056203
+      TiyanakRangeRight_25: -1226844188
+      TiyanakRangeRight_26: -255555109
+      TiyanakRangeRight_27: 1290478528
+      TiyanakRangeRight_28: -813320895
+      TiyanakRangeRight_29: 1779437789
+      TiyanakRangeRight_3: 557705227
+      TiyanakRangeRight_30: 1746033916
+      TiyanakRangeRight_31: 1026744074
+      TiyanakRangeRight_32: 239314822
+      TiyanakRangeRight_33: 1876016703
+      TiyanakRangeRight_34: -1949794601
+      TiyanakRangeRight_35: -1909514898
+      TiyanakRangeRight_36: 266572670
+      TiyanakRangeRight_37: -1274654146
+      TiyanakRangeRight_38: 1731726152
+      TiyanakRangeRight_39: -2007690457
+      TiyanakRangeRight_4: 563256053
+      TiyanakRangeRight_40: -1194106162
+      TiyanakRangeRight_5: -1183224675
+      TiyanakRangeRight_6: 1464047660
+      TiyanakRangeRight_7: -276422230
+      TiyanakRangeRight_8: 1745471419
+      TiyanakRangeRight_9: 65358394
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

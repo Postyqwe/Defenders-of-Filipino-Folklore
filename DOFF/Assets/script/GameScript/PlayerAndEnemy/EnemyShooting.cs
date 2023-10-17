@@ -2,32 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossScript : MonoBehaviour
+public class EnemyShooting : MonoBehaviour
 {
     private float range;
     [SerializeField]
-    public Transform target; //Enemy going towards
+    private Transform target; //Enemy going towards
     private Rigidbody rb;
     private Animator animator;
-    private float minDistance = 230.0f; //If the player get outside of this range it doesnt follow 
+    private float minDistance = 200.0f; //If the player get outside of this range it doesnt follow 
     private bool targetCollision = false;
-    private float speed = 35.0f; //Enemy base movement speed
+    private float speed = 25.0f; //Enemy base movement speed
     public float groundDist;
     private float Push = 80f; //How long it will get push
     public int EnemyHealth = 6; //Enemy health
-    public int currentHealth; //Variable that updates current health of the player
-    public HealthBarScript healthBar; //Health bar to show how much health of the player have
-    private int hitdamage = 10; //Enemy damage to the player health
+    public int hitdamage = 10;
+    
     //public Behaviour script; //To disabling a script
-
     public LayerMask terrainLayer;
     
-    private bool isDead = false; //For checking if the its still alive
+
+    //public Sprite[] sprites;
+    public GameObject bulletPrefab;
+    public Transform bulletPosition;
+    public float fireRate = 20.0f;
+    private float nextFireTime = 0.0f;
+    public bool isDefeated = false;
+
 
     void Start()
     {
         target = GameObject.Find("Player").transform;
-        currentHealth = EnemyHealth; 
         animator = GetComponent<Animator>();
     }
 
@@ -47,12 +51,14 @@ public class BossScript : MonoBehaviour
         }
         
         range = Vector2.Distance(transform.position, target.position); //To calculate how for the position to the player
-        if(range < minDistance && !isDead) // if range of enemy towards the player is less than the minimum distance, and if the sprite is still alive its true the enemy go towards the enemy
+        if(range < minDistance && !isDefeated) // if range of enemy towards the player is less than the minimum distance, and if the sprite is still alive its true the enemy go towards the enemy
         {
+            
             if(!targetCollision)
             {
+                
                 transform.LookAt(target.position); //Enemy identify and goes towards the target
-                if (target.position.x < transform.position.x) //To check if the target is on its left or right
+                 if (target.position.x < transform.position.x) //To check if the target is on its left or right
                 {
                     animator.Play("left"); //If the target is towards the left this get activate
                 }
@@ -65,6 +71,26 @@ public class BossScript : MonoBehaviour
             }
         }
         transform.rotation = Quaternion.identity; //To calculate the rotation of the object
+        if (target !=null && Time.time >= nextFireTime)
+        {
+            Shoot();
+            nextFireTime = Time.time + 1 / fireRate; // Set the next fire time.
+        }
+    }
+    void Shoot()
+    {
+        // Calculate the direction from the enemy to the player.
+        Vector3 direction = target.position - transform.position;
+        
+        // Create a bullet at the enemy's position.
+        GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+
+        // Get the Rigidbody component of the bullet.
+        Rigidbody rb = bullet.GetComponent<Rigidbody>();
+
+        // Set the bullet's velocity to move towards the player.
+        rb.velocity = direction.normalized * 10f; // Adjust the speed as needed.
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -110,12 +136,10 @@ public class BossScript : MonoBehaviour
 
     public void TakeDamage(int amount) //Getting hit by the player weapon
     {
-        currentHealth -= amount; //If it get hit enemy health gets lower
+        EnemyHealth -= amount; //If it get hit enemy health gets lower
         transform.GetChild(0).gameObject.SetActive(true); //This activate the blood sprite
-        if(currentHealth<0) //To check if enemy is still alive or not
+        if(EnemyHealth<1) //To check if enemy is still alive or not
         {
-            
-            isDead = true; //To indicate that the enemy is dead
             GetComponent<Rigidbody>().velocity = Vector3.zero; //To make sure that it doesnt slide/move still when it dies
             transform.GetChild(0).gameObject.SetActive(false); //To in-activate the blood
             animator.SetTrigger("death");
@@ -125,7 +149,6 @@ public class BossScript : MonoBehaviour
             Invoke("EnemyDeath",1.5f); //Enemy animation
             
         }
-        healthBar.SetHealth(currentHealth); 
         
         Invoke("HideBlood",0.25f); //Animation of the blood to indicate that it got hit
     }
@@ -139,9 +162,13 @@ public class BossScript : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public int GetHitDamage() //Public function that return the enemy damage
+    public void DefeatEnemy()
+    {
+        isDefeated = true; //To indicate that the enemy is dead
+    }
+
+    public int GetHitDamage()
     {
         return hitdamage;
     }
-    
 }
