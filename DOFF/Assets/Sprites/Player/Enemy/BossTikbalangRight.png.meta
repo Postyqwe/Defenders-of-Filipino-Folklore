@@ -1,0 +1,788 @@
+fileFormatVersion: 2
+guid: 2b9a25a8f79fb6d4191c017f20010075
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BossTikbalangRight_0
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 383
+        width: 50
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f4ac6006b643749b554c31b7bef01a
+      internalID: -1632835809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_1
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 383
+        width: 41
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e3e73b92bdaf549bbf06f453a865ed
+      internalID: 487752115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_2
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 383
+        width: 45
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66784e07cda3e20478aeda5c636a70f8
+      internalID: 1452230623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_3
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 383
+        width: 42
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a773d6d77c53243a4d1f196606f9f6
+      internalID: 1580634998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_4
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 383
+        width: 51
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c133eeb5f8548344bb5626036989e1a8
+      internalID: -619482854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_5
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 383
+        width: 59
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132280056b3f8964791f3d0640e09dfb
+      internalID: 290978812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_6
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 214
+        width: 102
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2ddd86e3c40cb47ab607b837658acd
+      internalID: 1897517309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_7
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 215
+        width: 101
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf609ae6c14467741a9276721d438f6e
+      internalID: 378615935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_8
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 214
+        width: 167
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f7c6ecca80aa14db94304626712d9b
+      internalID: -203811003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_9
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 215
+        width: 122
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e61be30e7305bf409bfd105c6355234
+      internalID: 567880369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_10
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 215
+        width: 114
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ba65c08db991a4294a0c87e0bb82d2
+      internalID: -1968648438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_11
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 214
+        width: 79
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e92c6b816846e64d93509afa820579d
+      internalID: -2073209805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_12
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 214
+        width: 67
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85d894d65df8404aab052c531a6031b
+      internalID: 117511515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_13
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 215
+        width: 62
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad73b64ac07a304d96058c1a4e165e8
+      internalID: 693957820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_14
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 214
+        width: 51
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35ca699262511e46a594666b116adde
+      internalID: -659292344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_15
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 51
+        width: 63
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b652577475513e84f9fdd23574851798
+      internalID: -644490276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_17
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 51
+        width: 64
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6dce5b8c679c146ad8aaa72c9fdfbf
+      internalID: -1343293700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_19
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 42
+        width: 79
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a981f9b7625799a44b848f178a8c1c0a
+      internalID: -1240518856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_21
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 42
+        width: 103
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934e0c4879b987b4cb1935d611c9df6d
+      internalID: 589097071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_26
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 42
+        width: 83
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0fa17741796144eb8b99af0f44b05b
+      internalID: -305239124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_28
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 42
+        width: 59
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d6bc27c3f61374cb00fdc0bdd335d9
+      internalID: -541034403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_31
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 42
+        width: 51
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513fde56fb84792439313c7dd091aec9
+      internalID: -1030807668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_32
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 42
+        width: 44
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f693cf95fd16e8744a8d9cad958febcd
+      internalID: -475902191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_50
+      rect:
+        serializedVersion: 2
+        x: 1942
+        y: 42
+        width: 43
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc8c0414d4954447bec2932b3af20b9
+      internalID: 940814379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_57
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 42
+        width: 94
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb72c0be9ba91834fb69293d965c8f59
+      internalID: 256066196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossTikbalangRight_80
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 51
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b727697aa15abd4478aa279009e7ad21
+      internalID: -1423251778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BossTikbalangRight_0: -1632835809
+      BossTikbalangRight_1: 487752115
+      BossTikbalangRight_10: -1968648438
+      BossTikbalangRight_100: 669600599
+      BossTikbalangRight_101: 1561612267
+      BossTikbalangRight_102: -1289057287
+      BossTikbalangRight_103: 1800730015
+      BossTikbalangRight_104: 1386435815
+      BossTikbalangRight_105: 2048042162
+      BossTikbalangRight_106: 1682253190
+      BossTikbalangRight_107: -1394654837
+      BossTikbalangRight_108: -258187066
+      BossTikbalangRight_109: -997847437
+      BossTikbalangRight_11: -2073209805
+      BossTikbalangRight_110: -1204670413
+      BossTikbalangRight_111: 780223544
+      BossTikbalangRight_112: -2030750980
+      BossTikbalangRight_113: -1590299112
+      BossTikbalangRight_114: 1994698220
+      BossTikbalangRight_115: -1195440941
+      BossTikbalangRight_116: -1689848425
+      BossTikbalangRight_117: -210121189
+      BossTikbalangRight_118: -607185747
+      BossTikbalangRight_12: 117511515
+      BossTikbalangRight_13: 693957820
+      BossTikbalangRight_14: -659292344
+      BossTikbalangRight_15: -644490276
+      BossTikbalangRight_16: 1644202967
+      BossTikbalangRight_17: -1343293700
+      BossTikbalangRight_18: -2106221443
+      BossTikbalangRight_19: -1240518856
+      BossTikbalangRight_2: 1452230623
+      BossTikbalangRight_20: 1617712448
+      BossTikbalangRight_21: 589097071
+      BossTikbalangRight_22: 1382562213
+      BossTikbalangRight_23: 1338486908
+      BossTikbalangRight_24: -1558337358
+      BossTikbalangRight_25: -1498610855
+      BossTikbalangRight_26: -305239124
+      BossTikbalangRight_27: -499307592
+      BossTikbalangRight_28: -541034403
+      BossTikbalangRight_29: 1846958050
+      BossTikbalangRight_3: 1580634998
+      BossTikbalangRight_30: 2041065938
+      BossTikbalangRight_31: -1030807668
+      BossTikbalangRight_32: -475902191
+      BossTikbalangRight_33: -469991846
+      BossTikbalangRight_34: -1913180453
+      BossTikbalangRight_35: -1953202079
+      BossTikbalangRight_36: -773117702
+      BossTikbalangRight_37: 1150430518
+      BossTikbalangRight_38: 1227601163
+      BossTikbalangRight_39: 453743631
+      BossTikbalangRight_4: -619482854
+      BossTikbalangRight_40: 793171836
+      BossTikbalangRight_41: -1618329230
+      BossTikbalangRight_42: 208138673
+      BossTikbalangRight_43: -683077718
+      BossTikbalangRight_44: -1083979384
+      BossTikbalangRight_45: 813520604
+      BossTikbalangRight_46: 945270414
+      BossTikbalangRight_47: 961287954
+      BossTikbalangRight_48: 1301599175
+      BossTikbalangRight_49: -1446818981
+      BossTikbalangRight_5: 290978812
+      BossTikbalangRight_50: 940814379
+      BossTikbalangRight_51: 375020471
+      BossTikbalangRight_52: -15499599
+      BossTikbalangRight_53: 500072778
+      BossTikbalangRight_54: -581600161
+      BossTikbalangRight_55: 199714774
+      BossTikbalangRight_56: -249971446
+      BossTikbalangRight_57: 256066196
+      BossTikbalangRight_58: -647257452
+      BossTikbalangRight_59: -1871331193
+      BossTikbalangRight_6: 1897517309
+      BossTikbalangRight_60: -1750680152
+      BossTikbalangRight_61: 493658855
+      BossTikbalangRight_62: -1471508942
+      BossTikbalangRight_63: 629402311
+      BossTikbalangRight_64: -1107158645
+      BossTikbalangRight_65: -780799374
+      BossTikbalangRight_66: 1043917341
+      BossTikbalangRight_67: 1143905608
+      BossTikbalangRight_68: -559386151
+      BossTikbalangRight_69: 736102938
+      BossTikbalangRight_7: 378615935
+      BossTikbalangRight_70: 988909689
+      BossTikbalangRight_71: 320952279
+      BossTikbalangRight_72: -1911197272
+      BossTikbalangRight_73: 64562174
+      BossTikbalangRight_74: -2128777426
+      BossTikbalangRight_75: -1362099849
+      BossTikbalangRight_76: 760156099
+      BossTikbalangRight_77: 291887852
+      BossTikbalangRight_78: -1135818461
+      BossTikbalangRight_79: 1057655545
+      BossTikbalangRight_8: -203811003
+      BossTikbalangRight_80: -1423251778
+      BossTikbalangRight_81: -1086721266
+      BossTikbalangRight_82: 1238073550
+      BossTikbalangRight_83: 380729985
+      BossTikbalangRight_84: 753642208
+      BossTikbalangRight_85: -38931104
+      BossTikbalangRight_86: 434970836
+      BossTikbalangRight_87: -1861448381
+      BossTikbalangRight_88: -1734438527
+      BossTikbalangRight_89: -83752407
+      BossTikbalangRight_9: 567880369
+      BossTikbalangRight_90: 2093140008
+      BossTikbalangRight_91: 1946785680
+      BossTikbalangRight_92: -1720482084
+      BossTikbalangRight_93: -1041294637
+      BossTikbalangRight_94: 1285012230
+      BossTikbalangRight_95: -471396033
+      BossTikbalangRight_96: 2076551248
+      BossTikbalangRight_97: 61936096
+      BossTikbalangRight_98: 1364841902
+      BossTikbalangRight_99: -1506998556
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
