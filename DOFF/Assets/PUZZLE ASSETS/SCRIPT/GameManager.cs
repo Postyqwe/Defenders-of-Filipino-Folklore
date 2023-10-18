@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
                         if (SwapIfValid(i, -size, size)) { break; }
                         if (SwapIfValid(i, +size, size)) { break; }
                         if (SwapIfValid(i, -1, 0)) { break; }
-                        if (SwapIfValid(i, +1, size)) { break; }
+                        if (SwapIfValid(i, +1, size - 1)) { break; }
                     }
                 }
             }
