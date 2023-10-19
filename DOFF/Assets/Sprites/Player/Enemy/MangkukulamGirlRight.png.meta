@@ -1,0 +1,686 @@
+fileFormatVersion: 2
+guid: 57ac88deeee388d4585cc4ee19ccb80d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_5
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 481
+        width: 60
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac4e946e91891a439082f46daaa5c7b
+      internalID: -964686638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_6
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 481
+        width: 57
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2273679d4b5764ba3bf003520c9392
+      internalID: 1599665499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_9
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 481
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba9a8bc9a903a3489ced32708ffbca6
+      internalID: -543458311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_10
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 481
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1303efef582e6fd468ac1fb02abd4348
+      internalID: -1161839196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_11
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 481
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b408c0e66ead0c74faaf38f3408d5aea
+      internalID: -164997514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_12
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 481
+        width: 70
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8131bcdeccf9148b214153a8d89459
+      internalID: -2005799094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_13
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 481
+        width: 74
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44293f30b897bf74b964853417afd494
+      internalID: -2140427079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_14
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 481
+        width: 61
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15718f2c5fdb1a04faa31255bae9c7a9
+      internalID: -732049264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_15
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 276
+        width: 57
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f16eec7a6ffac4f8f851f10b6488de
+      internalID: 1309139426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_16
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 276
+        width: 55
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48db1a73b8cd20044bb316bf902d8c7a
+      internalID: -902450734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_18
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 276
+        width: 81
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169e1ed9c05a46946b2d4dee4fe23d19
+      internalID: 774715243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_20
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 276
+        width: 76
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3295cbf033157a749a4597dc9042ae6d
+      internalID: 627990624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_22
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 276
+        width: 75
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5d406a3cdc2f740ac375f2f5b1561b
+      internalID: -1884984201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_24
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 276
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bbbbabb123687419221b666c9aefed
+      internalID: -228475310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_26
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 276
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475af86f3cff83442aefd8ac91902c4d
+      internalID: -112088932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_28
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 276
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7611f625652b8e14ebb83ccab4fa8762
+      internalID: -1264466944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_29
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 276
+        width: 66
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0a5a72e2dd105409c32fb3d378d664
+      internalID: 1360108641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_30
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 276
+        width: 57
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d91e52d0be5b14cbbad4751a7889d5
+      internalID: -163060582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_31
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 71
+        width: 55
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f65825de1b07f469c2826042bb40f2
+      internalID: 1860604266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_32
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 71
+        width: 57
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda239b0409612d4bb3b83dd35f46d38
+      internalID: 771115975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_33
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 71
+        width: 57
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8076840ffbb67c64eba8b8f92be9753c
+      internalID: 787541987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_34
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 71
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0961318cdb62c8041bea83128c88abe0
+      internalID: -830145008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_35
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 71
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa041ce3d384c643b213b404b2bcc9f
+      internalID: -852832931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_36
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 71
+        width: 55
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4bf6cc3f9244d1458264d574b2171dd
+      internalID: 90175032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MangkukulamGirlRight_37
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 71
+        width: 57
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3548d0ab1b215ca4eb4ca6aa122cf37a
+      internalID: 1341147409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MangkukulamGirlRight_0: -381010696
+      MangkukulamGirlRight_1: 1026602071
+      MangkukulamGirlRight_10: -1161839196
+      MangkukulamGirlRight_11: -164997514
+      MangkukulamGirlRight_12: -2005799094
+      MangkukulamGirlRight_13: -2140427079
+      MangkukulamGirlRight_14: -732049264
+      MangkukulamGirlRight_15: 1309139426
+      MangkukulamGirlRight_16: -902450734
+      MangkukulamGirlRight_17: 2134137255
+      MangkukulamGirlRight_18: 774715243
+      MangkukulamGirlRight_19: -1437172543
+      MangkukulamGirlRight_2: 2131614136
+      MangkukulamGirlRight_20: 627990624
+      MangkukulamGirlRight_21: 862708379
+      MangkukulamGirlRight_22: -1884984201
+      MangkukulamGirlRight_23: -901097868
+      MangkukulamGirlRight_24: -228475310
+      MangkukulamGirlRight_25: -1474968410
+      MangkukulamGirlRight_26: -112088932
+      MangkukulamGirlRight_27: -1627611027
+      MangkukulamGirlRight_28: -1264466944
+      MangkukulamGirlRight_29: 1360108641
+      MangkukulamGirlRight_3: 1937870697
+      MangkukulamGirlRight_30: -163060582
+      MangkukulamGirlRight_31: 1860604266
+      MangkukulamGirlRight_32: 771115975
+      MangkukulamGirlRight_33: 787541987
+      MangkukulamGirlRight_34: -830145008
+      MangkukulamGirlRight_35: -852832931
+      MangkukulamGirlRight_36: 90175032
+      MangkukulamGirlRight_37: 1341147409
+      MangkukulamGirlRight_4: 1838843757
+      MangkukulamGirlRight_5: -964686638
+      MangkukulamGirlRight_6: 1599665499
+      MangkukulamGirlRight_7: 553639233
+      MangkukulamGirlRight_8: 2095045110
+      MangkukulamGirlRight_9: -543458311
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

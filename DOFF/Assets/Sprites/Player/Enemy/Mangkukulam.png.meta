@@ -1,0 +1,710 @@
+fileFormatVersion: 2
+guid: e4864afb0c922184fa8f0afc11730a52
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mangkukulam_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 209
+        width: 67
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb393c2325c29554ba4ae05c97562993
+      internalID: 1068977527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 209
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d429e2e6906363647900fb6d5d927984
+      internalID: -1567686050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_3
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 209
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1bf182d1c3f854fa1550ccf5edcd03
+      internalID: 1890462360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_4
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 209
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1cb7d48d654d4c48b86a518d97f2435
+      internalID: 2001840023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_5
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 209
+        width: 73
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b150cc21584426645b110de50c0ab208
+      internalID: -2133373765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_7
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 209
+        width: 73
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e327923cc3191840a5f1b02397286ed
+      internalID: -799015760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_8
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 209
+        width: 65
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8daacbadaf103f458bbeab9c4584f0f
+      internalID: -1754938309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_9
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 209
+        width: 62
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6a926bc02c7474794e594e136c0673
+      internalID: -796001547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_11
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 209
+        width: 64
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb0a74755ef9344eaff1a6ee5e8dbf9
+      internalID: -1482939710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_13
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 209
+        width: 63
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03729da81f01c0b439fb0cfa37e2a271
+      internalID: -1119072907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_15
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 209
+        width: 73
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2fc9c543cf73945bf66aa345fe180d
+      internalID: 759721784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_17
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 209
+        width: 73
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f067f6d6342152c46804bf0d4c59f398
+      internalID: 964737802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_19
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 209
+        width: 64
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec9e126e5194ca4ea73910ce06c85d2
+      internalID: -1267550968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_22
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 209
+        width: 72
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c525522d78885949967e70b378a49c8
+      internalID: 1880176527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_31
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 61
+        width: 75
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648db0a76b41b3843a541523dc7faded
+      internalID: -483110286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 61
+        width: 69
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee5021726d4b2f41b85df3a54bc3c9a
+      internalID: -321958141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_35
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 61
+        width: 75
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335ce4fbf5ee14f4baab65eb3e2aa981
+      internalID: -1512422076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_38
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 60
+        width: 68
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35ecdc3bded008469fcb4643bbf2a04
+      internalID: -181597707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_40
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 61
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c616d8a45bc4664d98fce6db45938df
+      internalID: -181477746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_42
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 61
+        width: 67
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad408080624db5b46849cc044e2a337f
+      internalID: 522709086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_44
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 61
+        width: 71
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65fb8e87d7d8ee49a9dc3c2e8a05643
+      internalID: -2142262720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_45
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 61
+        width: 72
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb73c56d441fd9042b9383439c3707b0
+      internalID: 1913613595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_50
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 61
+        width: 76
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2533f23f887104248bd90de25e132db6
+      internalID: -1038292097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_56
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 61
+        width: 72
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa85ae1edbf3e8f4fab4e3a5035a23b7
+      internalID: -1356788379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mangkukulam_57
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 61
+        width: 73
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b07b68edb7d50749875b242ef2ebaa4
+      internalID: -554637784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Mangkukulam_0: 1068977527
+      Mangkukulam_1: 1781853022
+      Mangkukulam_10: -703238499
+      Mangkukulam_11: -1482939710
+      Mangkukulam_12: 1835834098
+      Mangkukulam_13: -1119072907
+      Mangkukulam_14: -1523172668
+      Mangkukulam_15: 759721784
+      Mangkukulam_16: -676875179
+      Mangkukulam_17: 964737802
+      Mangkukulam_18: -432631732
+      Mangkukulam_19: -1267550968
+      Mangkukulam_2: -1567686050
+      Mangkukulam_20: -237238553
+      Mangkukulam_21: 1634224333
+      Mangkukulam_22: 1880176527
+      Mangkukulam_23: -764217292
+      Mangkukulam_24: 419742054
+      Mangkukulam_25: -581581761
+      Mangkukulam_26: 739287986
+      Mangkukulam_27: 1202417522
+      Mangkukulam_28: -214724550
+      Mangkukulam_29: 94858103
+      Mangkukulam_3: 1890462360
+      Mangkukulam_30: 1200117046
+      Mangkukulam_31: -483110286
+      Mangkukulam_32: -1746136923
+      Mangkukulam_33: 1598654968
+      Mangkukulam_34: -321958141
+      Mangkukulam_35: -1512422076
+      Mangkukulam_36: 1054842892
+      Mangkukulam_37: 1426762428
+      Mangkukulam_38: -181597707
+      Mangkukulam_39: -1441315599
+      Mangkukulam_4: 2001840023
+      Mangkukulam_40: -181477746
+      Mangkukulam_41: 67251027
+      Mangkukulam_42: 522709086
+      Mangkukulam_43: 1912452861
+      Mangkukulam_44: -2142262720
+      Mangkukulam_45: 1913613595
+      Mangkukulam_46: -945931625
+      Mangkukulam_47: -1857978831
+      Mangkukulam_48: 1694087216
+      Mangkukulam_49: -1523161059
+      Mangkukulam_5: -2133373765
+      Mangkukulam_50: -1038292097
+      Mangkukulam_51: -1900862884
+      Mangkukulam_52: -2074553660
+      Mangkukulam_53: 1223988570
+      Mangkukulam_54: 2129978007
+      Mangkukulam_55: -1049977611
+      Mangkukulam_56: -1356788379
+      Mangkukulam_57: -554637784
+      Mangkukulam_58: 714335915
+      Mangkukulam_59: -645436591
+      Mangkukulam_6: -1434908207
+      Mangkukulam_60: 1940530038
+      Mangkukulam_61: -1009582253
+      Mangkukulam_7: -799015760
+      Mangkukulam_8: -1754938309
+      Mangkukulam_9: -796001547
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
