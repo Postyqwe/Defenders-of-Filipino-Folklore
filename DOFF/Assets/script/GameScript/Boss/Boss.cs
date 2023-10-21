@@ -25,7 +25,8 @@ public class Boss : MonoBehaviour
     private float timeSinceLastCharge = 0.0f;
 	private float timeSinceLastAttack = 0f;
     public float timeBetweenAttacks = 3f;
-    
+    private float range;
+    private float minDistance = 230.0f;
     private Transform player;
     public bool turnedLeft = false;
     
@@ -67,19 +68,21 @@ public class Boss : MonoBehaviour
                 transform.position = movePos;
             }
         }
-        
-        Vector2 direction = player.position - transform.position;
-        transform.LookAt(player.position); //Enemy identify and goes towards the target
-        turnedLeft = false;
-		if (player.position.x < transform.position.x) //To check if the target is on its left or right
-		{
-			animator.Play("left"); //If the target is towards the left this get activate
-            turnedLeft = true;
-		}
-		else
-		{
-			animator.Play("right"); //If the target is towards the right this get activate 
-		}
+        range = Vector2.Distance(transform.position, player.position); //To calculate how for the position to the player
+        if(range < minDistance && !isDead)
+        {
+            transform.LookAt(player.position); //Enemy identify and goes towards the target
+            turnedLeft = false;
+            if (player.position.x < transform.position.x) //To check if the target is on its left or right
+            {
+                animator.Play("left"); //If the target is towards the left this get activate
+                turnedLeft = true;
+            }
+            else
+            {
+                animator.Play("right"); //If the target is towards the right this get activate 
+            }
+        }
 		transform.Rotate(new Vector3(0,-90,0),Space.Self);
 		transform.Translate(new Vector3(moveSpeed* Time.deltaTime,0,0));
 		transform.rotation = Quaternion.identity; //To calculate the rotation of the object

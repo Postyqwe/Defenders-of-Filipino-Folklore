@@ -1,0 +1,1083 @@
+fileFormatVersion: 2
+guid: 01e7cb7e1dcc6444e9431836e9b3e56b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BigKapre_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 262
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c47851960a41924c808ef84487b0544
+      internalID: 786498651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_1
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 263
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef25a36159bad040815c19eb9532704
+      internalID: -905942076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_2
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 262
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30be7426516ee147b9e8cf309f8e54d
+      internalID: 657620555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_3
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 262
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25856c872c13a4844b67dfa5511c49eb
+      internalID: 1357555289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_4
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 262
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d61de4bcb9b4b4b823f12bfc5ce388
+      internalID: 444944006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_5
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 262
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863bd735f13e062489add1480dd1823c
+      internalID: -534366073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_6
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 262
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8e42824e4b55143919bcda6dedca06
+      internalID: 1272354035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_7
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 262
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d9d1f42bae3cf4fb6eb6f783cac954
+      internalID: 1563693205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_8
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 262
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98214f1b114d44e4a86be6233a259799
+      internalID: 1636439717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_9
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 262
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa65cf825eb640046a0cff7f01e641f7
+      internalID: -1260005623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_10
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 182
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27b4fef3ff8136419f3a9c31e1d4baa
+      internalID: -82916099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_11
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 182
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd90c6136f8b00f4f82047f1b3816bf2
+      internalID: -1955069015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_12
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 182
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d666750b69cfb47a0325e8d83a1061
+      internalID: 391484263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_13
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 182
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91476bc3480386d4ba0b0d91d3479843
+      internalID: 397948947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_14
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 182
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd75d017b3719144ae7c39c04cbd5bf
+      internalID: 2132964381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_15
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 182
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72068a12e04e6c04592d3538724a2a0f
+      internalID: 1877758131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_16
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 182
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46af006e775e03746baed8dbc3b8542c
+      internalID: -87387711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_17
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 182
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02d793d9646190458da765e5fdde16c
+      internalID: 654186510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_18
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 182
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ae867c5a1a4394e9fbaee32807af85
+      internalID: 1432028954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_19
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 182
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597c57836a703fb488d526b1b2844ce6
+      internalID: -601899828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_21
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 182
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90d9a02567489849a0e60e3ede3b2e2
+      internalID: 1614983105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_23
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 182
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c1475bc65952b41b3a6112fb7ef6d3
+      internalID: -1298680446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_24
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 182
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23fd82ecca667cf489bc5f72becc6eeb
+      internalID: -1866755819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_25
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 182
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4299e039ffa6844449acdf66d7c7b2ed
+      internalID: -1649901310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_26
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 182
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8810c3bebb7839d4599f4c228159fd60
+      internalID: 1555813538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_27
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 99
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd3492e7fbf07846905d8168f3f6f74
+      internalID: -968291649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_28
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 99
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917f191cf78a9b64bbc024af9b368a2d
+      internalID: 228945676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_29
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 99
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2080ddf0ac7a76458e27b1cbd1666d9
+      internalID: -1645078239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_30
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 99
+        width: 71
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10d7923d2f7bf243b0500d112069f27
+      internalID: -1500755030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_31
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 99
+        width: 73
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b2d8b2dfe3c51499f2963d2f964be9
+      internalID: -631939551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_32
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 95
+        width: 104
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93e5782e0c25b34e8cfc14376073c66
+      internalID: -1499777847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_33
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 95
+        width: 62
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3f65d426f0e4243b6f0d43c7b45322
+      internalID: -63805382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_34
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 94
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4cb8db7bf25f24fac8fc64f29b61d5
+      internalID: 1127039796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_35
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 99
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297479f648bd3614e88a81c6de696041
+      internalID: -2114232235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_38
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 18
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09aad68eda4d91f4d817cbf1752e50fe
+      internalID: 14267027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_39
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 18
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73129e381d81825428323355e04ae21e
+      internalID: -1874712802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_40
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 18
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381760b78c33b1444ae09126752505cf
+      internalID: 1775185804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_48
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 18
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7c81c59858cf64cb20d18d54c66f16
+      internalID: -1842844501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_49
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 18
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bdebf743133404e923a81991587dc6
+      internalID: -1594811986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_53
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 18
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1042461f4ff0e48982f5882be6cd7a
+      internalID: 1696053954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_54
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 18
+        width: 41
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a56b3216338df544918653f79946470
+      internalID: -2129982207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_55
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 18
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ee0722af11dff4381a89f6175bb503
+      internalID: -1055078095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKapre_56
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 18
+        width: 46
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5170155, y: 0.46331966}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c40fe41f42ced64c86c6cd4ce0ae17b
+      internalID: -1504997739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BigKapre_0: 786498651
+      BigKapre_1: -905942076
+      BigKapre_10: -82916099
+      BigKapre_11: -1955069015
+      BigKapre_12: 391484263
+      BigKapre_13: 397948947
+      BigKapre_14: 2132964381
+      BigKapre_15: 1877758131
+      BigKapre_16: -87387711
+      BigKapre_17: 654186510
+      BigKapre_18: 1432028954
+      BigKapre_19: -601899828
+      BigKapre_2: 657620555
+      BigKapre_20: -914542434
+      BigKapre_21: 1614983105
+      BigKapre_22: 825452600
+      BigKapre_23: -1298680446
+      BigKapre_24: -1866755819
+      BigKapre_25: -1649901310
+      BigKapre_26: 1555813538
+      BigKapre_27: -968291649
+      BigKapre_28: 228945676
+      BigKapre_29: -1645078239
+      BigKapre_3: 1357555289
+      BigKapre_30: -1500755030
+      BigKapre_31: -631939551
+      BigKapre_32: -1499777847
+      BigKapre_33: -63805382
+      BigKapre_34: 1127039796
+      BigKapre_35: -2114232235
+      BigKapre_36: -1803715071
+      BigKapre_37: 484389024
+      BigKapre_38: 14267027
+      BigKapre_39: -1874712802
+      BigKapre_4: 444944006
+      BigKapre_40: 1775185804
+      BigKapre_41: 1489470102
+      BigKapre_42: 1119077263
+      BigKapre_43: -1787085454
+      BigKapre_44: 188496282
+      BigKapre_45: -299903184
+      BigKapre_46: 667206586
+      BigKapre_47: -1206066273
+      BigKapre_48: -1842844501
+      BigKapre_49: -1594811986
+      BigKapre_5: -534366073
+      BigKapre_50: -1597015028
+      BigKapre_51: -148797747
+      BigKapre_52: -1644071341
+      BigKapre_53: 1696053954
+      BigKapre_54: -2129982207
+      BigKapre_55: -1055078095
+      BigKapre_56: -1504997739
+      BigKapre_6: 1272354035
+      BigKapre_7: 1563693205
+      BigKapre_8: 1636439717
+      BigKapre_9: -1260005623
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

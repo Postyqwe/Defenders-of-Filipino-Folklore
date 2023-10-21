@@ -103,6 +103,10 @@ public class PlayerController : MonoBehaviour
             {
                 TakeDamage(collision.gameObject.GetComponent<BossShooting>().GetHitDamage());
             }
+            if(collision.gameObject.GetComponent<Boss>())
+            {
+                TakeDamage(collision.gameObject.GetComponent<BossScript>().GetHitDamage());
+            }
             if(collision.gameObject.GetComponent<EnemyShooting>())
             {
                 TakeDamage(collision.gameObject.GetComponent<EnemyShooting>().GetHitDamage()); //Calculation for the player current health if it got hit by the enemy

@@ -1,37 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class BossScript : MonoBehaviour
 {
     private float range;
     [SerializeField]
-    public Transform target; //Enemy going towards
+    public Transform player; //Enemy going towards
     private Rigidbody rb;
     private Animator animator;
-    private float minDistance = 230.0f; //If the player get outside of this range it doesnt follow 
+    private float minDistance = 200.0f; //If the player get outside of this range it doesnt follow 
     private bool targetCollision = false;
-    private float speed = 35.0f; //Enemy base movement speed
+    private float speed = 25.0f; //Enemy base movement speed
     public float groundDist;
-    public bool isFlipped = false;
     private float Push = 80f; //How long it will get push
     public int EnemyHealth = 6; //Enemy health
     public int currentHealth; //Variable that updates current health of the player
     public HealthBarScript healthBar; //Health bar to show how much health of the player have
     private int hitdamage = 10; //Enemy damage to the player health
-    public Behaviour script; //To disabling a script
-
+    //public Behaviour script; //To disabling a script
     public LayerMask terrainLayer;
     
-    private bool isDead = false; //For checking if the its still alive
 
-    
+    //public Sprite[] sprites;
+    public bool isDead = false; //For checking if the its still alive
 
     void Start()
     {
-        currentHealth = EnemyHealth; 
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
+        currentHealth = EnemyHealth;
         healthBar.SetMaxHealth(EnemyHealth);
     }
 
@@ -50,13 +48,13 @@ public class BossScript : MonoBehaviour
             }
         }
         
-        range = Vector2.Distance(transform.position, target.position); //To calculate how for the position to the player
+        range = Vector2.Distance(transform.position, player.position); //To calculate how for the position to the player
         if(range < minDistance && !isDead) // if range of enemy towards the player is less than the minimum distance, and if the sprite is still alive its true the enemy go towards the enemy
         {
             if(!targetCollision)
             {
-                transform.LookAt(target.position); //Enemy identify and goes towards the target
-                 if (target.position.x < transform.position.x) //To check if the target is on its left or right
+                transform.LookAt(player.position); //Enemy identify and goes towards the target
+                 if (player.position.x < transform.position.x) //To check if the target is on its left or right
                 {
                     animator.Play("left"); //If the target is towards the left this get activate
                 }
@@ -116,30 +114,25 @@ public class BossScript : MonoBehaviour
     {
         currentHealth -= amount; //If it get hit enemy health gets lower
         transform.GetChild(0).gameObject.SetActive(true); //This activate the blood sprite
-        if(currentHealth<0) //To check if enemy is still alive or not
+        if(currentHealth<1) //To check if enemy is still alive or not
         {
             isDead = true; //To indicate that the enemy is dead
             GetComponent<Rigidbody>().velocity = Vector3.zero; //To make sure that it doesnt slide/move still when it dies
             transform.GetChild(0).gameObject.SetActive(false); //To in-activate the blood
             animator.SetTrigger("death");
-            script.enabled = false; //To disable this script
+            // script.enabled = false; //To disable this script
             GetComponent<Collider>().enabled = false; //To make sure that it doesnt collide with another entity even its dead
             PlayerController.coins++;
             Invoke("EnemyDeath",1.5f); //Enemy animation
+
         }
         healthBar.SetHealth(currentHealth); 
-        Invoke("HideBlood",0.25f); //Animation of the blood to indicate that it got hit
-    }
-    void HideBlood() //To in-activate the blood
-    {
-        transform.GetChild(0).gameObject.SetActive(false);
     }
 
     void EnemyDeath() //To remove the enemy sprite from the stage
     {
         Destroy(gameObject);
     }
-
     public int GetHitDamage() //Public function that return the enemy damage
     {
         return hitdamage;

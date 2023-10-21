@@ -35,5 +35,14 @@ public class WeaponColliderScript : MonoBehaviour
                 boss.TakeDamage(2); 
             }
         }
+        else if (collision.gameObject.CompareTag("Boss")) // Check if it collides with an object with the "Boss" tag.
+        {
+            BossScript boss = collision.gameObject.GetComponent<BossScript>(); // Try to get the Boss component from the collided object.
+
+            if (boss != null)
+            {
+                boss.TakeDamage(2); 
+            }
+        }
     }
 }
