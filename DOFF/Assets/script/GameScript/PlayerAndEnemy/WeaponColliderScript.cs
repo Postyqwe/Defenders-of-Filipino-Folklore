@@ -17,31 +17,47 @@ public class WeaponColliderScript : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("EnemyRange")) // Check if it collides with an object with the "EnemyRange" tag.
         {
-            
             EnemyShooting enemyShooting = collision.gameObject.GetComponent<EnemyShooting>(); // Try to get the EnemyShooting component from the collided object.
 
             if (enemyShooting != null)
             {
-                
                 enemyShooting.TakeDamage(3); 
             }
         }
         else if (collision.gameObject.CompareTag("Boss")) // Check if it collides with an object with the "Boss" tag.
         {
-            Boss boss = collision.gameObject.GetComponent<Boss>(); // Try to get the Boss component from the collided object.
+            MeleeBoss meleeboss = collision.gameObject.GetComponent<MeleeBoss>(); // Try to get the Boss component from the collided object.
 
-            if (boss != null)
+            if (meleeboss != null)
             {
-                boss.TakeDamage(2); 
+                meleeboss.TakeDamage(2); 
             }
         }
-        else if (collision.gameObject.CompareTag("Boss")) // Check if it collides with an object with the "Boss" tag.
+        else if (collision.gameObject.CompareTag("BossRange")) // Check if it collides with an object with the "Boss" tag.
         {
-            BossScript boss = collision.gameObject.GetComponent<BossScript>(); // Try to get the Boss component from the collided object.
+            RangeBoss rangeboss = collision.gameObject.GetComponent<RangeBoss>(); // Try to get the Boss component from the collided object.
 
+            if (rangeboss != null)
+            {
+                rangeboss.TakeDamage(2); 
+            }
+        }
+        else if (collision.gameObject.CompareTag("Kapre")) // Check if it collides with an object with the "Boss" tag.
+        {
+            BossScript boss = collision.gameObject.GetComponent<BossScript>();
+        
             if (boss != null)
             {
-                boss.TakeDamage(2); 
+                boss.TakeDamage(2);
+            }
+        }
+        else if (collision.gameObject.CompareTag("Tikbalang")) // Check if it collides with an object with the "Boss" tag.
+        {
+            BossScript boss = collision.gameObject.GetComponent<BossScript>();
+        
+            if (boss != null)
+            {
+                boss.TakeDamage(2);
             }
         }
     }

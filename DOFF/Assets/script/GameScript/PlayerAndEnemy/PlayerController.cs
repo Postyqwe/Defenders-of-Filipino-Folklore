@@ -89,21 +89,25 @@ public class PlayerController : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Enemy")||collision.gameObject.CompareTag("Boss")||collision.gameObject.CompareTag("EnemyRange"))//If the player and enemy collide this get trigger
+        if(collision.gameObject.CompareTag("Enemy")||collision.gameObject.CompareTag("Boss")||collision.gameObject.CompareTag("EnemyRange")||collision.gameObject.CompareTag("BossRange"))//If the player and enemy collide this get trigger
         {
             if(collision.gameObject.GetComponent<EnemyScript>())
             {
                 TakeDamage(collision.gameObject.GetComponent<EnemyScript>().GetHitDamage()); //Calculation for the player current health if it got hit by the enemy
             }
-            if(collision.gameObject.GetComponent<Boss>())
+            if(collision.gameObject.GetComponent<MeleeBoss>())
             {
-                TakeDamage(collision.gameObject.GetComponent<Boss>().GetHitDamage());
+                TakeDamage(collision.gameObject.GetComponent<MeleeBoss>().GetHitDamage());
+            }
+            if(collision.gameObject.GetComponent<RangeBoss>())
+            {
+                TakeDamage(collision.gameObject.GetComponent<RangeBoss>().GetHitDamage());
             }
             if(collision.gameObject.GetComponent<BossShooting>())
             {
                 TakeDamage(collision.gameObject.GetComponent<BossShooting>().GetHitDamage());
             }
-            if(collision.gameObject.GetComponent<Boss>())
+            if(collision.gameObject.GetComponent<BossScript>())
             {
                 TakeDamage(collision.gameObject.GetComponent<BossScript>().GetHitDamage());
             }

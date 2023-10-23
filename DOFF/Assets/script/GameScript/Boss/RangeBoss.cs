@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyShooting : MonoBehaviour
+public class RangeBoss : MonoBehaviour
 {
     private float range;
     [SerializeField]
@@ -14,22 +14,26 @@ public class EnemyShooting : MonoBehaviour
     private float speed = 25.0f; //Enemy base movement speed
     public float groundDist;
     private float Push = 80f; //How long it will get push
-    public int EnemyHealth = 6; //Enemy health
     public int hitdamage = 10;
     
-    //public Behaviour script; //To disabling a script
+    public Behaviour script; //To disabling a script
     public LayerMask terrainLayer;
+    public int EnemyHealth = 6; //Enemy health
+    public int currentHealth; //Variable that updates current health of the player
+    public HealthBarScript healthBar; //Health bar to show how much health of the player have
     public GameObject bulletPrefab;
     public Transform bulletPosition;
     public float fireRate = 20.0f;
     private float nextFireTime = 0.0f;
-    public bool isDefeated = false;
+    public bool isDead = false;
 
 
     void Start()
     {
         target = GameObject.Find("Player").transform;
         animator = GetComponent<Animator>();
+        currentHealth = EnemyHealth;
+        healthBar.SetMaxHealth(EnemyHealth);
     }
 
     void Update()
@@ -48,7 +52,7 @@ public class EnemyShooting : MonoBehaviour
         }
         
         range = Vector2.Distance(transform.position, target.position); //To calculate how for the position to the player
-        if(range < minDistance && !isDefeated) // if range of enemy towards the player is less than the minimum distance, and if the sprite is still alive its true the enemy go towards the enemy
+        if(range < minDistance && !isDead) // if range of enemy towards the player is less than the minimum distance, and if the sprite is still alive its true the enemy go towards the enemy
         {
             
             if(!targetCollision)
@@ -133,35 +137,26 @@ public class EnemyShooting : MonoBehaviour
 
     public void TakeDamage(int amount) //Getting hit by the player weapon
     {
-        EnemyHealth -= amount; //If it get hit enemy health gets lower
+        currentHealth -= amount; //If it get hit enemy health gets lower
         transform.GetChild(0).gameObject.SetActive(true); //This activate the blood sprite
-        if(EnemyHealth<1) //To check if enemy is still alive or not
+        if(currentHealth<1) //To check if enemy is still alive or not
         {
+            isDead= true;
             GetComponent<Rigidbody>().velocity = Vector3.zero; //To make sure that it doesnt slide/move still when it dies
             transform.GetChild(0).gameObject.SetActive(false); //To in-activate the blood
             animator.SetTrigger("death");
-            //script.enabled = false; //To disable this script
+            script.enabled = false; //To disable this script
             GetComponent<Collider>().enabled = false; //To make sure that it doesnt collide with another entity even its dead
             PlayerController.coins++;
             Invoke("EnemyDeath",1.5f); //Enemy animation
-            
         }
-        
-        Invoke("HideBlood",0.25f); //Animation of the blood to indicate that it got hit
+        healthBar.SetHealth(currentHealth); 
     }
-    void HideBlood() //To in-activate the blood
-    {
-        transform.GetChild(0).gameObject.SetActive(false);
-    }
+    
 
     void EnemyDeath() //To remove the enemy sprite from the stage
     {
         Destroy(gameObject);
-    }
-
-    public void DefeatEnemy()
-    {
-        isDefeated = true; //To indicate that the enemy is dead
     }
 
     public int GetHitDamage()

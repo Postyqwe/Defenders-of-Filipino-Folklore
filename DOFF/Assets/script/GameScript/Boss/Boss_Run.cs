@@ -10,14 +10,14 @@ public class Boss_Run : StateMachineBehaviour
 
 	Transform player;
 	Rigidbody rb;
-	Boss boss;
+	MeleeBoss boss;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 		rb = animator.GetComponent<Rigidbody>();
-		boss = animator.GetComponent<Boss>();
+		boss = animator.GetComponent<MeleeBoss>();
 
 	}
 
@@ -30,17 +30,12 @@ public class Boss_Run : StateMachineBehaviour
 		// Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
 		// rb.MovePosition(newPos);
 
-		if (boss.currentAttackType == Boss.AttackType.Charge)
+		if (boss.currentAttackType == MeleeBoss.AttackType.Charge)
         {
             
             boss.StartChargeAttack(); // Perform charge attack logic
         }
-        else if (boss.currentAttackType == Boss.AttackType.Projectile)
-        {
-            
-            boss.StartProjectileAttack(); // Perform projectile attack logic
-        }
-		
+        
 		
 	}
 
@@ -48,6 +43,6 @@ public class Boss_Run : StateMachineBehaviour
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
 	{
 		animator.SetTrigger("ChargeAttack");
-		animator.SetTrigger("RangeAttack");
+		
 	}
 }

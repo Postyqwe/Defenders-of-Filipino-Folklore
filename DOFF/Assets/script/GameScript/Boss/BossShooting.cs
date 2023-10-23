@@ -6,7 +6,7 @@ public class BossShooting : MonoBehaviour
 {
     private GameObject player;
     private Rigidbody rb;
-    public float force;
+    public float force =100f;
     private float timer;
     public int hitdamage = 10;
     // Start is called before the first frame update
@@ -16,10 +16,11 @@ public class BossShooting : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
 
         Vector3 direction = player.transform.position - transform.position;
+        Debug.Log("Direction: " + direction);
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
         
-        float rot = Mathf.Atan2(-direction.x, -direction.y) *Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0,0,rot);
+        float rot = Mathf.Atan2(-direction.y, -direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, rot);
     }
 
     // Update is called once per frame

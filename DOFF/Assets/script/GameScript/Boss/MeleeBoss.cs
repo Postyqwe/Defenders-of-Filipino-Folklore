@@ -2,19 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossScript : MonoBehaviour
+public class MeleeBoss : MonoBehaviour
 {
     public float moveSpeed = 25f; // Speed at which the boss charges.
+    public float chargeCooldown = 5.0f; // Cooldown between charge attacks.
+    public float chargeSpeed = 10.0f; // Speed at which the boss charges.
+    public float chargeDuration = 2.0f; // Duration of the charge attack.
+    private bool isCharging = false;
+    private bool canCharge = true;
+    // public float projectileForce = 60f; // Force applied to the projectile.
+	public int chargeHitDamage = 20;
 	public int EnemyHealth = 6; //Enemy health
     public int currentHealth; //Variable that updates current health of the player
     public HealthBarScript healthBar; //Health bar to show how much health of the player have
 	public float groundDist;
-    public int hitdamage =10;
-    private float timeSinceLastAttack = 0f;
-    private float attackTimer = 0f; // Timer for the attack duration
+    private float timeSinceLastCharge = 0.0f;
+	private float timeSinceLastAttack = 0f;
     public float timeBetweenAttacks = 2f;
-    public float attackDuration = 2f; // New field for attack duration
-    private float closeRangeAttackDistance = 50f;
     private float range;
     private float minDistance = 230.0f;
     private Transform player;
@@ -28,7 +32,7 @@ public class BossScript : MonoBehaviour
     public enum AttackType
     {
         None,
-        CloseRange
+        Charge
     }
 
     void Start()
@@ -68,34 +72,25 @@ public class BossScript : MonoBehaviour
             {
                 animator.Play("right");
             }
-            
         }
         transform.Rotate(new Vector3(0, -90, 0), Space.Self);
         transform.Translate(new Vector3(moveSpeed * Time.deltaTime, 0, 0));
         transform.rotation = Quaternion.identity;
 
         timeSinceLastAttack += Time.deltaTime;
-        
+        timeSinceLastCharge += Time.deltaTime;
 
         if (timeSinceLastAttack >= timeBetweenAttacks)
         {
-            if (range < closeRangeAttackDistance) // Perform the close-range attack when the player is within the specified range.
+            if (canCharge && timeSinceLastCharge >= chargeCooldown)
             {
-                StartCloseRangeAttack();
+                StartChargeAttack();
+                timeSinceLastAttack = 0f;
             }
         }
-
-        // Update the attack timer and reset the attack type if the timer has expired.
-        if (currentAttackType == AttackType.CloseRange)
-        {
-            attackTimer += Time.deltaTime;
-            if (attackTimer >= attackDuration)
-            {
-                attackTimer = 0f;
-                currentAttackType = AttackType.None;
-            }
-        }
+        
     }
+		
     
 
 	public void TakeDamage(int amount) //Getting hit by the player weapon
@@ -120,29 +115,53 @@ public class BossScript : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void StartCloseRangeAttack()
+
+    public void StartChargeAttack()
     {
-        // Check if the player is within close range (adjust the range as needed).
-        if (range < closeRangeAttackDistance)
+        currentAttackType = AttackType.Charge;
+        isCharging = true;
+
+        if (turnedLeft)
         {
-            // Set the attack type to CloseRange.
-            currentAttackType = AttackType.CloseRange;
-
-            // Deal damage to the player. You can adjust the damage amount.
-            if (player.position.x < transform.position.x)
-            {
-                animator.SetTrigger("CloseRangeAttackLeft");
-            }
-            else
-            {
-                animator.SetTrigger("CloseRangeAttackRight");
-            }
-
-            // You can add more effects or actions here as needed.
+            animator.SetTrigger("ChargeAttackLeft");
         }
+        else
+        {
+            animator.SetTrigger("ChargeAttackRight");
+        }
+
+        StartCoroutine(ChargeAttackRoutine()); // Start a coroutine to execute the charge attack for a specific duration.
     }
+
+    IEnumerator ChargeAttackRoutine()
+    {
+        Vector3 initialPosition = transform.position;
+        Vector3 targetPosition = player.position;
+        Vector3 directionToPlayer = (targetPosition - initialPosition).normalized;
+
+        float timer = 0f;
+        float originalMoveSpeed = moveSpeed;
+
+        while (timer < chargeDuration)
+        {
+            Vector3 newPosition = new Vector3(initialPosition.x + directionToPlayer.x * chargeSpeed * timer, initialPosition.y, initialPosition.z + directionToPlayer.z * chargeSpeed * timer);
+            transform.position = newPosition;
+
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        isCharging = false;
+        timeSinceLastCharge = 0.0f; // Reset the time since the last charge.
+        moveSpeed = originalMoveSpeed;
+    }
+
 	public int GetHitDamage()
     {
-        return hitdamage;
+        if (currentAttackType == AttackType.Charge)
+        {
+            return chargeHitDamage;
+        }
+        return 0;
     }
 }
