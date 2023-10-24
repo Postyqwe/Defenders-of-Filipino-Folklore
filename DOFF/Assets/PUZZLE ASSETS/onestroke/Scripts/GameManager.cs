@@ -150,6 +150,6 @@ public class GameManager : MonoBehaviour
     private IEnumerator GameFinished()
     {
         yield return new WaitForSeconds(2f);
-        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(14);
     }
 }
