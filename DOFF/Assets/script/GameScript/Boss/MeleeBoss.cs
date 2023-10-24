@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class MeleeBoss : MonoBehaviour
 {
@@ -24,7 +27,7 @@ public class MeleeBoss : MonoBehaviour
     private Transform player;
     public bool turnedLeft = false;
     public Behaviour script; // To disable a script
-    private bool isDead = false; // For checking if it's still alive
+    public bool isDead = false; // For checking if it's still alive
     public LayerMask terrainLayer;
     private Animator animator;
     public AttackType currentAttackType;
@@ -109,6 +112,10 @@ public class MeleeBoss : MonoBehaviour
             Invoke("EnemyDeath",1.5f); //Enemy animation
         }
         healthBar.SetHealth(currentHealth); 
+    }
+    public void IsDead()
+    {
+        isDead = true;
     }
 	void EnemyDeath() //To remove the enemy sprite from the stage
     {
