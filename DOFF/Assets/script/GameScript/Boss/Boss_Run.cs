@@ -24,11 +24,6 @@ public class Boss_Run : StateMachineBehaviour
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
 	{
-		//boss.LookAtPlayer();
-
-		// Vector2 target = new Vector2(player.position.x, rb.position.y);
-		// Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
-		// rb.MovePosition(newPos);
 
 		if (boss.currentAttackType == MeleeBoss.AttackType.Charge)
         {

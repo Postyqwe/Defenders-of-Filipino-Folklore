@@ -50,25 +50,6 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        /*if(movementJoystick.joystickVec.y != 0)
-        {
-            rb.velocity = new Vector2(movementJoystick.joystickVec.x * speed, movementJoystick.joystickVec.y * speed);
-        }
-        else
-        {
-            rb.velocity = Vector2.zero;
-        }
-        if(movementJoystick.joystickVec.x > 0) //If the joystick moving towards the right side
-        {
-            animator.Play("right"); //Plays the animation
-    
-        }
-        else if(movementJoystick.joystickVec.x < 0) //If the joystick moving towards the left side
-        {
-            animator.Play("left"); //Plays the animation
-            turnedLeft = true;
-            
-        }*/
         float x = movementJoystick.Horizontal; //To get the x axis of the joystick
         float z = movementJoystick.Vertical; //To get the y axis of the joystick
         Vector3 direction = new Vector3(x,0,z).normalized; //This just normalize the value of x and y so its not a bunch of numbers
@@ -95,27 +76,27 @@ public class PlayerController : MonoBehaviour
             {
                 TakeDamage(collision.gameObject.GetComponent<EnemyScript>().GetHitDamage()); //Calculation for the player current health if it got hit by the enemy
             }
-            if(collision.gameObject.GetComponent<MeleeBoss>())
+            else if(collision.gameObject.GetComponent<MeleeBoss>())
             {
                 TakeDamage(collision.gameObject.GetComponent<MeleeBoss>().GetHitDamage());
             }
-            if(collision.gameObject.GetComponent<RangeBoss>())
+            else if(collision.gameObject.GetComponent<RangeBoss>())
             {
                 TakeDamage(collision.gameObject.GetComponent<RangeBoss>().GetHitDamage());
             }
-            if(collision.gameObject.GetComponent<BossShooting>())
+            else if(collision.gameObject.GetComponent<BossShooting>())
             {
                 TakeDamage(collision.gameObject.GetComponent<BossShooting>().GetHitDamage());
             }
-            if(collision.gameObject.GetComponent<BossScript>())
+            else if(collision.gameObject.GetComponent<BossScript>())
             {
                 TakeDamage(collision.gameObject.GetComponent<BossScript>().GetHitDamage());
             }
-            if(collision.gameObject.GetComponent<EnemyShooting>())
+            else if(collision.gameObject.GetComponent<EnemyShooting>())
             {
                 TakeDamage(collision.gameObject.GetComponent<EnemyShooting>().GetHitDamage()); //Calculation for the player current health if it got hit by the enemy
             }
-            if(collision.gameObject.GetComponent<EnemyShootingScript>())
+            else if(collision.gameObject.GetComponent<EnemyShootingScript>())
             {
                 TakeDamage(collision.gameObject.GetComponent<EnemyShootingScript>().GetHitDamage()); //Calculation for the player current health if it got hit by the enemy
             }
@@ -142,31 +123,28 @@ public class PlayerController : MonoBehaviour
         script.enabled = false;
         scripta.enabled = false;
         scriptb.enabled = false;
-        //scriptc.enabled = false;
-        //scriptd.enabled = false;
-        //scripte.enabled = false;
         animator.SetTrigger("death");
     }
 
-    public void ReplayLevel()
+    public void ReplayLevel() //Replay Button
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
         coins = 0;
     }
     
-    public void PauseGame()
+    public void PauseGame() //Pause Button
     {
         Time.timeScale = 0;
         pauseMenu.SetActive(true);
     }
 
-    public void ResumeGame()
+    public void ResumeGame() //Resume Button
     {
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
     }
-    public void GotoMenu()
+    public void GotoMenu() //Going back to the menu scene
     {
         SceneManager.LoadScene("MENU");
     }

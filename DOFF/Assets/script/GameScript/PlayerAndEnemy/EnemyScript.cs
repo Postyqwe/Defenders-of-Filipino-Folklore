@@ -12,7 +12,7 @@ public class EnemyScript : MonoBehaviour
     private float minDistance = 200.0f; //If the player get outside of this range it doesnt follow 
     private bool targetCollision = false;
     private float speed = 25.0f; //Enemy base movement speed
-    public float groundDist;
+    public float groundDist; //Y position of this sprite
     private float Push = 80f; //How long it will get push
     public int EnemyHealth = 6; //Enemy health
     private int hitdamage = 10; //Enemy damage to the player health

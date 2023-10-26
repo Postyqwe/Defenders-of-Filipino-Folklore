@@ -13,17 +13,16 @@ public class MeleeBoss : MonoBehaviour
     public float chargeDuration = 2.0f; // Duration of the charge attack.
     private bool isCharging = false;
     private bool canCharge = true;
-    // public float projectileForce = 60f; // Force applied to the projectile.
 	public int chargeHitDamage = 20;
 	public int EnemyHealth = 6; //Enemy health
     public int currentHealth; //Variable that updates current health of the player
     public HealthBarScript healthBar; //Health bar to show how much health of the player have
-	public float groundDist;
+	public float groundDist; //Y position of this sprite
     private float timeSinceLastCharge = 0.0f;
 	private float timeSinceLastAttack = 0f;
     public float timeBetweenAttacks = 2f;
-    private float range;
-    private float minDistance = 230.0f;
+    private float range;  //for calculating distance of sprite to the player
+    private float minDistance = 230.0f; //If the player get outside of this range it doesnt follow 
     private Transform player;
     public bool turnedLeft = false;
     public Behaviour script; // To disable a script
@@ -159,7 +158,7 @@ public class MeleeBoss : MonoBehaviour
         }
 
         isCharging = false;
-        timeSinceLastCharge = 0.0f; // Reset the time since the last charge.
+        timeSinceLastCharge = 0.0f; //Reset the time since the last charge.
         moveSpeed = originalMoveSpeed;
     }
 
@@ -167,7 +166,7 @@ public class MeleeBoss : MonoBehaviour
     {
         if (currentAttackType == AttackType.Charge)
         {
-            return chargeHitDamage;
+            return chargeHitDamage; //If it hit the target
         }
         return 0;
     }
