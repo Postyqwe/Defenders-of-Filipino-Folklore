@@ -4,28 +4,28 @@ using UnityEngine;
 
 public class BossScript : MonoBehaviour
 {
-    public float moveSpeed = 25f; // Speed at which the boss charges.
+    public float moveSpeed = 25f; //Speed at which the boss charges.
 	public int EnemyHealth = 6; //Enemy health
     public int currentHealth; //Variable that updates current health of the player
     public HealthBarScript healthBar; //Health bar to show how much health of the player have
-	public float groundDist;
-    public int hitdamage =10;
+	public float groundDist; //Y position of this sprite
+    public int hitdamage =10; //If it hit the target
     private float timeSinceLastAttack = 0f;
-    private float attackTimer = 0f; // Timer for the attack duration
+    private float attackTimer = 0f; //Timer for the attack duration
     public float timeBetweenAttacks = 2f;
-    public float attackDuration = 2f; // New field for attack duration
-    private float closeRangeAttackDistance = 50f;
-    private float range;
-    private float minDistance = 230.0f;
+    public float attackDuration = 2f; //New field for attack duration
+    private float closeRangeAttackDistance = 50f; //If the target is in this range
+    private float range; //for calculating distance of sprite to the player
+    private float minDistance = 230.0f; //minimum distance that if the player is in range.
     private Transform player;
     public bool turnedLeft = false;
-    public Behaviour script; // To disable a script
-    private bool isDead = false; // For checking if it's still alive
+    public Behaviour script; //To disable a script
+    private bool isDead = false; //For checking if it's still alive
     public LayerMask terrainLayer;
     private Animator animator;
     public AttackType currentAttackType;
 
-    public enum AttackType
+    public enum AttackType //different attack types
     {
         None,
         CloseRange
@@ -36,8 +36,8 @@ public class BossScript : MonoBehaviour
         
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
-        currentHealth = EnemyHealth;
-        healthBar.SetMaxHealth(EnemyHealth);
+        currentHealth = EnemyHealth; //Converting current health of the enemy
+        healthBar.SetMaxHealth(EnemyHealth); //Max value of the max health for the health bar
     }
 
     void Update()
@@ -45,7 +45,7 @@ public class BossScript : MonoBehaviour
 		RaycastHit hit;
         Vector3 castPos = transform.position;
         castPos.y += 1;
-        if (Physics.Raycast(castPos, -transform.up, out hit, Mathf.Infinity, terrainLayer))
+        if (Physics.Raycast(castPos, -transform.up, out hit, Mathf.Infinity, terrainLayer)) //This is to check if the ground the player moving have a hill or not
         {
             if (hit.collider != null)
             {
@@ -79,14 +79,14 @@ public class BossScript : MonoBehaviour
 
         if (timeSinceLastAttack >= timeBetweenAttacks)
         {
-            if (range < closeRangeAttackDistance) // Perform the close-range attack when the player is within the specified range.
+            if (range < closeRangeAttackDistance) //Perform the close-range attack when the player is within the specified range.
             {
                 StartCloseRangeAttack();
             }
         }
 
-        // Update the attack timer and reset the attack type if the timer has expired.
-        if (currentAttackType == AttackType.CloseRange)
+        
+        if (currentAttackType == AttackType.CloseRange) //Update the attack timer and reset the attack type if the timer has expired.
         {
             attackTimer += Time.deltaTime;
             if (attackTimer >= attackDuration)
@@ -122,14 +122,11 @@ public class BossScript : MonoBehaviour
 
     void StartCloseRangeAttack()
     {
-        // Check if the player is within close range (adjust the range as needed).
-        if (range < closeRangeAttackDistance)
-        {
-            // Set the attack type to CloseRange.
-            currentAttackType = AttackType.CloseRange;
+        if (range < closeRangeAttackDistance) //Check if the player is within close range (adjust the range as needed).
+        { 
+            currentAttackType = AttackType.CloseRange; //Set the attack type to CloseRange.
 
-            // Deal damage to the player. You can adjust the damage amount.
-            if (player.position.x < transform.position.x)
+            if (player.position.x < transform.position.x) //Deal damage to the player. You can adjust the damage amount.
             {
                 animator.SetTrigger("CloseRangeAttackLeft");
             }
@@ -137,12 +134,10 @@ public class BossScript : MonoBehaviour
             {
                 animator.SetTrigger("CloseRangeAttackRight");
             }
-
-            // You can add more effects or actions here as needed.
         }
     }
 	public int GetHitDamage()
     {
-        return hitdamage;
+        return hitdamage; //If it hit the target
     }
 }

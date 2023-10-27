@@ -76,17 +76,10 @@ public class EnemyShooting : MonoBehaviour
     }
     void Shoot()
     {
-        // Calculate the direction from the enemy to the player.
-        Vector3 direction = target.position - transform.position;
-        
-        // Create a bullet at the enemy's position.
-        GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-
-        // Get the Rigidbody component of the bullet.
-        Rigidbody rb = bullet.GetComponent<Rigidbody>();
-
-        // Set the bullet's velocity to move towards the player.
-        rb.velocity = direction.normalized * 10f; // Adjust the speed as needed.
+        Vector3 direction = target.position - transform.position; //Calculate the direction from the enemy to the player.
+        GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity); //Create a bullet at the enemy's position.
+        Rigidbody rb = bullet.GetComponent<Rigidbody>(); //Get the Rigidbody component of the bullet.
+        rb.velocity = direction.normalized * 10f; //Set the bullet's velocity to move towards the player.
 
     }
 

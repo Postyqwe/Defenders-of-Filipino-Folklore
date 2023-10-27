@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RangeBoss : MonoBehaviour
 {
-    private float range;
+    private float range; //for calculating distance of sprite to the player
     [SerializeField]
     private Transform target; //Enemy going towards
     private Rigidbody rb;
@@ -12,10 +12,9 @@ public class RangeBoss : MonoBehaviour
     private float minDistance = 200.0f; //If the player get outside of this range it doesnt follow 
     private bool targetCollision = false;
     private float speed = 25.0f; //Enemy base movement speed
-    public float groundDist;
+    public float groundDist; //Y position of this sprite
     private float Push = 80f; //How long it will get push
-    public int hitdamage = 10;
-    
+    public int hitdamage = 10; //Damage deal if it hit the target
     public Behaviour script; //To disabling a script
     public LayerMask terrainLayer;
     public int EnemyHealth = 6; //Enemy health
@@ -23,8 +22,8 @@ public class RangeBoss : MonoBehaviour
     public HealthBarScript healthBar; //Health bar to show how much health of the player have
     public GameObject bulletPrefab;
     public Transform bulletPosition;
-    public float fireRate = 20.0f;
-    private float nextFireTime = 0.0f;
+    public float fireRate = 20.0f; //attack speed of the range attack
+    private float nextFireTime = 0.0f; //resetting fire rate
     public bool isDead = false;
 
 
@@ -75,22 +74,15 @@ public class RangeBoss : MonoBehaviour
         if (target !=null && Time.time >= nextFireTime)
         {
             Shoot();
-            nextFireTime = Time.time + 1 / fireRate; // Set the next fire time.
+            nextFireTime = Time.time + 1 / fireRate; //Set the next fire time.
         }
     }
     void Shoot()
     {
-        // Calculate the direction from the enemy to the player.
-        Vector3 direction = target.position - transform.position;
-        
-        // Create a bullet at the enemy's position.
-        GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-
-        // Get the Rigidbody component of the bullet.
+        Vector3 direction = target.position - transform.position; //Calculate the direction from the enemy to the player.
+        GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity); //Create a bullet at the enemy's position.
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
-
-        // Set the bullet's velocity to move towards the player.
-        rb.velocity = direction.normalized * 10f; // Adjust the speed as needed.
+        rb.velocity = direction.normalized * 10f; //Adjust the speed as needed.
 
     }
 
@@ -161,6 +153,6 @@ public class RangeBoss : MonoBehaviour
 
     public int GetHitDamage()
     {
-        return hitdamage;
+        return hitdamage; //If it hit the target
     }
 }

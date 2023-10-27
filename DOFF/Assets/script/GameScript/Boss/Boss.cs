@@ -8,27 +8,27 @@ public class Boss : MonoBehaviour
     public float chargeCooldown = 5.0f; // Cooldown between charge attacks.
     public float chargeSpeed = 10.0f; // Speed at which the boss charges.
     public float chargeDuration = 2.0f; // Duration of the charge attack.
-    private bool isCharging = false;
-    private bool canCharge = true;
+    private bool isCharging = false; 
+    private bool canCharge = true; 
     public GameObject projectilePrefab; // Prefab for the boss's projectile.
     public Transform projectileSpawnPoint; // Where to spawn the projectile.
     // public float projectileForce = 60f; // Force applied to the projectile.
-	public int chargeHitDamage = 20;
-	public int fireHitDamage = 10;
+	public int chargeHitDamage = 20; //Charge damage if it hit the player
+	public int fireHitDamage = 10; //Range attack damage if it hit the player
 	public int EnemyHealth = 6; //Enemy health
     public int currentHealth; //Variable that updates current health of the player
     public HealthBarScript healthBar; //Health bar to show how much health of the player have
-	public float groundDist;
-	public float fireRate = 1.0f;
-    private float nextFireTime = 0.0f;
+	public float groundDist; //Y position of this sprite
+	public float fireRate = 1.0f; //attack speed of the range attack
+    private float nextFireTime = 0.0f; //resetting fire rate
 
-    private float timeSinceLastCharge = 0.0f;
+    private float timeSinceLastCharge = 0.0f; //
 	private float timeSinceLastAttack = 0f;
     public float timeBetweenAttacks = 3f;
-    private float range;
-    private float minDistance = 230.0f;
+    private float range; //for calculating distance of sprite to the player
+    private float minDistance = 230.0f; //minimum distance that if the player is in range.
     private Transform player;
-    public bool turnedLeft = false;
+    public bool turnedLeft = false; //if the sprite turn left
     
     public Behaviour script; // To disable a script
     private bool isDead = false; // For checking if it's still alive
@@ -38,7 +38,7 @@ public class Boss : MonoBehaviour
 
     public AttackType currentAttackType;
 
-    public enum AttackType
+    public enum AttackType //different attack types
     {
         None,
         Charge,
@@ -50,8 +50,8 @@ public class Boss : MonoBehaviour
         
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
-        currentHealth = EnemyHealth;
-        healthBar.SetMaxHealth(EnemyHealth);
+        currentHealth = EnemyHealth; //converting current health of the enemy
+        healthBar.SetMaxHealth(EnemyHealth); //max value of the max health for the health bar
     }
 
     void Update()
@@ -69,7 +69,7 @@ public class Boss : MonoBehaviour
             }
         }
         range = Vector2.Distance(transform.position, player.position); //To calculate how for the position to the player
-        if(range < minDistance && !isDead)
+        if(range < minDistance && !isDead) //To check if the player is in range and if the enemy is not dead it will go towards the target
         {
             transform.LookAt(player.position); //Enemy identify and goes towards the target
             turnedLeft = false;
@@ -90,7 +90,7 @@ public class Boss : MonoBehaviour
 		timeSinceLastAttack += Time.deltaTime;
         timeSinceLastCharge += Time.deltaTime;
 
-        if (timeSinceLastAttack >= timeBetweenAttacks)
+        if (timeSinceLastAttack >= timeBetweenAttacks) //In between attacks
         { 
             if (canCharge && timeSinceLastCharge >= chargeCooldown) // Check if the boss can charge and it's not on cooldown.
             {
@@ -135,17 +135,17 @@ public class Boss : MonoBehaviour
     }
 
 
-    public void StartChargeAttack()
+    public void StartChargeAttack() //This method can be called from an animation event to trigger the charge attack.
     {
         currentAttackType = AttackType.Charge;
         isCharging = true;
         animator.SetTrigger("ChargeAttack");
         
 
-        StartCoroutine(ChargeAttackRoutine());// Start a coroutine to execute the charge attack for a specific duration.
+        StartCoroutine(ChargeAttackRoutine());//Start a coroutine to execute the charge attack for a specific duration.
     }
 
-    IEnumerator ChargeAttackRoutine()
+    IEnumerator ChargeAttackRoutine() //Charge attack logic
     {
         Vector3 initialPosition = transform.position;
         Vector3 targetPosition = player.position;
@@ -155,38 +155,38 @@ public class Boss : MonoBehaviour
 
         while (timer < chargeDuration)
         {
-            transform.position = Vector3.Lerp(initialPosition, targetPosition, timer / chargeDuration); // Move the boss in the direction of the player.
+            transform.position = Vector3.Lerp(initialPosition, targetPosition, timer / chargeDuration); //Move the boss in the direction of the player.
 
             timer += Time.deltaTime;
             yield return null;
         }
 
         isCharging = false;
-        timeSinceLastCharge = 0.0f; // Reset the time since the last charge.
+        timeSinceLastCharge = 0.0f; //Reset the time since the last charge.
     }
 
 
     void FireProjectile()
     {
-        Vector3 direction = player.position - transform.position; // Calculate the direction from the enemy to the player.
+        Vector3 direction = player.position - transform.position; //Calculate the direction from the enemy to the player.
         
-        GameObject bullet = Instantiate(projectilePrefab, transform.position, Quaternion.identity); // Create a bullet at the enemy's position.
+        GameObject bullet = Instantiate(projectilePrefab, transform.position, Quaternion.identity); //Create a bullet at the enemy's position.
 
-        Rigidbody rb = bullet.GetComponent<Rigidbody>();// Get the Rigidbody component of the bullet.
+        Rigidbody rb = bullet.GetComponent<Rigidbody>();//Get the Rigidbody component of the bullet.
 
-        rb.velocity = direction.normalized * 100f; // Set the bullet's velocity to move towards the player and adjust the speed as needed.
+        rb.velocity = direction.normalized * 100f; //Set the bullet's velocity to move towards the player and adjust the speed as needed.
 
     }
 
     
-    public void StartProjectileAttack() // This method can be called from an animation event to trigger the projectile attack.
+    public void StartProjectileAttack() //This method can be called from an animation event to trigger the projectile attack.
     {
 		currentAttackType = AttackType.Projectile;
         animator.SetTrigger("RangeAttack");
 		
         if (player !=null && Time.time >= nextFireTime)
         {
-            nextFireTime = Time.time + 1 / fireRate; // Set the next fire time.
+            nextFireTime = Time.time + 1 / fireRate; //Set the next fire time.
 			FireProjectile();
         }
     }
@@ -197,11 +197,11 @@ public class Boss : MonoBehaviour
     {
         if (currentAttackType == AttackType.Charge)
         {
-            return chargeHitDamage;
+            return chargeHitDamage; //this will deal damage to the target if hit
         }
         else if (currentAttackType == AttackType.Projectile)
         {
-            return fireHitDamage;
+            return fireHitDamage; //this will deal damage to the target if hit
         }
         return 0;
     }

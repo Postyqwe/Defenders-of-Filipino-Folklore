@@ -39,11 +39,11 @@ public class WeaponScript : MonoBehaviour
         {
             if(player.GetComponent<PlayerController>().turnedLeft)
             {
-                degree += 7; // Swing sword to the left
+                degree += 7; //Swing sword to the left
             }   
             else
             {
-                degree -= 7; // Swing sword to the right
+                degree -= 7; //Swing sword to the right
             }
             
             if(degree > 65 || degree <-65) //Sword swing animation ending point
