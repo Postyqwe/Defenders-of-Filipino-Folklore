@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: TeamOne
   productName: DOFF
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -121,6 +121,7 @@ PlayerSettings:
   switchNVNOtherPoolsGranularity: 16777216
   switchNVNMaxPublicTextureIDCount: 0
   switchNVNMaxPublicSamplerIDCount: 0
+  switchMaxWorkerMultiple: 8
   stadiaPresentMode: 0
   stadiaTargetFramerate: 0
   vulkanNumSwapchainBuffers: 3
