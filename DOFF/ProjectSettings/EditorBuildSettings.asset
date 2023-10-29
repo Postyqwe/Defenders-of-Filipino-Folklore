@@ -42,6 +42,6 @@ EditorBuildSettings:
     path: Assets/Scenes/LVL 5.unity
     guid: a0b102206d227cf47b16b92c4ec0d9f9
   - enabled: 1
-    path: Assets/PUZZLE ASSETS/onestroke/Scenes/Gameplay.unity
+    path: Assets/PUZZLES/onestroke/Scenes/Gameplay.unity
     guid: ebcedf2a8e4ae78408a1e3888a883e7b
   m_configObjects: {}
