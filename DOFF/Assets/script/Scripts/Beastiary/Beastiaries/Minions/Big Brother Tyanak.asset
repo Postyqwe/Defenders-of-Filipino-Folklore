@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd5f94d13095ea44bf24ce9ba182f5d, type: 3}
+  m_Name: Big Brother Tyanak
+  m_EditorClassIdentifier: 
+  type: 2
+  beastName: Infant Tyanak
+  beastDescription: Due to its large size it said to be a mean and powerful tyanak
+    among all of them. Tyanak are most famous in the province of Davao.
+  beastImage: {fileID: -62311288, guid: 98c3fedab836f024289853938fb95ada, type: 3}

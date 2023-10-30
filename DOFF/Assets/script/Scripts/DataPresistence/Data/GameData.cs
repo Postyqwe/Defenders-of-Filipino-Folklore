@@ -8,103 +8,129 @@ public class GameData
     public long lastUpdated;
     public bool isTutorialFinished;
 
-    //Story -Lapu Lapu-
-    public bool lapuChapter1Finished;
-    public bool lapuChapter2Finished;
-    public bool lapuChapter3Finished;
-    public bool lapuChapter4Finished;
-
-    //Story -Andres-
-    public bool andresChapter1Finished;
-    public bool andresChapter2Finished;
-    public bool andresChapter3Finished;
-    public bool andresChapter4Finished;
-    public bool andresChapter5Finished;
-
     //coins
     public int coins;
 
-    //Characters
-    public bool isAndresUnlocked;
+    //Story
+    public bool lvl1;
+    public bool lvl2;
+    public bool lvl3;
+    public bool lvl4;
+    public bool lvl5;
+    public bool lvl6;
+    public bool lvl7;
 
-    //PinoyPedia
-    //pickups
-    public bool Palabok;
-    public bool Pancit;
-    public bool Sinigang;
-    public bool Adobo;
-    public bool Lechon;
-    public bool Tinola;
-    public bool KareKare;
-    public bool Lugaw;
-    public bool Sopas;
-    public bool Champorado;
-    public bool HaloHalo;
-    public bool Balut;
-    public bool Puto;
-    public bool Bibingka;
-    public bool Taho;
-    public bool Sisig;
-    public bool Laing;
-    public bool Longganisa;
+    //Achievement
+    public bool ach1;
+    public bool ach2;
+    public bool ach3;
+    public bool ach4;
+    public bool ach5;
+    public bool ach6;
+    public bool ach7;
 
-    public bool Balisong;
-    public bool Kris;
-    public bool Bolo;
-    public bool Arnis;
-    public bool Barong;
-    public bool Punyal;
-    public bool Sundang;
-    public bool Kampilan;
+    //Beastiary
+    //Minions
+    public bool smallTyanak;
+    public bool bigBrotherTyanak;
+    public bool ponyTikbalang;
+    public bool stallionTikbalang;
+    public bool mananangal;
+    public bool janetTheMangkukulam;
+    public bool robertTheMangkukulam;
+    public bool childWhiteLady;
+    public bool teenagerWhiteLady;
+    public bool grayHairedKapre;
+    public bool redEyeKapre;
+    //Bosses
+    public bool infantTyanak;
+    public bool theBlindTikbalang;
+    public bool theMonstrousMananangal;
+    public bool papaMangkukulam;
+    public bool theMalevolentWhiteLady;
+    public bool theBigBossKapre;
+    public bool juanPusong;
+    //Locations
+    public bool davao;
+    public bool rizal;
+    public bool panay;
+    public bool antique;
+    public bool siquijor;
+    public bool baleteDrive;
+
+    //shop items
+    //Melee
+    public bool hasMoroBarong;
+    public bool hasKriss;
+    public bool hasBolo;
+    public bool hasTaga;
+    public bool hasHanger;
+    public bool hasWalisTambo;
+    //Range
+    public bool hasHandgun;
+    public bool hasSlingShot;
+    public bool hasBakya;
+    public bool hasDyaryo;
+    //Magic
+    public bool hasMagicWand;
+    public bool hasMagicOrb;
 
     public GameData()
     {
         this.coins = 0;
 
-        this.isAndresUnlocked = false;
-
-        //pickups
-        this.Palabok = false;
-        this.Pancit = false;
-        this.Sinigang = false;
-        this.Adobo = false;
-        this.Lechon = false;
-        this.Tinola = false;
-        this.KareKare = false;
-        this.Lugaw = false;
-        this.Sopas = false;
-        this.Champorado = false;
-        this.HaloHalo = false;
-        this.Balut = false;
-        this.Puto = false;
-        this.Bibingka = false;
-        this.Taho = false;
-        this.Sisig = false;
-        this.Laing = false;
-        this.Longganisa = false;
-
-        //weapons
-        this.Balisong = false;
-        this.Kris = false;
-        this.Bolo = false;
-        this.Barong = false;
-        this.Punyal = false;
-        this.Sundang = false;
-        this.Kampilan = false;
-        this.Arnis = false;
-
         this.isTutorialFinished = false;
 
-        //story
-        this.lapuChapter1Finished = false;
-        this.lapuChapter2Finished = false;
-        this.lapuChapter3Finished = false;
-        this.lapuChapter4Finished = false;
+        //Story
+        this.lvl1 = false;
+        this.lvl2 = false;
+        this.lvl3 = false;
+        this.lvl4 = false;
+        this.lvl5 = false;
+        this.lvl6 = false;
+        this.lvl7 = false;
 
-        this.andresChapter1Finished = false;
-        this.andresChapter2Finished = false;
-        this.andresChapter3Finished = false;
-        this.andresChapter4Finished = false;
-        this.andresChapter5Finished = false;
+        //Beastiary
+        // Minions
+        this.smallTyanak = false;
+        this.bigBrotherTyanak = false;
+        this.ponyTikbalang = false;
+        this.stallionTikbalang = false;
+        this.mananangal = false;
+        this.janetTheMangkukulam = false;
+        this.robertTheMangkukulam = false;
+        this.childWhiteLady = false;
+        this.teenagerWhiteLady = false;
+        this.grayHairedKapre = false;
+        this.redEyeKapre = false;
+        // Bosses
+        this.infantTyanak = false;
+        this.theBlindTikbalang = false;
+        this.theMonstrousMananangal = false;
+        this.papaMangkukulam = false;
+        this.theMalevolentWhiteLady = false;
+        this.theBigBossKapre = false;
+        this.juanPusong = false;
+        // Locations
+        this.davao = false;
+        this.rizal = false;
+        this.panay = false;
+        this.antique = false;
+        this.siquijor = false;
+        this.baleteDrive = false;
+
+        //Shop
+        this.hasMoroBarong = false;
+        this.hasKriss = false;
+        this.hasBolo = false;
+        this.hasTaga = false;
+        this.hasHanger = false;
+        this.hasWalisTambo = false;
+        this.hasHandgun = false;
+        this.hasSlingShot = false;
+        this.hasBakya = false;
+        this.hasDyaryo = false;
+        this.hasMagicWand = false;
+        this.hasMagicOrb = false;
     }
 }
