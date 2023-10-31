@@ -7,6 +7,11 @@ using UnityEngine.UI;
 public class AchievementManager : MonoBehaviour, IDataPersistence
 {
     public GameObject achievementHolder;
+    [Header("ProgressBar")]
+    public Slider progressBar;
+    public int totalAchs = 7;
+    public TMP_Text achAmount;
+
     [Header("List UI")]
     public GameObject listHodler;
     public Button a1;
@@ -33,6 +38,10 @@ public class AchievementManager : MonoBehaviour, IDataPersistence
     public bool ach7;
 
     private bool isOpened = false;
+    private void Start()
+    {
+        progressBar.maxValue = totalAchs;
+    }
     private void Update()
     {
         a1.interactable = ach1;
@@ -42,6 +51,10 @@ public class AchievementManager : MonoBehaviour, IDataPersistence
         a5.interactable = ach5;
         a6.interactable = ach6;
         a7.interactable = ach7;
+
+        int trueAchievements = (ach1 ? 1 : 0) + (ach2 ? 1 : 0) + (ach3 ? 1 : 0) + (ach4 ? 1 : 0) + (ach5 ? 1 : 0) + (ach6 ? 1 : 0) + (ach7 ? 1 : 0);
+        progressBar.value = trueAchievements;
+        achAmount.text = trueAchievements + " / " + totalAchs;
     }
     public void LoadData(GameData data)
     {

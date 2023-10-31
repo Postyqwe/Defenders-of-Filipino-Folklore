@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd78c5cf0d2ae24698547c8c02c4c8b, type: 3}
   m_Name: Marites
   m_EditorClassIdentifier: 
-  ID: 0
+  ID: 1
   characterName: Marites
   hp: 5
   atk: 5
