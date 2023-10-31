@@ -6,8 +6,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button))]
 
 public class WeaponScript : MonoBehaviour
-{
-    
+{  
     private bool swing = false; //Default to false because it needs to be activated first
     
     int degree = 0; //For the sword animation
