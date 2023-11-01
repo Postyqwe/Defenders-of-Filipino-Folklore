@@ -6,26 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 48c989773f20b2443be1ebd8d81deb77
+  - enabled: 0
     path: Assets/Scenes/MENU.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/shopMelee.unity
-    guid: 20ef7a9a1bf6e6c498ad439aeb806eb1
-  - enabled: 1
     path: Assets/Scenes/TUTORIAL SCENE.unity
     guid: 0886c0bceacc26649b452801e6df9af7
-  - enabled: 1
-    path: Assets/Scenes/shopMagic.unity
-    guid: ded44e51d2375fb46bf60aa89ff46ad4
-  - enabled: 1
-    path: Assets/Scenes/shopRange.unity
-    guid: 2f4aa0081fbe2f649aa59f510ed93f18
   - enabled: 1
     path: Assets/Scenes/Map.unity
     guid: 90d348a4178af4f47a8d6d0f8a3decdb
   - enabled: 1
     path: Assets/Scenes/CharSelect.unity
     guid: a18a9a0c74159b84b8d896d5a2d86b52
+  - enabled: 1
+    path: Assets/Scenes/LVL 1/TestLevel.unity
+    guid: 332c46d155238724eaf5f5c7663d54ef
   - enabled: 1
     path: Assets/Scenes/LVL 1/LVL 1.0.unity
     guid: bd7a6a08fbe4b864b811a87855524bde
