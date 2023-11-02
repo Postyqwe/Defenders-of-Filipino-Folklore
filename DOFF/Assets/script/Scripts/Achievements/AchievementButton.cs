@@ -16,11 +16,11 @@ public class AchievementButton : MonoBehaviour
 
     }
 
-    public void OnButtonClick()
+    public void OnButtonClick(int index)
     {
         if(ASO != null)
         {
-            achievementManager.AchievementDisplay(ASO.achievementName, ASO.achievementIcon, ASO.achievementDescription);
+            achievementManager.AchievementDisplay(ASO.achievementName, ASO.achievementIcon, ASO.achievementDescription, index);
         }
         else
         {

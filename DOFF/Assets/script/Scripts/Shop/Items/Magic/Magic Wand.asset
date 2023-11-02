@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Magic Wand
   m_EditorClassIdentifier: 
   itemID: 0
-  itemName: MagicWand
+  itemName: Magic Wand
   itemImage: {fileID: -1714171416, guid: 9298d7d2fd0283c468d9f6b0b86bbb01, type: 3}
   price: 100

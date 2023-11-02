@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 4
   itemName: Kriss
-  itemImage: {fileID: -2086584109, guid: 9298d7d2fd0283c468d9f6b0b86bbb01, type: 3}
+  itemImage: {fileID: 511606320, guid: 9298d7d2fd0283c468d9f6b0b86bbb01, type: 3}
   price: 150
