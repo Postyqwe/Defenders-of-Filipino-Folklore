@@ -13,6 +13,7 @@ public class Health : MonoBehaviour
     public GameObject deathParticle;
     public bool isDead = false;
     private Animator animator;
+
     private void Start()
     {
         animator = GetComponent<Animator>();

@@ -28,7 +28,13 @@ public class GameData
     public bool ach5;
     public bool ach6;
     public bool ach7;
-
+    public int killedTyanak;
+    public int killedTikbalang;
+    public int killedMananangal;
+    public int killedMangkukulam;
+    public int killedWhiteLady;
+    public int killedKapre;
+    public int killedFinalBoss;
     //Beastiary
     //Minions
     public bool smallTyanak;
@@ -75,6 +81,7 @@ public class GameData
     public bool hasMagicWand;
     public bool hasMagicOrb;
 
+
     public GameData()
     {
         this.coins = 0;
@@ -89,6 +96,22 @@ public class GameData
         this.lvl5 = false;
         this.lvl6 = false;
         this.lvl7 = false;
+        //Achiev
+        this.ach1 = false;
+        this.ach2 = false;
+        this.ach3 = false;
+        this.ach4 = false;
+        this.ach5 = false;
+        this.ach6 = false;
+        this.ach7 = false;
+
+        this.killedTyanak = 0;
+        this.killedTikbalang = 0;
+        this.killedMananangal = 0;
+        this.killedMangkukulam = 0;
+        this.killedWhiteLady = 0;
+        this.killedKapre = 0;
+        this.killedFinalBoss = 0;
 
         //Beastiary
         // Minions

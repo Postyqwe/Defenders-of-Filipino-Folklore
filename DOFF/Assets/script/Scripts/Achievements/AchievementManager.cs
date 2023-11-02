@@ -23,6 +23,7 @@ public class AchievementManager : MonoBehaviour, IDataPersistence
     public Button a7;
 
     [Header("Display Achievement UI")]
+    public GameObject progresBarUI;
     public GameObject displayerHolder;
     public TMP_Text titleHolder;
     public Image iconHolder;
@@ -36,11 +37,54 @@ public class AchievementManager : MonoBehaviour, IDataPersistence
     public bool ach5;
     public bool ach6;
     public bool ach7;
+    [Space]
+    public int killedTyanak;
+    public int killedTikbalang;
+    public int killedMananangal;
+    public int killedMangkukulam;
+    public int killedWhiteLady;
+    public int killedKapre;
+    public int killedFinalBoss;
 
     private bool isOpened = false;
     private void Start()
     {
         progressBar.maxValue = totalAchs;
+
+        if (killedTyanak >= 10)
+        {
+            ach1 = true;
+        }
+
+        if (killedTikbalang >= 15)
+        {
+            ach2 = true;
+        }
+
+        if (killedMananangal >= 15)
+        {
+            ach3 = true;
+        }
+
+        if (killedMangkukulam >= 10)
+        {
+            ach4 = true;
+        }
+
+        if (killedWhiteLady >= 10)
+        {
+            ach5 = true;
+        }
+
+        if (killedKapre >= 10) 
+        {
+            ach6 = true;
+        }
+
+        if (killedFinalBoss >= 1)
+        {
+            ach7 = true;
+        }
     }
     private void Update()
     {
@@ -65,6 +109,14 @@ public class AchievementManager : MonoBehaviour, IDataPersistence
         ach5 = data.ach5;
         ach6 = data.ach6;
         ach7 = data.ach7;
+
+        killedTyanak = data.killedTyanak;
+        killedTikbalang = data.killedTikbalang;
+        killedMananangal = data.killedMananangal;
+        killedMangkukulam = data.killedMangkukulam;
+        killedWhiteLady = data.killedWhiteLady;
+        killedKapre = data.killedKapre;
+        killedFinalBoss = data.killedFinalBoss;
     }
 
     public void SaveData(GameData data)
@@ -78,6 +130,7 @@ public class AchievementManager : MonoBehaviour, IDataPersistence
         iconHolder.sprite = icon;
         descriptionHolder.text = descripton;
 
+        progresBarUI.SetActive(false);
         displayerHolder.SetActive(true);
         listHodler.SetActive(false);
         isOpened = true;
@@ -86,10 +139,12 @@ public class AchievementManager : MonoBehaviour, IDataPersistence
     {
         if (isOpened == false)
         {
+            progresBarUI.SetActive(false);
             achievementHolder.SetActive(false);
         }
         else
         {
+            progresBarUI.SetActive(true);
             displayerHolder.SetActive(false);
             listHodler.SetActive(true);
         }

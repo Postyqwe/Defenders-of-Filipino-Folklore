@@ -9,20 +9,23 @@ public class EnemyAI : MonoBehaviour
     public float followRange = 5f;
     public float moveSpeed = 2f;
     public float attackRange = 1f;
+
+    [Header("Range")]
     public bool isRangedEnemy = false;
     public GameObject bullet;
 
+    [Header("Debugging")]
     public bool isDead = false;
 
     private Rigidbody rb;
-    private Transform attackPoint;
+    
     private Transform shootDirection;
     private Transform player;
     private Animator animator;
     private Health health;
     private float attackTimer = 0f;
     private bool isAttacking = false;
-
+    private float shootTimer = 0f;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -40,9 +43,13 @@ public class EnemyAI : MonoBehaviour
 
             if (distanceToPlayer <= followRange)
             {
-                if (isRangedEnemy)
+                if (isRangedEnemy && distanceToPlayer <= attackRange)
                 {
                     RangedEnemyBehavior(distanceToPlayer);
+                }
+                else if (isRangedEnemy && distanceToPlayer >= attackRange)
+                {
+                    FollowPlayer(distanceToPlayer);
                 }
                 else
                 {
@@ -94,7 +101,7 @@ public class EnemyAI : MonoBehaviour
     void MeeleAttack()
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-
+        attackTimer += Time.fixedDeltaTime;
         if (distanceToPlayer <= attackRange)
         {
             if (!isAttacking && attackTimer >= atkSpeed)
@@ -108,24 +115,32 @@ public class EnemyAI : MonoBehaviour
         else
         {
             // Increase the attackTimer when no attack is performed
-            attackTimer += Time.deltaTime;
             isAttacking = false;
         }
     }
 
     void RangedEnemyBehavior(float distanceToPlayer)
     {
-        if (distanceToPlayer <= followRange)
+        if (distanceToPlayer <= attackRange)
         {
             Shoot();
+            StopFollowingPlayer();
         }
     }
 
     void Shoot()
     {
-        Vector3 directionToPlayer = (player.position - attackPoint.position).normalized;
-        GameObject newBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity);
-        newBullet.GetComponent<Rigidbody2D>().velocity = directionToPlayer * moveSpeed;
+        shootTimer += Time.fixedDeltaTime;
+        if (shootTimer >= atkSpeed)
+        {
+
+            Vector3 directionToPlayer = (player.position - transform.position).normalized;
+            GameObject newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+            newBullet.GetComponent<Rigidbody>().velocity = directionToPlayer * moveSpeed;
+            shootTimer = 0f;
+        }
+
+        shootTimer += Time.fixedDeltaTime;
     }
 
     void StopShooting()
