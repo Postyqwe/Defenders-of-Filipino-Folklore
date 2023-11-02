@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.5294118, g: 0.39215687, b: 0.39215687, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.04
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 1192519616}
   m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -185,6 +185,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -552,6 +556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &12376374 stripped
@@ -621,6 +629,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -765,6 +777,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -1217,6 +1233,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9a05930a84b2c8c4ab8985cdab3f7961, type: 3}
   m_PrefabInstance: {fileID: 28035672}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &28035674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9a05930a84b2c8c4ab8985cdab3f7961, type: 3}
+  m_PrefabInstance: {fileID: 28035672}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &28035675
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28035674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &30626444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1354,6 +1389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &31223160 stripped
@@ -1423,6 +1462,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -1642,6 +1685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &39047835 stripped
@@ -1711,6 +1758,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -2089,6 +2140,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 48197479}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &48197481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 48197479}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &48197482
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48197481}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &48807601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2237,6 +2307,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f5f9428df66a34e4b88f0ea11e63b1f3, type: 3}
   m_PrefabInstance: {fileID: 48846137}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &48846139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f5f9428df66a34e4b88f0ea11e63b1f3, type: 3}
+  m_PrefabInstance: {fileID: 48846137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &48846140
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48846139}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &54625494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2299,6 +2388,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -2369,6 +2462,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -2810,6 +2907,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &79292535 stripped
@@ -2879,6 +2980,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -3616,6 +3721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &110318712 stripped
@@ -3907,6 +4016,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -4200,6 +4313,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &122767948 stripped
@@ -4270,6 +4387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &123224160 stripped
@@ -4339,6 +4460,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -4557,6 +4682,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -4787,6 +4916,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 135110400}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &135110402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 135110400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &135110403
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135110402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &139873771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4923,6 +5071,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -5437,6 +5589,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -6259,6 +6415,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 186298187}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &186298189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 186298187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &186298190
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186298189}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &189618905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6325,6 +6500,10 @@ PrefabInstance:
     - target: {fileID: 442534, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495390, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
@@ -6840,6 +7019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &199816204 stripped
@@ -7217,6 +7400,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 211025827}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &211025829 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 211025827}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &211025830
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211025829}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &211413686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7279,6 +7481,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -7361,6 +7567,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 213805957}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &213805959 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 213805957}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &213805960
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213805959}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &219020569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7423,6 +7648,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -7937,6 +8166,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -8674,6 +8907,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &259157503 stripped
@@ -8755,6 +8992,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 260651528}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &260651530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 260651528}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &260651531
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260651530}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &262300819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9632,6 +9888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &285837453 stripped
@@ -9639,51 +9899,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 154870180701471469, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
   m_PrefabInstance: {fileID: 285837452}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &288738762
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 288738764}
-  - component: {fileID: 288738763}
-  m_Layer: 0
-  m_Name: TransitionManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &288738763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288738762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61430b0086307cc4da3ccc8d39ae88da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transitionTemplate: {fileID: 5276914992623515724, guid: 616d511151a6c554caddf1c754e4f91d, type: 3}
---- !u!4 &288738764
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288738762}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &291043276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9746,6 +9961,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -9828,6 +10047,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 292814311}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &292814313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 292814311}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &292814314
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292814313}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &296993079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10039,6 +10277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &299501042 stripped
@@ -10182,6 +10424,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -10474,6 +10720,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -10841,6 +11091,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &329056369 stripped
@@ -10922,6 +11176,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 329164192}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &329164194 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 329164192}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &329164195
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329164194}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &332555638
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11354,6 +11627,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -11869,6 +12146,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &356863076 stripped
@@ -12161,6 +12442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &362033610 stripped
@@ -12378,6 +12663,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -12970,6 +13259,10 @@ PrefabInstance:
     - target: {fileID: 442534, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495390, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
@@ -13707,6 +14000,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &397615974 stripped
@@ -14072,6 +14369,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -14513,6 +14814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &431402578 stripped
@@ -14804,6 +15109,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -15097,6 +15406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &445897409 stripped
@@ -15240,6 +15553,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -15618,6 +15935,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 455453375}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &455453377 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 455453375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &455453378
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455453377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &460873610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15680,6 +16016,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -15910,6 +16250,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 469733233}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &469733235 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 469733233}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &469733236
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469733235}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &470415683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15984,6 +16343,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 470415683}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &470415685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 470415683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &470415686
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470415685}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &472330601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16195,6 +16573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &475706459 stripped
@@ -16338,6 +16720,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -16631,6 +17017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &487685265 stripped
@@ -16849,6 +17239,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &492399697 stripped
@@ -16992,6 +17386,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -17359,6 +17757,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &502010984 stripped
@@ -17440,6 +17842,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 504337115}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &504337117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 504337115}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &504337118
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504337117}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &506884219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17502,6 +17923,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -18165,6 +18590,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &517445652 stripped
@@ -18234,6 +18663,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -18464,6 +18897,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 529555237}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &529555239 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 529555237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &529555240
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529555239}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &530629417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18600,6 +19052,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -18818,6 +19274,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -19110,6 +19570,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -19476,6 +19940,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -19854,6 +20322,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 558390323}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &558390325 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 558390323}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &558390326
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558390325}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &567113293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19990,6 +20477,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -20590,6 +21081,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 591456834}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &591456836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 591456834}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &591456837
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591456836}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &592919816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20652,6 +21162,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -21093,6 +21607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &607112829 stripped
@@ -21162,6 +21680,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -21455,6 +21977,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &616469783 stripped
@@ -21684,6 +22210,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
   m_PrefabInstance: {fileID: 626369760}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &626369762 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
+  m_PrefabInstance: {fileID: 626369760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &626369763
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626369762}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
 --- !u!1001 &629901121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21895,6 +22440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &635250650 stripped
@@ -22038,6 +22587,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -22268,6 +22821,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
   m_PrefabInstance: {fileID: 650378614}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &650378616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
+  m_PrefabInstance: {fileID: 650378614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &650378617
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650378616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
 --- !u!1001 &652838788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22342,6 +22914,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
   m_PrefabInstance: {fileID: 652838788}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &652838790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
+  m_PrefabInstance: {fileID: 652838788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &652838791
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652838790}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
 --- !u!1001 &652838993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22564,6 +23155,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 655348041}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &655348043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 655348041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &655348044
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655348043}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &656231061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22775,6 +23385,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &657315401 stripped
@@ -22856,6 +23470,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 657837036}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &657837038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 657837036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &657837039
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657837038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &660129616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22930,6 +23563,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 660129616}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &660129618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 660129616}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &660129619
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660129618}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &660603744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22992,6 +23644,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -23136,6 +23792,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -23354,6 +24014,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -23880,6 +24544,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
   m_PrefabInstance: {fileID: 685078534}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &685078536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
+  m_PrefabInstance: {fileID: 685078534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &685078537
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685078536}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
 --- !u!1001 &685271264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24091,6 +24774,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &692605815 stripped
@@ -24160,6 +24847,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -24601,6 +25292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &708115710 stripped
@@ -24823,6 +25518,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6495390, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
 --- !u!4 &715647807 stripped
@@ -24978,6 +25677,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 719857359}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &719857361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 719857359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &719857362
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719857361}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &720266007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25040,6 +25758,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -25407,6 +26129,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &730718191 stripped
@@ -25562,6 +26288,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 732295750}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &732295752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 732295750}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &732295753
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732295752}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &737151216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25636,6 +26381,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 737151216}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &737151218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 737151216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &737151219
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737151218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &737617337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26006,6 +26770,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 746122088}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &746122090 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 746122088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &746122091
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746122090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &750396414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26524,6 +27307,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 773870384}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &773870386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 773870384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &773870387
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773870386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &774217563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27042,6 +27844,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 783882682}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &783882684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 783882682}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &783882685
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783882684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &786029964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27252,6 +28073,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -27545,6 +28370,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &795219281 stripped
@@ -27626,6 +28455,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 795271767}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &795271769 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 795271767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &795271770
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795271769}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &802674889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27848,6 +28696,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 811693228}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &811693230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 811693228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &811693231
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811693230}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &815927429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28070,6 +28937,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 820519502}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &820519504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 820519502}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &820519505
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820519504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &828042179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28440,6 +29326,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 835270319}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &835270321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 835270319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &835270322
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835270321}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &844970658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28651,6 +29556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &850445127 stripped
@@ -28795,6 +29704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &853290395 stripped
@@ -28938,6 +29851,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -29304,6 +30221,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -29682,6 +30603,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 882164727}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &882164729 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 882164727}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &882164730
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882164729}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &884572888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30115,6 +31055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &891370368 stripped
@@ -30196,6 +31140,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
   m_PrefabInstance: {fileID: 891380558}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &891380560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
+  m_PrefabInstance: {fileID: 891380558}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &891380561
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891380560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
 --- !u!1001 &892971640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30554,6 +31517,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -31069,6 +32036,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &923528102 stripped
@@ -31212,6 +32183,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -31357,6 +32332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &925656440 stripped
@@ -31438,6 +32417,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 927001572}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &927001574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 927001572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &927001575
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927001574}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &927222580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31500,6 +32498,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -31804,6 +32806,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 9b6c3d01c33718b45bf7737e8c87415d, type: 3}
   m_PrefabInstance: {fileID: 935373674}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &935373676 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 9b6c3d01c33718b45bf7737e8c87415d, type: 3}
+  m_PrefabInstance: {fileID: 935373674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &935373677
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935373676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &939775302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32089,6 +33110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &946430043 stripped
@@ -32172,7 +33197,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &946965833
 PrefabInstance:
@@ -32470,6 +33495,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 951157642}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &951157644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 951157642}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &951157645
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951157644}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &955218754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32759,6 +33803,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6495390, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
 --- !u!4 &962865954 stripped
@@ -32829,6 +33877,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &968604617 stripped
@@ -32898,6 +33950,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -33054,6 +34110,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 978186270}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &978186272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 978186270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &978186273
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978186272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &978706274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33339,6 +34414,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &980629052 stripped
@@ -33409,6 +34488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &983519558 stripped
@@ -33478,6 +34561,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -33845,6 +34932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &998526041 stripped
@@ -34148,6 +35239,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 1010371623}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1010371625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 1010371623}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1010371626
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010371625}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &1013046809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34296,6 +35406,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 1014218950}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1014218952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 1014218950}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1014218953
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014218952}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &1015080815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34432,6 +35561,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -34736,6 +35869,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 1037609323}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1037609325 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 1037609323}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1037609326
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037609325}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &1040755953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35021,6 +36173,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1057397716 stripped
@@ -35090,6 +36246,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -35383,6 +36543,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1062024825 stripped
@@ -35452,6 +36616,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -36189,6 +37357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1080349160 stripped
@@ -36333,6 +37505,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1089125821 stripped
@@ -36402,6 +37578,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -36546,6 +37726,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -36839,6 +38023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1104043311 stripped
@@ -36982,6 +38170,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -37348,6 +38540,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -38825,6 +40021,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1170678978 stripped
@@ -39191,6 +40391,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1192430231 stripped
@@ -39198,6 +40402,100 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 154870180701471469, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
   m_PrefabInstance: {fileID: 1192430230}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1192519615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1192519617}
+  - component: {fileID: 1192519616}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1192519616
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192519615}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1192519617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192519615}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 12.19556, y: 12.083198, z: -1.8681746}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1193277663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39482,6 +40780,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -40008,6 +41310,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 1204555490}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1204555492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 1204555490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1204555493
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204555492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &1207929510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40144,6 +41465,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -40300,6 +41625,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 1215043250}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1215043252 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 1215043250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1215043253
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215043252}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &1217830304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40658,6 +42002,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -41099,6 +42447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1242309641 stripped
@@ -41242,6 +42594,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -41461,6 +42817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1254973248 stripped
@@ -41604,6 +42964,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -42119,6 +43483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1280527821 stripped
@@ -42348,6 +43716,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
   m_PrefabInstance: {fileID: 1283229402}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1283229404 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
+  m_PrefabInstance: {fileID: 1283229402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1283229405
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283229404}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 7d6ba04ff2b713248b1fa30cda241ecc, type: 3}
 --- !u!1001 &1288869740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42706,6 +44093,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -43158,6 +44549,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 1318175078}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1318175080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 1318175078}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1318175081
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318175080}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &1320108601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43232,6 +44642,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 273aafbd147aec044a0f20c7242a83ca, type: 3}
   m_PrefabInstance: {fileID: 1320108601}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1320108603 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 273aafbd147aec044a0f20c7242a83ca, type: 3}
+  m_PrefabInstance: {fileID: 1320108601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1320108604
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320108603}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 273aafbd147aec044a0f20c7242a83ca, type: 3}
 --- !u!1001 &1320230844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43306,6 +44735,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 273aafbd147aec044a0f20c7242a83ca, type: 3}
   m_PrefabInstance: {fileID: 1320230844}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1320230846 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 273aafbd147aec044a0f20c7242a83ca, type: 3}
+  m_PrefabInstance: {fileID: 1320230844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1320230847
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320230846}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 273aafbd147aec044a0f20c7242a83ca, type: 3}
 --- !u!1001 &1321210680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43368,6 +44816,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -43439,6 +44891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1324441455 stripped
@@ -43509,6 +44965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1328673154 stripped
@@ -43578,6 +45038,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -43796,6 +45260,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -44162,6 +45630,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -44983,6 +46455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1372500866 stripped
@@ -45126,6 +46602,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -45430,6 +46910,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 1384337672}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1384337674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 1384337672}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1384337675
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384337674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &1388749728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45714,6 +47213,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -46092,6 +47595,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 1400326895}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1400326897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 1400326895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1400326898
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400326897}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &1402984545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46228,6 +47750,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -46372,6 +47898,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -46676,6 +48206,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 1420483224}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1420483226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 1420483224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1420483227
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420483226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &1421329003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46886,6 +48435,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -47105,6 +48658,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1427384851 stripped
@@ -47174,6 +48731,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -47319,6 +48880,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1432975108 stripped
@@ -47388,6 +48953,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -47470,6 +49039,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8627997297071822229, guid: df50a6df5c82ef8488c92d770622df64, type: 3}
   m_PrefabInstance: {fileID: 1435156529}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1438856417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1438856419}
+  - component: {fileID: 1438856418}
+  m_Layer: 0
+  m_Name: TransitionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1438856418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438856417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61430b0086307cc4da3ccc8d39ae88da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionTemplate: {fileID: 5276914992623515724, guid: 616d511151a6c554caddf1c754e4f91d, type: 3}
+--- !u!4 &1438856419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438856417}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1441569609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47681,6 +49295,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1444961670 stripped
@@ -47750,6 +49368,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -47832,6 +49454,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 1450427153}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1450427155 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 1450427153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1450427156
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450427155}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &1452124568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47968,6 +49609,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -48116,6 +49761,10 @@ PrefabInstance:
     - target: {fileID: 442534, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495390, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
@@ -48335,6 +49984,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1467574352 stripped
@@ -48404,6 +50057,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -48697,6 +50354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1472231972 stripped
@@ -48926,6 +50587,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 273aafbd147aec044a0f20c7242a83ca, type: 3}
   m_PrefabInstance: {fileID: 1477832354}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1477832356 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 273aafbd147aec044a0f20c7242a83ca, type: 3}
+  m_PrefabInstance: {fileID: 1477832354}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1477832357
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477832356}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 273aafbd147aec044a0f20c7242a83ca, type: 3}
 --- !u!1001 &1480402471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49062,6 +50742,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -49292,6 +50976,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 1487434047}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1487434049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 1487434047}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1487434050
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487434049}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &1491510689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49354,6 +51057,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -49943,6 +51650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1501102476 stripped
@@ -50012,6 +51723,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -50231,6 +51946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1506468196 stripped
@@ -50374,6 +52093,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -50902,6 +52625,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1513224575 stripped
@@ -51045,6 +52772,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -51264,6 +52995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1531860511 stripped
@@ -51408,6 +53143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1533706479 stripped
@@ -51477,6 +53216,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -51696,6 +53439,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1546054502 stripped
@@ -51777,6 +53524,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 1546807196}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1546807198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 1546807196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1546807199
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546807198}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &1549929183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51914,6 +53680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1551581061 stripped
@@ -51995,6 +53765,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 9b6c3d01c33718b45bf7737e8c87415d, type: 3}
   m_PrefabInstance: {fileID: 1552431160}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1552431162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 9b6c3d01c33718b45bf7737e8c87415d, type: 3}
+  m_PrefabInstance: {fileID: 1552431160}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1552431163
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552431162}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1552722283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53686,6 +55475,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1606956937 stripped
@@ -53904,6 +55697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1614055974 stripped
@@ -53973,6 +55770,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -54055,6 +55856,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 1615639333}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1615639335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 1615639333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1615639336
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615639335}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &1615989324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54339,6 +56159,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -54706,6 +56530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1635922491 stripped
@@ -54924,6 +56752,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1644977181 stripped
@@ -55141,6 +56973,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -56096,7 +57932,7 @@ Transform:
   - {fileID: 1421918905}
   - {fileID: 1512801967}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1661908673
 PrefabInstance:
@@ -57134,6 +58970,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 1700758490}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1700758492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 1700758490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1700758493
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700758492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &1701409584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58170,6 +60025,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 273aafbd147aec044a0f20c7242a83ca, type: 3}
   m_PrefabInstance: {fileID: 1748520488}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1748520490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 273aafbd147aec044a0f20c7242a83ca, type: 3}
+  m_PrefabInstance: {fileID: 1748520488}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1748520491
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748520490}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 273aafbd147aec044a0f20c7242a83ca, type: 3}
 --- !u!1001 &1749067207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58306,6 +60180,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -58821,6 +60699,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1765307108 stripped
@@ -58976,6 +60858,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 1767996857}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1767996859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 1767996857}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1767996860
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767996859}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &1772080363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59038,6 +60939,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -59108,6 +61013,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -59623,6 +61532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1785992654 stripped
@@ -59692,6 +61605,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -59836,6 +61753,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -59992,6 +61913,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 1797373004}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1797373006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 1797373004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1797373007
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797373006}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &1798160153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60202,6 +62142,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -60420,6 +62364,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -61083,6 +63031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1831294951 stripped
@@ -61312,6 +63264,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 1840206961}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1840206963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 1840206961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1840206964
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840206963}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &1846576360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61596,6 +63567,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -61963,6 +63938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1865178982 stripped
@@ -62044,6 +64023,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 1867845813}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1867845815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 1867845813}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1867845816
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867845815}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &1868336011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62106,6 +64104,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -62176,6 +64178,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -62394,6 +64400,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -62909,6 +64919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1888845307 stripped
@@ -63200,6 +65214,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -63863,6 +65881,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1919002665 stripped
@@ -64155,6 +66177,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1929416095 stripped
@@ -64377,6 +66403,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6495390, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
 --- !u!4 &1940495161 stripped
@@ -64447,6 +66477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1942340456 stripped
@@ -64516,6 +66550,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -65253,6 +67291,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1974186210 stripped
@@ -65322,6 +67364,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -65615,6 +67661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &1982602122 stripped
@@ -65770,52 +67820,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8627997297071822229, guid: df50a6df5c82ef8488c92d770622df64, type: 3}
   m_PrefabInstance: {fileID: 1995459911}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1995881724
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1995881726}
-  - component: {fileID: 1995881725}
-  m_Layer: 0
-  m_Name: TransitionTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1995881725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995881724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bb84b9801d302a448833f1fb2f6166c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transition: {fileID: 11400000, guid: 06fa0ad2bc756f44ab258bc74947381d, type: 2}
-  startDelay: 3
---- !u!4 &1995881726
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995881724}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 505.09445, y: 260.09415, z: 6.0426555}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1996378578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65890,6 +67894,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 1996378578}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1996378580 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 1996378578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1996378581
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996378580}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &1996988807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65952,6 +67975,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -66182,6 +68209,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 2001516617}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2001516619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 2001516617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2001516620
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001516619}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &2002040885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66404,6 +68450,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 2005334364}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2005334366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 2005334364}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2005334367
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005334366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &2009787581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66614,6 +68679,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -66833,6 +68902,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &2022420936 stripped
@@ -66988,6 +69061,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 2024486722}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2024486724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 2024486722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2024486725
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024486724}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &2026535143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67136,6 +69228,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 2031398542}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2031398544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 2031398542}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2031398545
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031398544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &2034020405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67506,6 +69617,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 2048715217}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2048715219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 2048715217}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2048715220
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048715219}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &2051646357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67568,6 +69698,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -68168,6 +70302,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 2063481509}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2063481511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 2063481509}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2063481512
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063481511}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &2066426596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68538,6 +70691,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8627997297071822229, guid: df50a6df5c82ef8488c92d770622df64, type: 3}
   m_PrefabInstance: {fileID: 2086749809}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2086842468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2086842470}
+  - component: {fileID: 2086842469}
+  m_Layer: 0
+  m_Name: TransitionTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2086842469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086842468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb84b9801d302a448833f1fb2f6166c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition: {fileID: 11400000, guid: 06fa0ad2bc756f44ab258bc74947381d, type: 2}
+  startDelay: 0
+--- !u!4 &2086842470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086842468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 505.09445, y: 260.09415, z: 6.0426555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2088688271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68748,6 +70947,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -69041,6 +71244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &2103450916 stripped
@@ -69259,6 +71466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &2109344754 stripped
@@ -69340,6 +71551,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 2111479642}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2111479644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 2111479642}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2111479645
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111479644}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
 --- !u!1001 &2112724538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69488,6 +71718,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 2113829270}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2113829272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 2113829270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2113829273
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113829272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &2113919286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69636,6 +71885,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481554, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
   m_PrefabInstance: {fileID: 2114094053}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2114094055 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188006, guid: c6b7fb383a3534b039692b5485b6e739, type: 3}
+  m_PrefabInstance: {fileID: 2114094053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2114094056
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114094055}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1e50ef3048667495d90210b70c070c6b, type: 3}
+--- !u!1 &2115203215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2115203216}
+  m_Layer: 0
+  m_Name: ------Design--------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2115203216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115203215}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.4403343, y: 3.7337906, z: -7.1840935}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2117745028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69772,6 +72071,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -70150,6 +72453,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
   m_PrefabInstance: {fileID: 2128951239}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2128951241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
+  m_PrefabInstance: {fileID: 2128951239}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2128951242
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128951241}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 12f0ed80d834e6246b96b9cf113fedc3, type: 3}
 --- !u!1001 &2132562765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70287,6 +72609,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &2134860174 stripped
@@ -70356,6 +72682,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
@@ -70501,6 +72831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence Type1 02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
 --- !u!4 &2145188222 stripped
@@ -70644,6 +72978,10 @@ PrefabInstance:
     - target: {fileID: 154870180701748049, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
       propertyPath: m_Name
       value: Fence Type1 02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 154870180708040677, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b898de72e127c7c4e8306aaf4bbe6462, type: 3}
