@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6eb09b6bd9ea1df4f937033c9bfe713a
+guid: 266889b4e6e644f4790cc75dfbe1f2a9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 48
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mangkukulam-Girl-Projectile_0
+      name: carrot_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 4
-        width: 7
-        height: 6
+        x: 16
+        y: 13
+        width: 99
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 321a98e20b4102d41add82c968f87199
-      internalID: -1353024220
+      spriteID: 146a34adba9db9e4f891bd0c8d3f47a1
+      internalID: -1361318283
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mangkukulam-Girl-Projectile_0: -1353024220
+      carrot_0: -1361318283
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

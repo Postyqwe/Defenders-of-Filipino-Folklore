@@ -10,10 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2207671764984980708}
   - component: {fileID: 296019885960823486}
-  - component: {fileID: 1355571211241620396}
+  - component: {fileID: 6772415343086564795}
+  - component: {fileID: 4287716430918062564}
+  - component: {fileID: 6987846434187194261}
+  - component: {fileID: 1840216954346168736}
+  - component: {fileID: 9097201681663869783}
   m_Layer: 0
   m_Name: Tyanak Boss
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,7 +89,79 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1355571211241620396
+--- !u!54 &6772415343086564795
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2550300966920798520}
+  serializedVersion: 2
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!136 &4287716430918062564
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2550300966920798520}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.0756681
+  m_Height: 3.1815605
+  m_Direction: 0
+  m_Center: {x: -0.073345184, y: -0.043156862, z: -0.0000002389306}
+--- !u!114 &6987846434187194261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2550300966920798520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c688298306a6ee946b5199694f7305bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  atkSpeed: 0.5
+  followRange: 5
+  moveSpeed: 2
+  attackRange: 1
+  isRangedEnemy: 0
+  bullet: {fileID: 0}
+  isDead: 0
+--- !u!114 &1840216954346168736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2550300966920798520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80cc666e3494faf44802bf17881ba0cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 15
+  currentHealth: 15
+  OnHitWithReference:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeathWithReference:
+    m_PersistentCalls:
+      m_Calls: []
+  deathParticle: {fileID: 6715000993775492479, guid: 12e53ad2948ac0c4790401477ffbd0df, type: 3}
+  isDead: 0
+--- !u!95 &9097201681663869783
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -95,7 +171,7 @@ Animator:
   m_GameObject: {fileID: 2550300966920798520}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 789984687d174d34697949c563edc7f6, type: 2}
+  m_Controller: {fileID: 9100000, guid: c18bbb56511cd5e4a8045033adea1b69, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -11,9 +11,13 @@ GameObject:
   - component: {fileID: 1640223667597017267}
   - component: {fileID: 4681403988941154776}
   - component: {fileID: 9031652287145509478}
+  - component: {fileID: 5005972237008089577}
+  - component: {fileID: 863332634411346443}
+  - component: {fileID: 5417493208276631275}
+  - component: {fileID: 2431884711013910429}
   m_Layer: 0
   m_Name: Multo Big
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,7 +99,7 @@ Animator:
   m_GameObject: {fileID: 3036890449696861154}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3db1db541f882794db816d2da2e13012, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1016a2eb80df83e4bb955e5d6a2d0866, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -106,3 +110,75 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!54 &5005972237008089577
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3036890449696861154}
+  serializedVersion: 2
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!136 &863332634411346443
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3036890449696861154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.59516096
+  m_Height: 1.6037372
+  m_Direction: 1
+  m_Center: {x: 0.04445696, y: -0.24363834, z: -0.000001075446}
+--- !u!114 &5417493208276631275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3036890449696861154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c688298306a6ee946b5199694f7305bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  atkSpeed: 0.5
+  followRange: 5
+  moveSpeed: 2
+  attackRange: 1
+  isRangedEnemy: 0
+  bullet: {fileID: 0}
+  isDead: 0
+--- !u!114 &2431884711013910429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3036890449696861154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80cc666e3494faf44802bf17881ba0cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
+  currentHealth: 20
+  OnHitWithReference:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeathWithReference:
+    m_PersistentCalls:
+      m_Calls: []
+  deathParticle: {fileID: 6715000993775492479, guid: 12e53ad2948ac0c4790401477ffbd0df, type: 3}
+  isDead: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6eb09b6bd9ea1df4f937033c9bfe713a
+guid: d27a05dca6d7a6e459c22f719b67eb92
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 48
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mangkukulam-Girl-Projectile_0
+      name: Watermelon_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 6
         y: 4
-        width: 7
-        height: 6
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 321a98e20b4102d41add82c968f87199
-      internalID: -1353024220
+      spriteID: edf36f6274c43cc44aa6d7483d0c1a34
+      internalID: 1797913926
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mangkukulam-Girl-Projectile_0: -1353024220
+      Watermelon_0: 1797913926
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

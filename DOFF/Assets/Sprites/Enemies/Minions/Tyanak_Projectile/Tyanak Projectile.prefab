@@ -11,9 +11,13 @@ GameObject:
   - component: {fileID: 806349063256355436}
   - component: {fileID: 7594727873128294130}
   - component: {fileID: 2125179580509698048}
+  - component: {fileID: -71533219926690099}
+  - component: {fileID: 7768640798745713353}
+  - component: {fileID: 5832322843091596364}
+  - component: {fileID: 7658027430622620778}
   m_Layer: 0
   m_Name: Tyanak Projectile
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,7 +99,7 @@ Animator:
   m_GameObject: {fileID: 8876404404308570380}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ef624d92b5f76ec439082339b4362e1f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 23e257103f1d3b34482bfabf474730a7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -106,3 +110,75 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!54 &-71533219926690099
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8876404404308570380}
+  serializedVersion: 2
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!136 &7768640798745713353
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8876404404308570380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.54227924
+  m_Height: 1.397734
+  m_Direction: 1
+  m_Center: {x: -0.008424759, y: 0.04597062, z: -0.0000010725736}
+--- !u!114 &5832322843091596364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8876404404308570380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c688298306a6ee946b5199694f7305bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  atkSpeed: 0.5
+  followRange: 5
+  moveSpeed: 2
+  attackRange: 1
+  isRangedEnemy: 0
+  bullet: {fileID: 8153903107819547951, guid: 48a774a357260f54f90b679384167a1d, type: 3}
+  isDead: 0
+--- !u!114 &7658027430622620778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8876404404308570380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80cc666e3494faf44802bf17881ba0cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 7
+  currentHealth: 7
+  OnHitWithReference:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeathWithReference:
+    m_PersistentCalls:
+      m_Calls: []
+  deathParticle: {fileID: 6715000993775492479, guid: 12e53ad2948ac0c4790401477ffbd0df, type: 3}
+  isDead: 0
