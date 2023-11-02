@@ -157,7 +157,7 @@ MonoBehaviour:
   followRange: 5
   moveSpeed: 2
   attackRange: 1
-  isRangedEnemy: 0
+  isRangedEnemy: 1
   bullet: {fileID: 8153903107819547951, guid: 48a774a357260f54f90b679384167a1d, type: 3}
   isDead: 0
 --- !u!114 &7658027430622620778

@@ -10,15 +10,15 @@ public class Healthbar : MonoBehaviour
     private GameObject player;
     private Health health;
 
-    private void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player");
-        health = player.GetComponent<Health>();
-        healthBar.maxValue = health.maxHealth;
-    }
-
     private void Update()
     {
+        if(player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+            health = player.GetComponent<Health>();
+            healthBar.maxValue = health.maxHealth;
+        }
+
         healthBar.value = health.currentHealth;
     }
 }

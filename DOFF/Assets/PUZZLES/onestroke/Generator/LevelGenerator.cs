@@ -124,7 +124,9 @@ public class LevelGenerator : MonoBehaviour
             _level.Points.Add(point);
             points[id] = Instantiate(_pointPrefab);
             points[id].Init(spawnPos, id);
+#if UNITY_EDITOR
             EditorUtility.SetDirty(_level);
+#endif
         }
         if (Input.GetKeyDown(KeyCode.A))
         {
@@ -154,7 +156,9 @@ public class LevelGenerator : MonoBehaviour
             edges[reversed] = spawnEdge;
             spawnEdge.Init(points[normal.x].Position, points[normal.y].Position);
             _level.Edges.Add(normal);
+#if UNITY_EDITOR
             EditorUtility.SetDirty(_level);
+#endif
         }
 
 

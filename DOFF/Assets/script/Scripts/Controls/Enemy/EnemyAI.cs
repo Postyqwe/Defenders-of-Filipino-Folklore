@@ -30,13 +30,18 @@ public class EnemyAI : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        health = player.GetComponent<Health>();
+        
         attackTimer = atkSpeed;
     }
 
     private void FixedUpdate()
     {
+        if(player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+            health = player.GetComponent<Health>();
+        }
+
         if (!isDead)
         {
             float distanceToPlayer = Vector3.Distance(transform.position, player.position);
