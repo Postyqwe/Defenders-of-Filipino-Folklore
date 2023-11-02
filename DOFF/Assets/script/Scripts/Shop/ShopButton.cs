@@ -172,6 +172,10 @@ public class ShopButton : MonoBehaviour
 
     public void OnEquipItem(int index)
     {
-        Debug.Log("Equpped" + index);
+        // Set the selected item's ID as a player preference
+        PlayerPrefs.SetInt("SelectedWeaponIndex", index);
+        PlayerPrefs.Save();
+
+        Debug.Log("Equipped item with ID: " + index);
     }
 }

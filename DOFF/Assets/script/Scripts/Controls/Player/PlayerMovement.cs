@@ -16,11 +16,20 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
+    Weapon weapon;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         spriteRenderer = GetComponent <SpriteRenderer>();
         animator = GetComponent<Animator>();
+    }
+
+    private void Update()
+    {
+        if (weapon == null)
+        {
+            weapon = GameObject.FindGameObjectWithTag("Weapon").GetComponent<Weapon>();
+        }
     }
 
     private void FixedUpdate()
@@ -38,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void OnAttack(InputValue value)
     {
-        Debug.Log("Try Attack");
+        weapon.Attack();
         OnAttackReference?.Invoke();
     }
 

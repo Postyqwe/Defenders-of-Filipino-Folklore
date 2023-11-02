@@ -10,6 +10,8 @@ TagManager:
   - BossRange
   - Kapre
   - Tikbalang
+  - CoinCount
+  - Weapon
   layers:
   - Default
   - TransparentFX

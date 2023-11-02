@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerWeapons : MonoBehaviour
 {
-    [SerializeField] private GameObject[] weapons;
+    [SerializeField] private GameObject[] weaponPrefabs;
     private int selectedWeaponIndex = 0; // Default to index 0
+    private GameObject currentWeapon;
 
     private void Start()
     {
@@ -14,23 +15,26 @@ public class PlayerWeapons : MonoBehaviour
             selectedWeaponIndex = PlayerPrefs.GetInt("SelectedWeaponIndex");
         }
 
-        selectedWeaponIndex = Mathf.Clamp(selectedWeaponIndex, 0, weapons.Length - 1);
+        selectedWeaponIndex = Mathf.Clamp(selectedWeaponIndex, 0, weaponPrefabs.Length - 1);
 
-        SetActiveWeapon(selectedWeaponIndex);
+        EquipWeapon(selectedWeaponIndex);
     }
 
-    public void SetActiveWeapon(int weaponIndex)
+    public void EquipWeapon(int weaponIndex)
     {
-        if (weaponIndex >= 0 && weaponIndex < weapons.Length)
+        if (weaponIndex >= 0 && weaponIndex < weaponPrefabs.Length)
         {
-            foreach (GameObject weapon in weapons)
+            // Destroy the current weapon if it exists
+            if (currentWeapon != null)
             {
-                weapon.SetActive(false);
+                Destroy(currentWeapon);
             }
 
-            weapons[weaponIndex].SetActive(true);
+            // Instantiate the selected weapon at the current position of the PlayerWeapons GameObject
+            currentWeapon = Instantiate(weaponPrefabs[weaponIndex], transform.position, Quaternion.identity, transform);
 
             selectedWeaponIndex = weaponIndex;
+            Debug.Log("Weapon loaded: " + selectedWeaponIndex);
 
             PlayerPrefs.SetInt("SelectedWeaponIndex", selectedWeaponIndex);
             PlayerPrefs.Save();
