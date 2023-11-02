@@ -12,26 +12,43 @@ public class ShopManager : MonoBehaviour, IDataPersistence
 
     //Coins
     private int coinCount;
+    //level
+    public bool lvl1;
+    public bool lvl2;
+    public bool lvl3;
+    public bool lvl4;
+    public bool lvl5;
+    public bool lvl6;
+    public bool lvl7;
+
     //shop items
     //Melee
-    private bool hasMoroBarong;
-    private bool hasKriss;
-    private bool hasBolo;
-    private bool hasTaga;
-    private bool hasHanger;
-    private bool hasWalisTambo;
+    public bool hasMoroBarong;
+    public bool hasKriss;
+    public bool hasBolo;
+    public bool hasTaga;
+    public bool hasHanger;
+    public bool hasWalisTambo;
     //Range
-    private bool hasHandgun;
-    private bool hasSlingShot;
-    private bool hasBakya;
-    private bool hasDyaryo;
+    public bool hasHandgun;
+    public bool hasSlingShot;
+    public bool hasBakya;
+    public bool hasDyaryo;
     //Magic
-    private bool hasMagicWand;
-    private bool hasMagicOrb;
+    public bool hasMagicWand;
+    public bool hasMagicOrb;
 
     public void LoadData(GameData data)
     {
         coinCount = data.coins;
+        lvl1 = true;
+        lvl2 = data.lvl2;
+        lvl3 = data.lvl3;
+        lvl4 = data.lvl4;
+        lvl5 = data.lvl5;
+        lvl6 = data.lvl6;
+        lvl7 = data.lvl7;
+
         hasMoroBarong = data.hasMoroBarong;
         hasKriss = data.hasKriss;
         hasBolo = data.hasBolo;
@@ -62,10 +79,12 @@ public class ShopManager : MonoBehaviour, IDataPersistence
         data.hasMagicWand = hasMagicWand;
         data.hasMagicOrb = hasMagicOrb;
     }
+
     private void Update()
     {
         coinText.SetText(coinCount.ToString());
     }
+
     public void PurchaseItem(int itemIndex, ShopItemsSO itemData)
     {
         if (coinCount >= itemData.price)
@@ -76,43 +95,43 @@ public class ShopManager : MonoBehaviour, IDataPersistence
 
             switch (itemData.itemID)
             {
-                case 1:
-                    hasMoroBarong = true;
-                    break;
-                case 2:
-                    hasKriss = true;
-                    break;
-                case 3:
-                    hasBolo = true;
-                    break;
-                case 4:
-                    hasTaga = true;
-                    break;
-                case 5:
-                    hasHanger = true;
-                    break;
-                case 6:
-                    hasWalisTambo = true;
-                    break;
-                case 7:
-                    hasHandgun = true;
-                    break;
-                case 8:
-                    hasSlingShot = true;
-                    break;
-                case 9:
-                    hasBakya = true;
-                    break;
-                case 10:
-                    hasDyaryo = true;
-                    break;
-                case 11:
+                case 0:
                     hasMagicWand = true;
                     break;
-                case 12:
+                case 1:
                     hasMagicOrb = true;
                     break;
-                    // Add more cases for other items
+                case 2:
+                    hasBolo = true;
+                    break;
+                case 3:
+                    hasHanger = true;
+                    break;
+                case 4:
+                    hasKriss = true;
+                    break;
+                case 5:
+                    hasMoroBarong = true;
+                    break;
+                case 6:
+                    hasTaga = true;
+                    break;
+                case 7:
+                    hasWalisTambo = true;
+                    break;
+                case 8:
+                    hasHandgun = true;             
+                    break;
+                case 9:
+                    hasSlingShot = true;
+                    break;
+                case 10:
+                    hasBakya = true;
+                    break;
+                case 11:
+                    hasDyaryo = true;
+                    break;
+
             }
             Debug.Log("Item Puchased" + itemData.itemName);
         }

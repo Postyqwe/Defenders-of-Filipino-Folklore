@@ -28,6 +28,7 @@ public class AchievementManager : MonoBehaviour, IDataPersistence
     public TMP_Text titleHolder;
     public Image iconHolder;
     public TMP_Text descriptionHolder;
+    public TMP_Text counterDesc;
 
     [Header("Debugging")]
     public bool ach1;
@@ -124,11 +125,39 @@ public class AchievementManager : MonoBehaviour, IDataPersistence
 
     }
 
-    public void AchievementDisplay(string title, Sprite icon, string descripton)
+    public void AchievementDisplay(string title, Sprite icon, string descripton, int index)
     {
         titleHolder.text = title;
         iconHolder.sprite = icon;
         descriptionHolder.text = descripton;
+
+        switch (index)
+        {
+            case 0:
+                counterDesc.text = "Total Killed: " + killedTyanak;
+                break;
+            case 1:
+                counterDesc.text = "Total Killed: " + killedTikbalang;
+                break;
+            case 2:
+                counterDesc.text = "Total Killed: " + killedMananangal;
+                break;
+            case 3:
+                counterDesc.text = "Total Killed: " + killedMangkukulam;
+                break;
+            case 4:
+                counterDesc.text = "Total Killed: " + killedWhiteLady;
+                break;
+            case 5:
+                counterDesc.text = "Total Killed: " + killedKapre;
+                break;
+            case 6:
+                counterDesc.text = "Total Killed: " + killedFinalBoss;
+                break;
+            default:
+                counterDesc.text = "Total Killed: 0";
+                break;
+        }
 
         progresBarUI.SetActive(false);
         displayerHolder.SetActive(true);
@@ -139,7 +168,7 @@ public class AchievementManager : MonoBehaviour, IDataPersistence
     {
         if (isOpened == false)
         {
-            progresBarUI.SetActive(false);
+            progresBarUI.SetActive(true);
             achievementHolder.SetActive(false);
         }
         else
@@ -147,6 +176,7 @@ public class AchievementManager : MonoBehaviour, IDataPersistence
             progresBarUI.SetActive(true);
             displayerHolder.SetActive(false);
             listHodler.SetActive(true);
+            isOpened = false;
         }
     }
 }
