@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,12 +20,13 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Start()
     {
+
         col = GetComponent<Collider>();
 
         if (interactAction != null)
         {
             interactAction.Enable();
-            interactAction.performed += OnInteract;
+            interactAction.performed += _ => OnInteract();
         }
         else
         {
@@ -32,7 +34,7 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
-    private void OnInteract(InputAction.CallbackContext context)
+    private void OnInteract()
     {
         if (isClose)
         {
@@ -52,14 +54,33 @@ public class DialogueTrigger : MonoBehaviour
         {
             isClose = true;
             Debug.Log("Player close to NPC");
+            UpdateUI();
         }
     }
+
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             isClose = false;
             Debug.Log("Player away to NPC");
+            UpdateUI();
+        }
+    }
+
+    private void UpdateUI()
+    {
+        GameObject gameController = GameObject.FindGameObjectWithTag("GameController");
+        if (gameController != null)
+        {
+            Transform attackUI = gameController.transform.Find("Attack");
+            Transform interactUI = gameController.transform.Find("Interact");
+
+            if (attackUI != null && interactUI != null)
+            {
+                attackUI.gameObject.SetActive(!isClose);
+                interactUI.gameObject.SetActive(isClose);
+            }
         }
     }
 }

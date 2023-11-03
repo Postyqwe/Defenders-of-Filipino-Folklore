@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 9141811097957381562}
   - component: {fileID: 8742759832842459716}
   m_Layer: 0
-  m_Name: PortaLegit
+  m_Name: PortalPref
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
