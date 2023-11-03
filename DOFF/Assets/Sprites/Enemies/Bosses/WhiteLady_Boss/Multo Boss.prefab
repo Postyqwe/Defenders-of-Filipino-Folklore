@@ -236,9 +236,10 @@ MonoBehaviour:
   atkSpeed: 0.5
   followRange: 5
   moveSpeed: 2
-  attackRange: 1
-  isRangedEnemy: 0
-  bullet: {fileID: 0}
+  attackRange: 5
+  isRangedEnemy: 1
+  bulletSpeed: 5
+  bullet: {fileID: 3097017602935635826, guid: 83f7a6363e4ae9848a6da67725c16b21, type: 3}
   isDead: 0
 --- !u!114 &5898083215299286020
 MonoBehaviour:
@@ -252,8 +253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80cc666e3494faf44802bf17881ba0cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 30
-  currentHealth: 30
+  maxHealth: 60
+  currentHealth: 60
   name: 
   OnHitWithReference:
     m_PersistentCalls:

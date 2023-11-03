@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  lifeTime: 2
+  lifeTime: 4
   target: Player
 --- !u!135 &1747980703444065246
 SphereCollider:

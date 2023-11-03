@@ -438,6 +438,7 @@ MonoBehaviour:
   moveSpeed: 1
   attackRange: 4
   isRangedEnemy: 1
+  bulletSpeed: 10
   bullet: {fileID: 8153903107819547951, guid: 2e287e48e0b4fe949a197a0c18074266, type: 3}
   isDead: 0
 --- !u!114 &941528691023974497
