@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 5f;
+    public float speed = 3f;
 
     public UnityEvent OnAttackReference;
     [SerializeField] private InputActionReference attack;
@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
 
     Weapon weapon;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -72,4 +73,5 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("walking", isWalking);
     }
+
 }

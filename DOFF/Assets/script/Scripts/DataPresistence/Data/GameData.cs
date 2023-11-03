@@ -89,7 +89,7 @@ public class GameData
         this.isTutorialFinished = false;
 
         //Story
-        this.lvl1 = true;
+        this.lvl1 = false;
         this.lvl2 = false;
         this.lvl3 = false;
         this.lvl4 = false;

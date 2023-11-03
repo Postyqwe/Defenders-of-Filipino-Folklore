@@ -12,6 +12,7 @@ TagManager:
   - Tikbalang
   - CoinCount
   - Weapon
+  - BossHp
   layers:
   - Default
   - TransparentFX

@@ -25,13 +25,12 @@ public class LevelLoader : MonoBehaviour,IDataPersistence
 
     void Update()
     {
-        SetButtonState(buttonlvl1, lvl1);
-        SetButtonState(buttonlvl2, lvl2);
-        SetButtonState(buttonlvl3, lvl3);
-        SetButtonState(buttonlvl4, lvl4);
-        SetButtonState(buttonlvl5, lvl5);
-        SetButtonState(buttonlvl6, lvl6);
-        SetButtonState(buttonlvl7, lvl7);
+        SetButtonState(buttonlvl2, lvl1);
+        SetButtonState(buttonlvl3, lvl2);
+        SetButtonState(buttonlvl4, lvl3);
+        SetButtonState(buttonlvl5, lvl4);
+        SetButtonState(buttonlvl6, lvl5);
+        SetButtonState(buttonlvl7, lvl6);
     }
 
     private void SetButtonState(Button button, bool isEnabled)

@@ -8,11 +8,16 @@ public class Health : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
 
+    public string name;
+
     public UnityEvent<GameObject> OnHitWithReference, OnDeathWithReference;
 
     public GameObject deathParticle;
     public bool isDead = false;
     private Animator animator;
+
+    private GameObject player;
+
 
     private void Start()
     {

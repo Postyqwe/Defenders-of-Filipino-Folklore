@@ -25,7 +25,7 @@ public class SaveBoss : MonoBehaviour,IDataPersistence
     private bool theBigBossKapre;
     private bool juanPusong;
 
-    void Start()
+    public void Save()
     {
         DataPersistenceManager.instance.SaveGame();
     }

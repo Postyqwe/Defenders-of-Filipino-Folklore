@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerWeapons : MonoBehaviour
 {
     [SerializeField] private GameObject[] weaponPrefabs;
-    private int selectedWeaponIndex = 0; // Default to index 0
+    private int selectedWeaponIndex = 6;
     private GameObject currentWeapon;
 
     private void Start()
@@ -24,13 +24,11 @@ public class PlayerWeapons : MonoBehaviour
     {
         if (weaponIndex >= 0 && weaponIndex < weaponPrefabs.Length)
         {
-            // Destroy the current weapon if it exists
             if (currentWeapon != null)
             {
                 Destroy(currentWeapon);
             }
 
-            // Instantiate the selected weapon at the current position of the PlayerWeapons GameObject
             currentWeapon = Instantiate(weaponPrefabs[weaponIndex], transform.position, Quaternion.identity, transform);
 
             selectedWeaponIndex = weaponIndex;

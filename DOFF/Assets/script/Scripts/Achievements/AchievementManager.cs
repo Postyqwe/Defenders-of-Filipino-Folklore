@@ -134,25 +134,25 @@ public class AchievementManager : MonoBehaviour, IDataPersistence
         switch (index)
         {
             case 0:
-                counterDesc.text = "Total Killed: " + killedTyanak;
+                counterDesc.text = "Total Killed: " + "<color=#9F0000>" + killedTyanak;
                 break;
             case 1:
-                counterDesc.text = "Total Killed: " + killedTikbalang;
+                counterDesc.text = "Total Killed: " + "<color=#9F0000>" + killedTikbalang;
                 break;
             case 2:
-                counterDesc.text = "Total Killed: " + killedMananangal;
+                counterDesc.text = "Total Killed: " + "<color=#9F0000>" + killedMananangal;
                 break;
             case 3:
-                counterDesc.text = "Total Killed: " + killedMangkukulam;
+                counterDesc.text = "Total Killed: " + "<color=#9F0000>" + killedMangkukulam;
                 break;
             case 4:
-                counterDesc.text = "Total Killed: " + killedWhiteLady;
+                counterDesc.text = "Total Killed: " + "<color=#9F0000>" + killedWhiteLady;
                 break;
             case 5:
-                counterDesc.text = "Total Killed: " + killedKapre;
+                counterDesc.text = "Total Killed: " + "<color=#9F0000>" + killedKapre;
                 break;
             case 6:
-                counterDesc.text = "Total Killed: " + killedFinalBoss;
+                counterDesc.text = "Total Killed: " + "<color=#9F0000>" + killedFinalBoss;
                 break;
             default:
                 counterDesc.text = "Total Killed: 0";

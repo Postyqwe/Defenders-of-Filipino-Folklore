@@ -32,7 +32,7 @@ public class SaveMinion : MonoBehaviour, IDataPersistence
     private bool grayHairedKapre;
     private bool redEyeKapre;
 
-    void Start()
+    public void Save()
     {
         DataPersistenceManager.instance.SaveGame();
     }

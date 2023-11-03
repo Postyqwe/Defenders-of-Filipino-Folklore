@@ -28,5 +28,6 @@ public class CoinBar : MonoBehaviour, IDataPersistence
     public void GetCoin(int coin)
     {
         coinCount += coin;
+        DataPersistenceManager.instance.SaveGame();
     }
 }
