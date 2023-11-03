@@ -382,9 +382,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c688298306a6ee946b5199694f7305bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 3
   atkSpeed: 2
-  followRange: 5
+  followRange: 6
   moveSpeed: 2
   attackRange: 2
   isRangedEnemy: 0
@@ -403,8 +403,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80cc666e3494faf44802bf17881ba0cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
-  currentHealth: 5
+  maxHealth: 20
+  currentHealth: 20
   name: 
   OnHitWithReference:
     m_PersistentCalls:
