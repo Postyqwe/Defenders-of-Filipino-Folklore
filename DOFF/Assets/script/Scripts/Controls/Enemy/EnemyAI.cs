@@ -12,6 +12,7 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Range")]
     public bool isRangedEnemy = false;
+    public float bulletSpeed = 0.2f;
     public GameObject bullet;
 
     [Header("Debugging")]
@@ -141,7 +142,7 @@ public class EnemyAI : MonoBehaviour
 
             Vector3 directionToPlayer = (player.position - transform.position).normalized;
             GameObject newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
-            newBullet.GetComponent<Rigidbody>().velocity = directionToPlayer * moveSpeed;
+            newBullet.GetComponent<Rigidbody>().velocity = directionToPlayer * bulletSpeed;
             shootTimer = 0f;
         }
 

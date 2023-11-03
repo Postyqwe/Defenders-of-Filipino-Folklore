@@ -40,7 +40,7 @@ public class Weapon : MonoBehaviour
     {
         if (isAttacking)
         {
-            if (other.gameObject.CompareTag("Enemy"))
+            if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Boss"))
             {
                 Health health;
                 if (health = other.gameObject.GetComponent<Health>())
@@ -70,15 +70,15 @@ public class Weapon : MonoBehaviour
     private void ShootBulletAtNearestEnemy()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        if (enemies.Length == 0)
+        GameObject[] bosses = GameObject.FindGameObjectsWithTag("Boss");
+        if (enemies.Length == 0 || bosses.Length == 0)
         {
-            return; // No enemies to shoot at.
+            return;
         }
 
-        Transform nearestEnemy = GetNearestEnemy(enemies);
+        Transform nearestEnemy = GetNearestEnemy(enemies, bosses);
         if (nearestEnemy != null)
         {
-            // Instantiate a bullet and shoot it at the nearest enemy.
             GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             Bullet bulletScript = bullet.GetComponent<Bullet>();
             bulletScript.Shoot(nearestEnemy, damage, bulletLifeTime);
@@ -87,7 +87,7 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    private Transform GetNearestEnemy(GameObject[] enemies)
+    private Transform GetNearestEnemy(GameObject[] enemies, GameObject[] bosses)
     {
         Transform nearestEnemy = null;
         float minDistance = float.MaxValue;
@@ -99,6 +99,16 @@ public class Weapon : MonoBehaviour
             {
                 minDistance = distance;
                 nearestEnemy = enemy.transform;
+            }
+        }
+
+        foreach (var boss in bosses)
+        {
+            float distance = Vector3.Distance(transform.position, boss.transform.position);
+            if (distance < minDistance)
+            {
+                minDistance = distance;
+                nearestEnemy = boss.transform;
             }
         }
 

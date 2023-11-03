@@ -62,11 +62,18 @@ public class WeaponParent : MonoBehaviour
 
     private void FindNearestEnemy()
     {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
+        GameObject[] enemyArray = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject[] bossArray = GameObject.FindGameObjectsWithTag("Boss");
+
+        GameObject[] allEnemies = new GameObject[enemyArray.Length + bossArray.Length];
+
+        enemyArray.CopyTo(allEnemies, 0);
+        bossArray.CopyTo(allEnemies, enemyArray.Length);
+
         nearestEnemy = null;
         float nearestDistance = float.MaxValue;
 
-        foreach (GameObject enemy in enemies)
+        foreach (GameObject enemy in allEnemies)
         {
             float distance = Vector2.Distance(transform.position, enemy.transform.position);
             if (distance < nearestDistance)
