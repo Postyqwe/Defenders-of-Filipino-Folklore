@@ -416,10 +416,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.6055679
-  m_Height: 3.9030793
+  m_Radius: 1.0191822
+  m_Height: 2.5363746
   m_Direction: 1
-  m_Center: {x: 0.313509, y: -0.7511622, z: -0.00000035518664}
+  m_Center: {x: 0.13532066, y: -0.06780982, z: -0.00000035664428}
 --- !u!114 &2159475944432090649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,6 +438,7 @@ MonoBehaviour:
   moveSpeed: 1
   attackRange: 3
   isRangedEnemy: 1
+  bulletSpeed: 0.2
   bullet: {fileID: 8153903107819547951, guid: 2e287e48e0b4fe949a197a0c18074266, type: 3}
   isDead: 0
 --- !u!114 &941528691023974497

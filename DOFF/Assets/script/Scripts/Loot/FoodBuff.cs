@@ -17,14 +17,7 @@ public class FoodBuff : MonoBehaviour
 
     private void Update()
     {
-        if (target != null)
-        {
-            Vector3 direction = target.position - transform.position;
 
-            float step = followSpeed * Time.deltaTime;
-
-            transform.position = Vector3.MoveTowards(transform.position, target.position, step);
-        }
     }
 
     private void OnTriggerEnter(Collider other)

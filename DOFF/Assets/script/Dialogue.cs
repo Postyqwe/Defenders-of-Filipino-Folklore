@@ -8,6 +8,6 @@ public class Dialogue
     public string name;
 
     [TextArea(1, 10)]
-    public string[] sentences;
-
+    public string[] englishSentence;
+    public string[] tagalogSentence;
 }

@@ -8,30 +8,33 @@ public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
-
     public Animator animator;
 
     private Queue<string> sentences;
+    private string currentLanguage;
 
-
-    // Start is called before the first frame update
     void Start()
     {
-        sentences = new Queue<string> ();
+        sentences = new Queue<string>();
+    }
+
+    private void Update()
+    {
+        currentLanguage = PlayerPrefs.GetString("Language", "English");
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
-
         animator.SetBool("IsOpen", true);
-
         nameText.text = dialogue.name;
 
         sentences.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+        string[] sentencesToUse = currentLanguage == "Tagalog" ? dialogue.tagalogSentence : dialogue.englishSentence;
+
+        foreach (string sentence in sentencesToUse)
         {
-            sentences.Enqueue (sentence);
+            sentences.Enqueue(sentence);
         }
 
         DisplayNextSentence();
@@ -50,7 +53,7 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeSentence(sentence));
     }
 
-    IEnumerator TypeSentence (string sentence)
+    IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
@@ -62,10 +65,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-
         animator.SetBool("IsOpen", false);
-
         Debug.Log("End of conversation");
     }
-   
 }
