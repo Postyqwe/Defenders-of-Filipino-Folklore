@@ -384,7 +384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   atkSpeed: 2
-  followRange: 5
+  followRange: 6
   moveSpeed: 2
   attackRange: 2
   isRangedEnemy: 1
