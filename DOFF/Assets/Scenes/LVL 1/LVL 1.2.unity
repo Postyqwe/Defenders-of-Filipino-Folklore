@@ -3493,6 +3493,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1542816211}
     m_Modifications:
+    - target: {fileID: 1333921061, guid: f5a136daf46a1d34c80367ca8a5dbe50, type: 3}
+      propertyPath: itemsDropPrefab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333921061, guid: f5a136daf46a1d34c80367ca8a5dbe50, type: 3}
+      propertyPath: itemsDropPrefab.Array.data[0].amount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333921061, guid: f5a136daf46a1d34c80367ca8a5dbe50, type: 3}
+      propertyPath: itemsDropPrefab.Array.data[0].prefab
+      value: 
+      objectReference: {fileID: 9181543900269981473, guid: ca449f3299bff304e9df20836f9fdc3b, type: 3}
     - target: {fileID: 2130208644209554454, guid: f5a136daf46a1d34c80367ca8a5dbe50, type: 3}
       propertyPath: m_Name
       value: Chest (2)
@@ -41018,6 +41030,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1542816211}
     m_Modifications:
+    - target: {fileID: 1333921061, guid: f5a136daf46a1d34c80367ca8a5dbe50, type: 3}
+      propertyPath: itemsDropPrefab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333921061, guid: f5a136daf46a1d34c80367ca8a5dbe50, type: 3}
+      propertyPath: itemsDropPrefab.Array.data[0].amount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333921061, guid: f5a136daf46a1d34c80367ca8a5dbe50, type: 3}
+      propertyPath: itemsDropPrefab.Array.data[0].prefab
+      value: 
+      objectReference: {fileID: 9181543900269981473, guid: ca449f3299bff304e9df20836f9fdc3b, type: 3}
     - target: {fileID: 2130208644209554454, guid: f5a136daf46a1d34c80367ca8a5dbe50, type: 3}
       propertyPath: m_Name
       value: Chest (1)
@@ -44126,6 +44150,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1542816211}
     m_Modifications:
+    - target: {fileID: 1333921061, guid: f5a136daf46a1d34c80367ca8a5dbe50, type: 3}
+      propertyPath: itemsDropPrefab.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333921061, guid: f5a136daf46a1d34c80367ca8a5dbe50, type: 3}
+      propertyPath: itemsDropPrefab.Array.data[0].amount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333921061, guid: f5a136daf46a1d34c80367ca8a5dbe50, type: 3}
+      propertyPath: itemsDropPrefab.Array.data[0].prefab
+      value: 
+      objectReference: {fileID: 9181543900269981473, guid: ca449f3299bff304e9df20836f9fdc3b, type: 3}
     - target: {fileID: 2130208644209554454, guid: f5a136daf46a1d34c80367ca8a5dbe50, type: 3}
       propertyPath: m_Name
       value: Chest
