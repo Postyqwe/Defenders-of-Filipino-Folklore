@@ -24,6 +24,11 @@ public class BossHp : MonoBehaviour
             nameText.text = health.name;
             healthUI.SetActive(true);
         }
+        else if(health.currentHealth <= 0)
+        {
+            boss = null;
+            healthUI.SetActive(false);
+        }
 
         healthBar.value = health.currentHealth;
     }
