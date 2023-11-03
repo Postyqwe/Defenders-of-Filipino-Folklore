@@ -156,8 +156,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6426675594457708733}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.26444, z: 0.000000039581}
-  m_LocalScale: {x: 1.5433999, y: 0.6766267, z: 1.026}
+  m_LocalPosition: {x: -0.0404, y: 0.0579, z: -0}
+  m_LocalScale: {x: 1.2085954, y: 0.4833086, z: 1.026}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8682764292378815578}
@@ -411,6 +411,18 @@ MonoBehaviour:
       m_Calls: []
   OnDeathWithReference:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5949395339355889629}
+        m_TargetAssemblyTypeName: SaveMinion, Assembly-CSharp
+        m_MethodName: Save
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   deathParticle: {fileID: 6715000993775492479, guid: 12e53ad2948ac0c4790401477ffbd0df, type: 3}
   isDead: 0
