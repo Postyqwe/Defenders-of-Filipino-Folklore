@@ -107,7 +107,6 @@ public class EnemyAI : MonoBehaviour
     {
         rb.velocity = Vector2.zero;
         animator.SetBool("walk", false);
-        animator.SetBool("attack", false);
     }
 
     void MeeleAttack()
@@ -142,6 +141,7 @@ public class EnemyAI : MonoBehaviour
 
     void Shoot()
     {
+        animator.SetTrigger("attack");
         shootTimer += Time.fixedDeltaTime;
         if (shootTimer >= atkSpeed)
         {

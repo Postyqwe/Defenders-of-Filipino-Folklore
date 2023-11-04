@@ -274,13 +274,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   currentHealth: 5
+  name: 
   OnHitWithReference:
     m_PersistentCalls:
       m_Calls: []
   OnDeathWithReference:
     m_PersistentCalls:
       m_Calls: []
-  deathParticle: {fileID: 0}
+  deathParticle: {fileID: 6715000993775492479, guid: 12e53ad2948ac0c4790401477ffbd0df, type: 3}
+  hitParticle: {fileID: 6715000993775492479, guid: 33d719be09fe0754a97fa01ecb80e24d, type: 3}
   isDead: 0
 --- !u!136 &742117217204102404
 CapsuleCollider:

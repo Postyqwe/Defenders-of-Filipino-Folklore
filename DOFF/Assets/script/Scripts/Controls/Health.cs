@@ -13,6 +13,7 @@ public class Health : MonoBehaviour
     public UnityEvent<GameObject> OnHitWithReference, OnDeathWithReference;
 
     public GameObject deathParticle;
+    public GameObject hitParticle;
     public bool isDead = false;
     private Animator animator;
 
@@ -34,6 +35,7 @@ public class Health : MonoBehaviour
     }
     public void GetHit(int damage, GameObject sender)
     {
+        Instantiate(hitParticle, transform.position, Quaternion.identity);
         currentHealth -= damage;
         OnHitWithReference?.Invoke(sender);
         if (currentHealth <= 0)
