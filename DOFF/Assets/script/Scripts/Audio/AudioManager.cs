@@ -85,7 +85,7 @@ public class AudioManager : MonoBehaviour
 
     public void playOpenChest()
     {
-        SFXSrouce.clip = openChest;
+        SFXSrouce.clip = OpenChest;
         SFXSrouce.Play();
     }
 }
