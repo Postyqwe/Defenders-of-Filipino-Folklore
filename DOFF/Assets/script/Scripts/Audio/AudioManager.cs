@@ -17,6 +17,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip playerHit;
     public AudioClip playerDeath;
     public AudioClip monsterDeath;
+    public AudioClip OpenChest;
 
     #region Keep Audio Manager
     private static AudioManager instance;
@@ -79,6 +80,12 @@ public class AudioManager : MonoBehaviour
     public void playMonsterDeath()
     {
         SFXSrouce.clip = monsterDeath;
+        SFXSrouce.Play();
+    }
+
+    public void playOpenChest()
+    {
+        SFXSrouce.clip = openChest;
         SFXSrouce.Play();
     }
 }
