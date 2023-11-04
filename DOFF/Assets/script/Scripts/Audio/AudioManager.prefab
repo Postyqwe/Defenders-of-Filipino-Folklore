@@ -41,8 +41,8 @@ AudioSource:
   m_GameObject: {fileID: 1123176850406134773}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 6733340524114933983, guid: f4d534fc303a0634283fdae1db72ce3b, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 89ec441fe608cc840b31f12a9bb90ab8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -169,7 +169,7 @@ AudioSource:
   m_GameObject: {fileID: 1173355621100714039}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3587890422448481908, guid: f4d534fc303a0634283fdae1db72ce3b, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -302,6 +302,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2399d106d17baf74797bd0efb11837ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 0}
-  SFXSrouce: {fileID: 0}
-  mainMenuBGM: {fileID: 0}
+  musicSource: {fileID: 6477101405340186379}
+  SFXSrouce: {fileID: 9016626478538813726}
+  mainMenuBGM: {fileID: 8300000, guid: 89ec441fe608cc840b31f12a9bb90ab8, type: 3}
+  buttonSound: {fileID: 8300000, guid: 20067e355b501b94db7aa6dab40f7502, type: 3}
+  Attack: {fileID: 8300000, guid: 7db88245b7c505d448e7915d8bc45ed4, type: 3}
+  playerHit: {fileID: 8300000, guid: 87b21adebc9b7e44aab06613d074c1ea, type: 3}
+  playerDeath: {fileID: 8300000, guid: de5baf336293dfb44a28664524b1f7e1, type: 3}
+  monsterDeath: {fileID: 8300000, guid: 0cb4d2935350eaa4bb7889ebe05d2643, type: 3}

@@ -23319,42 +23319,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 5058596873904197545, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
-      propertyPath: Attack
-      value: 
-      objectReference: {fileID: 8300000, guid: 7db88245b7c505d448e7915d8bc45ed4, type: 3}
-    - target: {fileID: 5058596873904197545, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
-      propertyPath: SFXSrouce
-      value: 
-      objectReference: {fileID: 3434223259231182247}
-    - target: {fileID: 5058596873904197545, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
-      propertyPath: playerHit
-      value: 
-      objectReference: {fileID: 8300000, guid: 87b21adebc9b7e44aab06613d074c1ea, type: 3}
-    - target: {fileID: 5058596873904197545, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
-      propertyPath: monsterHit
-      value: 
-      objectReference: {fileID: 8300000, guid: 0cb4d2935350eaa4bb7889ebe05d2643, type: 3}
-    - target: {fileID: 5058596873904197545, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
-      propertyPath: buttonSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 20067e355b501b94db7aa6dab40f7502, type: 3}
-    - target: {fileID: 5058596873904197545, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
-      propertyPath: mainMenuBGM
-      value: 
-      objectReference: {fileID: 8300000, guid: 89ec441fe608cc840b31f12a9bb90ab8, type: 3}
-    - target: {fileID: 5058596873904197545, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
-      propertyPath: musicSource
-      value: 
-      objectReference: {fileID: 3434223259231182248}
-    - target: {fileID: 5058596873904197545, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
-      propertyPath: playerDeath
-      value: 
-      objectReference: {fileID: 8300000, guid: de5baf336293dfb44a28664524b1f7e1, type: 3}
-    - target: {fileID: 5058596873904197545, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
-      propertyPath: monsterDeath
-      value: 
-      objectReference: {fileID: 8300000, guid: 0cb4d2935350eaa4bb7889ebe05d2643, type: 3}
     - target: {fileID: 6259289147850293847, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -23399,30 +23363,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6477101405340186379, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 89ec441fe608cc840b31f12a9bb90ab8, type: 3}
-    - target: {fileID: 6477101405340186379, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 6733340524114933983, guid: f4d534fc303a0634283fdae1db72ce3b, type: 2}
-    - target: {fileID: 9016626478538813726, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: -3587890422448481908, guid: f4d534fc303a0634283fdae1db72ce3b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
---- !u!82 &3434223259231182247 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 9016626478538813726, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
-  m_PrefabInstance: {fileID: 3434223259231182246}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &3434223259231182248 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6477101405340186379, guid: 27c16b8332e9c6d46bd6e1fb0ae8ab3b, type: 3}
-  m_PrefabInstance: {fileID: 3434223259231182246}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5038606204497199557
 PrefabInstance:
   m_ObjectHideFlags: 0
