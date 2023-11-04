@@ -41,7 +41,7 @@ public class ShopManager : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         coinCount = data.coins;
-        lvl1 = true;
+        lvl1 = data.lvl1;
         lvl2 = data.lvl2;
         lvl3 = data.lvl3;
         lvl4 = data.lvl4;

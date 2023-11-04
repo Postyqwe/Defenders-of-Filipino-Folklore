@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344685462556952297}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0191, y: 0.005, z: -0}
-  m_LocalScale: {x: 1.066961, y: 0.63545686, z: 1.026}
+  m_LocalPosition: {x: -0.0118, y: -0.013, z: 0.0104}
+  m_LocalScale: {x: 0.4339928, y: 0.33350194, z: 1.026}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 806349063256355436}
@@ -94,10 +94,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.21974088
+  m_Height: 2.1596491
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.0023551092, y: 0.047271304, z: 1.01998854e-10}
 --- !u!1 &3328628858294051537
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 7768640798745713353}
   - component: {fileID: 5832322843091596364}
   - component: {fileID: 7658027430622620778}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tyanak Projectile
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -366,10 +366,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.54227924
-  m_Height: 1.397734
+  m_Radius: 0.22961146
+  m_Height: 0.660754
   m_Direction: 1
-  m_Center: {x: -0.008424759, y: 0.04597062, z: -0.0000010725736}
+  m_Center: {x: -0.0076696873, y: 0.008389264, z: -0.0000009388599}
 --- !u!114 &5832322843091596364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,12 +383,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  atkSpeed: 0.5
-  followRange: 7
-  moveSpeed: 2
+  atkSpeed: 5
+  followRange: 3
+  moveSpeed: 1
   attackRange: 1
   isRangedEnemy: 1
-  bulletSpeed: 0.2
+  bulletSpeed: 2
   bullet: {fileID: 8153903107819547951, guid: 48a774a357260f54f90b679384167a1d, type: 3}
   isDead: 0
 --- !u!114 &7658027430622620778

@@ -52,6 +52,8 @@ public class Chest : MonoBehaviour
         animator.SetTrigger("Open");
         col.enabled = false;
         isChestOpen = true;
+        isClose = false;
+        UpdateUI();
     }
 
     public void SpawnItems()
@@ -97,7 +99,7 @@ public class Chest : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             isClose = false;
-            Debug.Log("Player close to chest");
+            Debug.Log("Player away to chest");
             UpdateUI();
         }
     }

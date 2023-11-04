@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363484c2cdc6f7a449d8649f6446d6a8, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
+  achievementID: 0
   achievementName: I Hate Potions
   achievementDescription: Defeat 10 mangkukulam
-  achievementIcon: {fileID: 0}
+  achievementIcon: {fileID: 21300000, guid: 4f8415abcf43de64f8450fedef3c6ee5, type: 3}

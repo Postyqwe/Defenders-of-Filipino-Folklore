@@ -15,6 +15,7 @@ public class SettingsManager : MonoBehaviour
         {
             int savedQualityLevel = PlayerPrefs.GetInt(QualityLevelKey);
             QualitySettings.SetQualityLevel(savedQualityLevel);
+            PlayerPrefs.Save();
         }
 
         if (PlayerPrefs.HasKey("Language"))

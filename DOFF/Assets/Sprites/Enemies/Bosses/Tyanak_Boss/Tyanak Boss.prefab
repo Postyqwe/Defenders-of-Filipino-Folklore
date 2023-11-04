@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 9097201681663869783}
   m_Layer: 0
   m_Name: Tyanak Boss
-  m_TagString: Enemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -275,10 +275,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  atkSpeed: 1
-  followRange: 5
+  atkSpeed: 0.7
+  followRange: 6
   moveSpeed: 2
-  attackRange: 1
+  attackRange: 1.55
   isRangedEnemy: 0
   bulletSpeed: 0.2
   bullet: {fileID: 0}
@@ -297,7 +297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 15
   currentHealth: 15
-  name: 
+  name: Infant Tyanak
   OnHitWithReference:
     m_PersistentCalls:
       m_Calls: []

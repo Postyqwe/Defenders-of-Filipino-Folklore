@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363484c2cdc6f7a449d8649f6446d6a8, type: 3}
   m_Name: 6
   m_EditorClassIdentifier: 
-  achievementName: Uy di ba kuya mo yun
+  achievementID: 0
+  achievementName: David Vs Goliath
   achievementDescription: Defeat 10 kapre
-  achievementIcon: {fileID: 0}
+  achievementIcon: {fileID: 21300000, guid: 0e10704d1f70c7545b568bcf76a8c806, type: 3}

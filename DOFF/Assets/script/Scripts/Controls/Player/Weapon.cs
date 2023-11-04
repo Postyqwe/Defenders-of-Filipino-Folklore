@@ -71,10 +71,6 @@ public class Weapon : MonoBehaviour
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         GameObject[] bosses = GameObject.FindGameObjectsWithTag("Boss");
-        if (enemies.Length == 0 || bosses.Length == 0)
-        {
-            return;
-        }
 
         Transform nearestEnemy = GetNearestEnemy(enemies, bosses);
         if (nearestEnemy != null)
@@ -94,21 +90,31 @@ public class Weapon : MonoBehaviour
 
         foreach (var enemy in enemies)
         {
-            float distance = Vector3.Distance(transform.position, enemy.transform.position);
-            if (distance < minDistance)
+            // Check if the enemy is not dead
+            Health enemyHealth = enemy.GetComponent<Health>();
+            if (enemyHealth != null && !enemyHealth.isDead)
             {
-                minDistance = distance;
-                nearestEnemy = enemy.transform;
+                float distance = Vector3.Distance(transform.position, enemy.transform.position);
+                if (distance < minDistance)
+                {
+                    minDistance = distance;
+                    nearestEnemy = enemy.transform;
+                }
             }
         }
 
         foreach (var boss in bosses)
         {
-            float distance = Vector3.Distance(transform.position, boss.transform.position);
-            if (distance < minDistance)
+            // Check if the boss is not dead
+            Health bossHealth = boss.GetComponent<Health>();
+            if (bossHealth != null && !bossHealth.isDead)
             {
-                minDistance = distance;
-                nearestEnemy = boss.transform;
+                float distance = Vector3.Distance(transform.position, boss.transform.position);
+                if (distance < minDistance)
+                {
+                    minDistance = distance;
+                    nearestEnemy = boss.transform;
+                }
             }
         }
 

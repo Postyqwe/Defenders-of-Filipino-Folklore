@@ -45,10 +45,130 @@ public class ClearReward : MonoBehaviour,IDataPersistence
     {
         if(other.gameObject.tag == "Player")
         {
-            rewardsText.text = "Rewards: \n\n" + coinReward + " Coins\n" + "+1 Hp\n" + "+0.3 Spd";
-            rewardUI.SetActive(true);
-            RewardChecker();
-            scene.LoadScene(sceneToLoad);
+            switch (lvlClear)
+            {
+                case LevelClear.lvl1:
+                    if(lvl1 == true)
+                    {
+                        rewardsText.text = "Rewards: \n\n" + coinReward + " Coins";
+                        rewardUI.SetActive(true);
+                        RewardChecker();
+                        scene.LoadScene(sceneToLoad);
+                    }
+                    else
+                    {
+                        rewardsText.text = "Rewards: \n\n" + coinReward + " Coins\n" + "+5 Hp\n" + "+0.3 Spd";
+                        rewardUI.SetActive(true);
+                        RewardChecker();
+                        scene.LoadScene(sceneToLoad);
+                    }
+                    break;
+
+                case LevelClear.lvl2:
+                    if (lvl2 == true)
+                    {
+                        rewardsText.text = "Rewards: \n\n" + coinReward + " Coins";
+                        rewardUI.SetActive(true);
+                        RewardChecker();
+                        scene.LoadScene(sceneToLoad);
+                    }
+                    else
+                    {
+                        rewardsText.text = "Rewards: \n\n" + coinReward + " Coins\n" + "+5 Hp\n" + "+0.3 Spd";
+                        rewardUI.SetActive(true);
+                        RewardChecker();
+                        scene.LoadScene(sceneToLoad);
+                    }
+                    break;
+
+                case LevelClear.lvl3:
+                    if (lvl3 == true)
+                    {
+                        rewardsText.text = "Rewards: \n\n" + coinReward + " Coins";
+                        rewardUI.SetActive(true);
+                        RewardChecker();
+                        scene.LoadScene(sceneToLoad);
+                    }
+                    else
+                    {
+                        rewardsText.text = "Rewards: \n\n" + coinReward + " Coins\n" + "+5 Hp\n" + "+0.3 Spd";
+                        rewardUI.SetActive(true);
+                        RewardChecker();
+                        scene.LoadScene(sceneToLoad);
+                    }
+                    break;
+
+                case LevelClear.lvl4:
+                    if (lvl4 == true)
+                    {
+                        rewardsText.text = "Rewards: \n\n" + coinReward + " Coins";
+                        rewardUI.SetActive(true);
+                        RewardChecker();
+                        scene.LoadScene(sceneToLoad);
+                    }
+                    else
+                    {
+                        rewardsText.text = "Rewards: \n\n" + coinReward + " Coins\n" + "+5 Hp\n" + "+0.3 Spd";
+                        rewardUI.SetActive(true);
+                        RewardChecker();
+                        scene.LoadScene(sceneToLoad);
+                    }
+                    break;
+
+                case LevelClear.lvl5:
+                    if (lvl5 == true)
+                    {
+                        rewardsText.text = "Rewards: \n\n" + coinReward + " Coins";
+                        rewardUI.SetActive(true);
+                        RewardChecker();
+                        scene.LoadScene(sceneToLoad);
+                    }
+                    else
+                    {
+                        rewardsText.text = "Rewards: \n\n" + coinReward + " Coins\n" + "+5 Hp\n" + "+0.3 Spd";
+                        rewardUI.SetActive(true);
+                        RewardChecker();
+                        scene.LoadScene(sceneToLoad);
+                    }
+                    break;
+
+                case LevelClear.lvl6:
+                    if (lvl6 == true)
+                    {
+                        rewardsText.text = "Rewards: \n\n" + coinReward + " Coins";
+                        rewardUI.SetActive(true);
+                        RewardChecker();
+                        scene.LoadScene(sceneToLoad);
+                    }
+                    else
+                    {
+                        rewardsText.text = "Rewards: \n\n" + coinReward + " Coins\n" + "+5 Hp\n" + "+0.3 Spd";
+                        rewardUI.SetActive(true);
+                        RewardChecker();
+                        scene.LoadScene(sceneToLoad);
+                    }
+                    break;
+
+                case LevelClear.lvl7:
+                    if (lvl7 == true)
+                    {
+                        rewardsText.text = "Rewards: \n\n" + coinReward + " Coins";
+                        rewardUI.SetActive(true);
+                        RewardChecker();
+                        scene.LoadScene(sceneToLoad);
+                    }
+                    else
+                    {
+                        rewardsText.text = "Rewards: \n\n" + coinReward + " Coins\n" + "+5 Hp\n" + "+0.3 Spd";
+                        rewardUI.SetActive(true);
+                        RewardChecker();
+                        scene.LoadScene(sceneToLoad);
+                    }
+                    break;
+
+                default:
+                    break;
+            }
         }
     }
     public void LoadData(GameData data)

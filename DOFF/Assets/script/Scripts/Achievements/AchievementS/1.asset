@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363484c2cdc6f7a449d8649f6446d6a8, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
+  achievementID: 0
   achievementName: Tyanak Slayer
   achievementDescription: 'Defeat 20 tyanak '
-  achievementIcon: {fileID: 0}
+  achievementIcon: {fileID: 21300000, guid: 40f10c5fa9f6edf49a4e5f0a7b5f689b, type: 3}

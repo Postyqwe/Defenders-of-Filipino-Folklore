@@ -146,7 +146,7 @@ public class GameData
         this.hasMoroBarong = false;
         this.hasKriss = false;
         this.hasBolo = false;
-        this.hasTaga = false;
+        this.hasTaga = true;
         this.hasHanger = false;
         this.hasWalisTambo = false;
         this.hasHandgun = false;

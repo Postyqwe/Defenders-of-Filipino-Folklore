@@ -12,8 +12,9 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField]
     private InputAction interactAction;
 
-    public ItemDrop[] itemsDropPrefab;
-    public Transform itemSpawnPoint;
+    [Header("Coin Giver")]
+    public bool isCoinGiver;
+    public int amount;
 
     Collider col;
     bool isClose = false;
@@ -46,6 +47,7 @@ public class DialogueTrigger : MonoBehaviour
     private void ShowDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager>().Rewarder(isCoinGiver, amount);
     }
 
     private void OnTriggerEnter(Collider other)

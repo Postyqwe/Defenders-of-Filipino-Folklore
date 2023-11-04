@@ -9,10 +9,11 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public Animator animator;
+    public GameObject coin;
 
     private Queue<string> sentences;
     private string currentLanguage;
-
+    private bool isReceived = false;
     void Start()
     {
         sentences = new Queue<string>();
@@ -67,5 +68,17 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", false);
         Debug.Log("End of conversation");
+    }
+
+    public void Rewarder(bool isRewarded, int amount)
+    {
+        if(isRewarded && !isReceived)
+        {
+            for(int i = 0; i < amount; i++)
+            {
+                Instantiate(coin, transform.position, Quaternion.identity);
+                isReceived = true;
+            }
+        }
     }
 }

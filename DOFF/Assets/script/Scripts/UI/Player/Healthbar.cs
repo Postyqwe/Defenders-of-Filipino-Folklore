@@ -18,7 +18,7 @@ public class Healthbar : MonoBehaviour, IDataPersistence
 
     private void Start()
     {
-        bonusHp += (lvl1 ? 1 : 0) + (lvl2 ? 1 : 0) + (lvl3 ? 1 : 0) + (lvl4 ? 1 : 0) + (lvl5 ? 1 : 0) + (lvl6 ? 1 : 0) + (lvl7 ? 1 : 0);
+        bonusHp += (lvl1 ? 5 : 0) + (lvl2 ? 5 : 0) + (lvl3 ? 5 : 0) + (lvl4 ? 5 : 0) + (lvl5 ? 5 : 0) + (lvl6 ? 5 : 0) + (lvl7 ? 5 : 0);
         bonusSpd = (lvl1 ? 0.3f : 0.0f) + (lvl2 ? 0.3f : 0.0f) + (lvl3 ? 0.3f : 0.0f) + (lvl4 ? 0.3f : 00.0f) + (lvl5 ? 0.3f : 0.0f) + (lvl6 ? 0.3f : 0.0f) + (lvl7 ? 0.3f : 0.0f);
         
     }

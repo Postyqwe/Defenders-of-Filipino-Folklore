@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -59,7 +60,7 @@ public class ShopButton : MonoBehaviour
                 }
                 else
                 {
-                    lockerTxt.text = "Unlock at " + lvl;
+                    lockerTxt.text = "Unlock after " + lvl;
                     priceText.text = "Locked";
                     buyButton.interactable = false;
                     coinImg.enabled = false;
@@ -67,8 +68,6 @@ public class ShopButton : MonoBehaviour
                 }
             }
         }
-
-
     }
     private int CheckUnlock(ShopItemsSO item)
     {
@@ -91,9 +90,9 @@ public class ShopButton : MonoBehaviour
             case 7:
                 return shopManager.hasWalisTambo ? 1 : 0;
             case 8:
-                return shopManager.hasSlingShot ? 1 : 0;
-            case 9:
                 return shopManager.hasHandgun ? 1 : 0;
+            case 9:
+                return shopManager.hasSlingShot ? 1 : 0;
             case 10:
                 return shopManager.hasBakya ? 1 : 0;
             case 11:
@@ -172,10 +171,37 @@ public class ShopButton : MonoBehaviour
 
     public void OnEquipItem(int index)
     {
-        // Set the selected item's ID as a player preference
         PlayerPrefs.SetInt("SelectedWeaponIndex", index);
         PlayerPrefs.Save();
 
         Debug.Log("Equipped item with ID: " + index);
+    }
+
+    private void Update()
+    {
+
+        if(PlayerPrefs.HasKey("SelectedWeaponIndex"))
+        {
+            int itemUnlock = CheckUnlock(shopItemData);
+            if (itemUnlock == 1)
+            {
+                int index = PlayerPrefs.GetInt("SelectedWeaponIndex");
+                if (index == shopItemData.itemID)
+                {
+                    priceText.text = "Equipped";
+                    buyButton.interactable = false;
+                }
+                else
+                {
+                    priceText.text = "Equip";
+                    buyButton.interactable = true;
+                }
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetInt("SelectedWeaponIndex", 6);
+            PlayerPrefs.Save();
+        }
     }
 }

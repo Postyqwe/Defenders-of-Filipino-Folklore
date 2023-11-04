@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public int damage = 1;
-    public float atkSpeed = 0.5f;
-    public float followRange = 5f;
-    public float moveSpeed = 2f;
-    public float attackRange = 1f;
+    [Tooltip("Damage Amount")]
+    public int damage = 1;//damage
+    [Tooltip("Higher value = slower, Lower value = faster")]
+    public float atkSpeed = 0.5f;//higher the slower fr
+    [Tooltip("Has Gizmo")]
+    public float followRange = 5f;//has gizmo
+    [Tooltip("Higher value = faster, Lower value = slower")]
+    public float moveSpeed = 2f;//higher speed faster
+    [Tooltip("Has Gizmo")]
+    public float attackRange = 1f;//has gizmo
 
     [Header("Range")]
     public bool isRangedEnemy = false;
-    public float bulletSpeed = 0.2f;
+    [Tooltip("Higher value = faster, Lower value = slower")]
+    public float bulletSpeed = 0.2f;//higher is fast, lower is slow
     public GameObject bullet;
 
     [Header("Debugging")]

@@ -12,6 +12,11 @@ public class AudioManager : MonoBehaviour
     public AudioClip mainMenuBGM;
 
     [Header("---------- Audio Clip SFX ----------")]
+    public AudioClip buttonSound;
+    public AudioClip Attack;
+    public AudioClip playerHit;
+    public AudioClip playerDeath;
+    public AudioClip monsterDeath;
 
     #region Keep Audio Manager
     private static AudioManager instance;
@@ -49,5 +54,31 @@ public class AudioManager : MonoBehaviour
     {
         musicSource.clip = mainMenuBGM;
         musicSource.Play();
+    }
+    public void playButton()
+    {
+        SFXSrouce.clip = buttonSound;
+        SFXSrouce.Play();
+    }
+    public void playWeaponAttack()
+    {
+        SFXSrouce.clip = Attack;
+        SFXSrouce.Play();
+    }
+    public void playPlayerHit()
+    {
+        SFXSrouce.clip = playerHit;
+        SFXSrouce.Play();
+    }
+    public void playPlayerDeath()
+    {
+        SFXSrouce.clip = playerDeath;
+        SFXSrouce.Play();
+    }
+
+    public void playMonsterDeath()
+    {
+        SFXSrouce.clip = monsterDeath;
+        SFXSrouce.Play();
     }
 }

@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 15102992}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1279891780}
+        m_TargetAssemblyTypeName: SfxPlayer, Assembly-CSharp
+        m_MethodName: playButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &15102992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,6 +342,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1279891780}
+        m_TargetAssemblyTypeName: SfxPlayer, Assembly-CSharp
+        m_MethodName: playButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 987773329}
         m_TargetAssemblyTypeName: EasyTransition.DemoLoadScene, Assembly-CSharp
         m_MethodName: LoadScene
@@ -551,7 +575,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 107575298}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1279891780}
+        m_TargetAssemblyTypeName: SfxPlayer, Assembly-CSharp
+        m_MethodName: playButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &107575298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -673,6 +709,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1067719902}
     m_Modifications:
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1279891780}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SfxPlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3795798405527345576, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -786,7 +850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopItemData: {fileID: 11400000, guid: d5faedf48a625304fa61f34b6274ec30, type: 2}
-  shopManager: {fileID: 1036725701}
+  shopManager: {fileID: 181108724}
 --- !u!1 &179577697
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,6 +949,70 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+--- !u!1 &181108722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 181108723}
+  - component: {fileID: 181108724}
+  m_Layer: 0
+  m_Name: ShopManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &181108723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181108722}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1658571443}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &181108724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181108722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c90da4b4a750aa4a84f3c9e5f60d623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinText: {fileID: 1061824799}
+  lvl1: 0
+  lvl2: 0
+  lvl3: 0
+  lvl4: 0
+  lvl5: 0
+  lvl6: 0
+  lvl7: 0
+  hasMoroBarong: 0
+  hasKriss: 0
+  hasBolo: 0
+  hasTaga: 0
+  hasHanger: 0
+  hasWalisTambo: 0
+  hasHandgun: 0
+  hasSlingShot: 0
+  hasBakya: 0
+  hasDyaryo: 0
+  hasMagicWand: 0
+  hasMagicOrb: 0
 --- !u!1 &226661123
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,6 +1096,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1067719902}
     m_Modifications:
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1279891780}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SfxPlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3795798405527345576, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1081,7 +1237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopItemData: {fileID: 11400000, guid: 94c191d885798e64b893b1899b9b5f90, type: 2}
-  shopManager: {fileID: 1036725701}
+  shopManager: {fileID: 181108724}
 --- !u!1001 &300724286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1089,6 +1245,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1067719902}
     m_Modifications:
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1279891780}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SfxPlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3795798405527345576, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1202,7 +1386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopItemData: {fileID: 11400000, guid: 0ff7627e0e5c54c439acbb345113d519, type: 2}
-  shopManager: {fileID: 1036725701}
+  shopManager: {fileID: 181108724}
 --- !u!1 &302869164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,10 +1471,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1156164606}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1279891780}
+        m_TargetAssemblyTypeName: SfxPlayer, Assembly-CSharp
+        m_MethodName: playButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1310,6 +1494,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1976919106}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1976919106}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -1488,7 +1684,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 360175619}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1279891780}
+        m_TargetAssemblyTypeName: SfxPlayer, Assembly-CSharp
+        m_MethodName: playButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &360175619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1611,10 +1819,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1156164606}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1279891780}
+        m_TargetAssemblyTypeName: SfxPlayer, Assembly-CSharp
+        m_MethodName: playButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1624,6 +1832,18 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1659748832}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1976919106}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1844,6 +2064,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1842336277}
     m_Modifications:
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1279891780}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SfxPlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3795798405527345576, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1957,7 +2205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopItemData: {fileID: 11400000, guid: ac37a04dcc789544fb02a7b80af43ab3, type: 2}
-  shopManager: {fileID: 1036725701}
+  shopManager: {fileID: 181108724}
 --- !u!1 &453436308
 GameObject:
   m_ObjectHideFlags: 0
@@ -2718,7 +2966,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.53375, y: 0.18344876}
   m_AnchorMax: {x: 0.59375, y: 0.2728782}
-  m_AnchoredPosition: {x: -51, y: 105.49999}
+  m_AnchoredPosition: {x: -51, y: 105.49995}
   m_SizeDelta: {x: 752, y: 416.30804}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &684130537
@@ -2927,6 +3175,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1134258399}
     m_Modifications:
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1279891780}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SfxPlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3795798405527345576, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3040,7 +3316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopItemData: {fileID: 11400000, guid: 8e0244773083c314992bb017f33612b5, type: 2}
-  shopManager: {fileID: 1036725701}
+  shopManager: {fileID: 181108724}
 --- !u!1 &778962070
 GameObject:
   m_ObjectHideFlags: 0
@@ -3336,6 +3612,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1279891780}
+        m_TargetAssemblyTypeName: SfxPlayer, Assembly-CSharp
+        m_MethodName: playButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 1036725699}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -3483,6 +3771,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1134258399}
     m_Modifications:
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1279891780}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SfxPlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3795798405527345576, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3596,7 +3912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopItemData: {fileID: 11400000, guid: aa41bfeed7511ed4b814eb2f2220f9ac, type: 2}
-  shopManager: {fileID: 1036725701}
+  shopManager: {fileID: 181108724}
 --- !u!1 &898622518
 GameObject:
   m_ObjectHideFlags: 0
@@ -3680,6 +3996,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1279891780}
+        m_TargetAssemblyTypeName: SfxPlayer, Assembly-CSharp
+        m_MethodName: playButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 987773329}
         m_TargetAssemblyTypeName: EasyTransition.DemoLoadScene, Assembly-CSharp
         m_MethodName: LoadScene
@@ -3689,7 +4017,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: TestLevel
+          m_StringArgument: LVL 1.1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &898622521
@@ -3748,7 +4076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopItemData: {fileID: 11400000, guid: cc0d412c7f0e03f458b17057c6599b90, type: 2}
-  shopManager: {fileID: 1036725701}
+  shopManager: {fileID: 181108724}
 --- !u!1 &947294168
 GameObject:
   m_ObjectHideFlags: 0
@@ -3830,7 +4158,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1027148752
 GameObject:
@@ -3878,7 +4206,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1036725700}
-  - component: {fileID: 1036725701}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -3907,38 +4234,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1036725701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036725699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c90da4b4a750aa4a84f3c9e5f60d623, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinText: {fileID: 1061824799}
-  lvl1: 0
-  lvl2: 0
-  lvl3: 0
-  lvl4: 0
-  lvl5: 0
-  lvl6: 0
-  lvl7: 0
-  hasMoroBarong: 0
-  hasKriss: 0
-  hasBolo: 0
-  hasTaga: 0
-  hasHanger: 0
-  hasWalisTambo: 0
-  hasHandgun: 0
-  hasSlingShot: 0
-  hasBakya: 0
-  hasDyaryo: 0
-  hasMagicWand: 0
-  hasMagicOrb: 0
 --- !u!1 &1053666450
 GameObject:
   m_ObjectHideFlags: 0
@@ -4529,7 +4824,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1082092467}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1279891780}
+        m_TargetAssemblyTypeName: SfxPlayer, Assembly-CSharp
+        m_MethodName: playButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1082092467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4652,6 +4959,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1279891780}
+        m_TargetAssemblyTypeName: SfxPlayer, Assembly-CSharp
+        m_MethodName: playButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1036725699}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -5219,6 +5538,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249250640}
   m_CullTransparentMesh: 1
+--- !u!1001 &1279891779
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1165778253458394818, guid: 759c77011993de846a96766f93a18d05, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165778253458394818, guid: 759c77011993de846a96766f93a18d05, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 542
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165778253458394818, guid: 759c77011993de846a96766f93a18d05, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 305
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165778253458394818, guid: 759c77011993de846a96766f93a18d05, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165778253458394818, guid: 759c77011993de846a96766f93a18d05, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165778253458394818, guid: 759c77011993de846a96766f93a18d05, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165778253458394818, guid: 759c77011993de846a96766f93a18d05, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165778253458394818, guid: 759c77011993de846a96766f93a18d05, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165778253458394818, guid: 759c77011993de846a96766f93a18d05, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165778253458394818, guid: 759c77011993de846a96766f93a18d05, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165778253458394818, guid: 759c77011993de846a96766f93a18d05, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5547616295332834493, guid: 759c77011993de846a96766f93a18d05, type: 3}
+      propertyPath: m_Name
+      value: SFXPlayer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 759c77011993de846a96766f93a18d05, type: 3}
+--- !u!114 &1279891780 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4082261264027064272, guid: 759c77011993de846a96766f93a18d05, type: 3}
+  m_PrefabInstance: {fileID: 1279891779}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa60526dcf6409f48b72f5c095f80f77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1291549737
 GameObject:
   m_ObjectHideFlags: 0
@@ -5592,6 +5979,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1067719902}
     m_Modifications:
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1279891780}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SfxPlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3795798405527345576, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5705,7 +6120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopItemData: {fileID: 11400000, guid: a2d818268d401bc47b6f209902719a42, type: 2}
-  shopManager: {fileID: 1036725701}
+  shopManager: {fileID: 181108724}
 --- !u!1 &1363075175
 GameObject:
   m_ObjectHideFlags: 0
@@ -5924,7 +6339,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1418239965}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1279891780}
+        m_TargetAssemblyTypeName: SfxPlayer, Assembly-CSharp
+        m_MethodName: playButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1418239965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5970,6 +6397,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1842336277}
     m_Modifications:
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1279891780}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SfxPlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3795798405527345576, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6083,7 +6538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopItemData: {fileID: 11400000, guid: 52c9cfd5726f6de4aaeb919c26c16043, type: 2}
-  shopManager: {fileID: 1036725701}
+  shopManager: {fileID: 181108724}
 --- !u!1 &1493010704
 GameObject:
   m_ObjectHideFlags: 0
@@ -6244,10 +6699,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1156164606}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1279891780}
+        m_TargetAssemblyTypeName: SfxPlayer, Assembly-CSharp
+        m_MethodName: playButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6267,6 +6722,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1976919106}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1976919106}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -6610,6 +7077,7 @@ Transform:
   - {fileID: 1600906110}
   - {fileID: 576469176}
   - {fileID: 1652887830}
+  - {fileID: 181108723}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6924,6 +7392,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1134258399}
     m_Modifications:
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1279891780}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SfxPlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3795798405527345576, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7037,7 +7533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopItemData: {fileID: 11400000, guid: dfb7a4aecb704f547bc55455eae172b2, type: 2}
-  shopManager: {fileID: 1036725701}
+  shopManager: {fileID: 181108724}
 --- !u!1 &1898045659
 GameObject:
   m_ObjectHideFlags: 0
@@ -7187,7 +7683,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1935801818}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1279891780}
+        m_TargetAssemblyTypeName: SfxPlayer, Assembly-CSharp
+        m_MethodName: playButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1935801818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7233,6 +7741,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1067719902}
     m_Modifications:
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1279891780}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SfxPlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3795798405527345576, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7346,7 +7882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopItemData: {fileID: 11400000, guid: f9481845dcc372c4eb6fca51e84efc5f, type: 2}
-  shopManager: {fileID: 1036725701}
+  shopManager: {fileID: 181108724}
 --- !u!1 &1976919106
 GameObject:
   m_ObjectHideFlags: 0
@@ -7476,6 +8012,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1134258399}
     m_Modifications:
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1279891780}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SfxPlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3795798405527345576, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7589,7 +8153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopItemData: {fileID: 11400000, guid: 5ad1b352add6aae49b4995a921df2b1c, type: 2}
-  shopManager: {fileID: 1036725701}
+  shopManager: {fileID: 181108724}
 --- !u!1 &2131830470
 GameObject:
   m_ObjectHideFlags: 0
@@ -7673,6 +8237,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1067719902}
     m_Modifications:
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1279891780}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SfxPlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795798404735739770, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3795798405527345576, guid: b73373f70a21a3b48abbc9536254c437, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

@@ -13,23 +13,30 @@ public class BossHp : MonoBehaviour
 
     private GameObject boss;
     private Health health;
+    private bool isBossDead = false;
 
     private void Update()
     {
         if (boss == null)
         {
             boss = GameObject.FindGameObjectWithTag("Boss");
-            health = boss.GetComponent<Health>();
-            healthBar.maxValue = health.maxHealth;
-            nameText.text = health.name;
-            healthUI.SetActive(true);
+            if (boss !=null && !isBossDead)
+            {
+                health = boss.GetComponent<Health>();
+                healthBar.maxValue = health.maxHealth;
+                nameText.text = health.name;
+                healthUI.SetActive(true);
+            }
         }
         else if(health.currentHealth <= 0)
         {
             boss = null;
             healthUI.SetActive(false);
+            isBossDead = true;
         }
-
-        healthBar.value = health.currentHealth;
+        if(health != null)
+        {
+            healthBar.value = health.currentHealth;
+        }
     }
 }

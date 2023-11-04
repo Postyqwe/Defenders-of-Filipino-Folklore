@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363484c2cdc6f7a449d8649f6446d6a8, type: 3}
   m_Name: 7
   m_EditorClassIdentifier: 
+  achievementID: 0
   achievementName: Im the Hero
   achievementDescription: Defeat the Final Boss
-  achievementIcon: {fileID: 0}
+  achievementIcon: {fileID: 21300000, guid: 10d1f52457ecec8469f89ca63bc3e500, type: 3}
