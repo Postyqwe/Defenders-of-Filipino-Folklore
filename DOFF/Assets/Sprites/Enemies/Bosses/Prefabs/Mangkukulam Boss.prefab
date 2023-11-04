@@ -436,7 +436,7 @@ MonoBehaviour:
   atkSpeed: 5
   followRange: 5
   moveSpeed: 1
-  attackRange: 3
+  attackRange: 4
   isRangedEnemy: 1
   bulletSpeed: 5
   bullet: {fileID: 8153903107819547951, guid: 2e287e48e0b4fe949a197a0c18074266, type: 3}
