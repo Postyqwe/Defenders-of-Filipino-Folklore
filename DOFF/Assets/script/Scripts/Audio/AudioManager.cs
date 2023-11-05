@@ -26,7 +26,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip buff;
     public AudioClip slingshot;
     public AudioClip monsterHit;
-    public AudioClip monsterHit;
     public AudioClip changeScene;
 
 

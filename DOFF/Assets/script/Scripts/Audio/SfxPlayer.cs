@@ -51,10 +51,6 @@ public class SfxPlayer : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().playdarkMagic();
     }
-    public void playdarkMagic()
-    {
-        FindObjectOfType<AudioManager>().playbuff();
-    }
     public void playslingshot()
     {
         FindObjectOfType<AudioManager>().playslingshot();
