@@ -31,4 +31,45 @@ public class SfxPlayer : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().playMonsterDeath();
     }
+    public void playOpenChest()
+    {
+        FindObjectOfType<AudioManager>().playOpenChest();
+    }
+    public void playcoinObtain()
+    {
+        FindObjectOfType<AudioManager>().playcoinObtain();
+    }
+    public void playbuyWeapon()
+    {
+        FindObjectOfType<AudioManager>().playbuyWeapon();
+    }
+    public void playmonsterAttack()
+    {
+        FindObjectOfType<AudioManager>().playmonsterAttack();
+    }
+    public void playdarkMagic()
+    {
+        FindObjectOfType<AudioManager>().playdarkMagic();
+    }
+    public void playdarkMagic()
+    {
+        FindObjectOfType<AudioManager>().playbuff();
+    }
+    public void playslingshot()
+    {
+        FindObjectOfType<AudioManager>().playslingshot();
+    }
+    public void playambience()
+    {
+        FindObjectOfType<AudioManager>().playambience();
+    }
+    public void playmonsterHit()
+    {
+        FindObjectOfType<AudioManager>().playmonsterHit();
+    }
+    public void playchangeScene()
+    {
+        FindObjectOfType<AudioManager>().playchangeScene();
+    }
+
 }
