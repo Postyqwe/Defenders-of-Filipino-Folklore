@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: df8efc2b604d45342a6c11e17073493b
+guid: 95fd3f66c80246a4ea49e5ecd897477f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Andrew_0
+      name: Kim Matanglawin_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d73af601ffa4f744798870eede183de9
-      internalID: -476174776
+      spriteID: 0cbb3ecd8f7cc0842812fb1d47cab53a
+      internalID: 1954099174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andrew_1
+      name: Kim Matanglawin_1
       rect:
         serializedVersion: 2
         x: 32
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f74470fc5d8f2542b3d2ec9ef4383c0
-      internalID: -1491492761
+      spriteID: 80533b557c9ff854f83355ec09e6f18f
+      internalID: 1876079468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andrew_2
+      name: Kim Matanglawin_2
       rect:
         serializedVersion: 2
         x: 64
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0081fcc569ffba4090e724cb9d31473
-      internalID: -1000919343
+      spriteID: c73d55d58852bad4e8895d2e950d99ad
+      internalID: -1789633941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andrew_3
+      name: Kim Matanglawin_3
       rect:
         serializedVersion: 2
         x: 96
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d58eb4ba6aeb31428ef835f8e7b6a8b
-      internalID: 178065304
+      spriteID: 3ff8a4a4b6cf5814eb56966507b9f3f3
+      internalID: -636717062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andrew_4
+      name: Kim Matanglawin_4
       rect:
         serializedVersion: 2
         x: 128
@@ -203,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99cc2e38c7388c8448dd94c3cbec94fd
-      internalID: 1113176401
+      spriteID: 8f7b6ce20c2c2c744a1bbae0941997d5
+      internalID: 1583915109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andrew_5
+      name: Kim Matanglawin_5
       rect:
         serializedVersion: 2
         x: 160
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d9a047e0a4d8c549a99b6194541d0a2
-      internalID: -1028359429
+      spriteID: 6a932bb7b4d7f5741b918fbb21541f60
+      internalID: -678851966
       vertices: []
       indices: 
       edges: []
@@ -241,12 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Andrew_0: -476174776
-      Andrew_1: -1491492761
-      Andrew_2: -1000919343
-      Andrew_3: 178065304
-      Andrew_4: 1113176401
-      Andrew_5: -1028359429
+      Kim Matanglawin_0: 1954099174
+      Kim Matanglawin_1: 1876079468
+      Kim Matanglawin_2: -1789633941
+      Kim Matanglawin_3: -636717062
+      Kim Matanglawin_4: 1583915109
+      Kim Matanglawin_5: -678851966
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

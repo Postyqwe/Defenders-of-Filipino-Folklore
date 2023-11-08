@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 184079166388443362}
   - component: {fileID: 184079166388443365}
   m_Layer: 0
-  m_Name: Princess 11
+  m_Name: Level 7 Juan Pusong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,11 +134,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Stranger
+    name: Juan Pusong
     englishSentence:
-    - Good day to you, because you've found me. I have a gift for you. +5 Coins
+    - You can't imagine how long I've waited for this chance. Finally, I can confront
+      you and carry out the mission I've been longing for.
+    - I've been confined to the depths of the sea by a complacent king for far too
+      long. No one knows why I deceived that king.
+    - "I did those things because the king is unjust and indifferent to his people.
+      So, whenever the opportunity arises, I target the king\u2014it's my way of
+      seeking justice for his mistreatment of his subjects."
     tagalogSentence:
-    - Pagbati sa iyo, dahil akoy iyong natagpuan mo eto ang pabuya ko sayo.  +5 Coins
+    - Hindi mo alam kung kailan ko hinintay itong pagkakataon na ito, sa wakas ay
+      makakalaban narin kita at mapupunan narin ang aksyon na aking hinahanap.
+    - Kay tagal narin ng akoy itapon sa dagat ng matabang hari. Walang nakakaalam
+      kung bakit nililinlang ko ang hari na iyon.
+    - Ginawa ko ang mga bagay na iyon dahil ang hari ay isang abosado at walang paki
+      sa kanyang nasasakupan. Kaya sa tuwing ako nagkakaroon ng pagkakataon ay talagang
+      linlingin ko ang hari na iyon, ganti na rin iyon sa mga ginagawa niya sa kaniyang
+      nasasakupan.
   interactAction:
     m_Name: Interact
     m_Type: 0
@@ -156,5 +169,5 @@ MonoBehaviour:
       m_Action: Interact
       m_Flags: 0
     m_Flags: 0
-  isCoinGiver: 1
-  amount: 5
+  isCoinGiver: 0
+  amount: 0

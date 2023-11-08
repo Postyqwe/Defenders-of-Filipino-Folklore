@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 184079166388443362}
   - component: {fileID: 184079166388443365}
   m_Layer: 0
-  m_Name: Princess
+  m_Name: Level 4 Kim the Explorer 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1418220441, guid: 3a1901235dc06a1408b3955d0283caab, type: 3}
+  m_Sprite: {fileID: 1954099174, guid: 95fd3f66c80246a4ea49e5ecd897477f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,7 +97,7 @@ Animator:
   m_GameObject: {fileID: 184079166388443369}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d66d1a17f2671304eba5539293475750, type: 2}
+  m_Controller: {fileID: 9100000, guid: 715555f0b11818341a38f3bd2b8a8f95, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -134,19 +134,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Princess
+    name: Kim Matanglawin
     englishSentence:
-    - 'Help! help. '
-    - 'Mister we need help, there are groups of tyanak that attack and terrorize
-      our village. '
-    - There are a lot of casualties already and furthermore there are a lot of lives
-      that've been taken.
+    - There have been recent events about Tatay Gerardo seeing an enormous silhouette
+      of a bird the other day. He also adds that he immediately runs into his house
+      because he's scared that he might get caught by the massive bird.
+    - ' I have a big suspicion that what Tatay Gerardo saw was the monstrous mananangal.
+      Thankfully nothing happened to Tatay Gerardo and he got away from that situation
+      safely.'
     tagalogSentence:
-    - Tulong! tulong.
-    - 'Mister kailangan namin ng tulong bigla na lamang umatake ang grupo ng mga
-      tyanak. '
-    - Madaming arariaan ang nasira at marami na ring buhay ang nasawi. Kailangan
-      na kailangan na namin ang tulong.
+    - Mainit na balita pa sa barangay ay may nakita daw na malaking ibon si tatay
+      Gerardo noong isang araw. Agad daw syang tumakbo at ang akala nya ay dadagitin
+      sya nito.
+    - Malaki ang hinala ko na ang nakita ni Tatay Gerardo ay ang malahalimaw na manananggal.
+      Mabuti na lamang ay nakatakbo si tatay at walang nangyaring masama.
   interactAction:
     m_Name: Interact
     m_Type: 0

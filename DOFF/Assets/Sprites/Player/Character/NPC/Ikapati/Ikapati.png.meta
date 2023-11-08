@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: df8efc2b604d45342a6c11e17073493b
+guid: 7aa6247af9f8e8542bf1f6e549b5e42e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Andrew_0
+      name: Ikapati_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d73af601ffa4f744798870eede183de9
-      internalID: -476174776
+      spriteID: f1bb8b304a109c14b9594508c929b396
+      internalID: 1690993292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andrew_1
+      name: Ikapati_1
       rect:
         serializedVersion: 2
         x: 32
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f74470fc5d8f2542b3d2ec9ef4383c0
-      internalID: -1491492761
+      spriteID: c589f001dae8a3b4f92a3333d092295e
+      internalID: -5667865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andrew_2
+      name: Ikapati_2
       rect:
         serializedVersion: 2
         x: 64
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0081fcc569ffba4090e724cb9d31473
-      internalID: -1000919343
+      spriteID: 98eb38dd84c2db3428134998254c9f77
+      internalID: -1694820723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andrew_3
+      name: Ikapati_3
       rect:
         serializedVersion: 2
         x: 96
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d58eb4ba6aeb31428ef835f8e7b6a8b
-      internalID: 178065304
+      spriteID: 37c02697f45cfcc4e8519c8b342fb137
+      internalID: 369702269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andrew_4
+      name: Ikapati_4
       rect:
         serializedVersion: 2
         x: 128
@@ -203,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99cc2e38c7388c8448dd94c3cbec94fd
-      internalID: 1113176401
+      spriteID: 7a4ab03cbd2bf3f40b83c39951762c3f
+      internalID: -264235323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andrew_5
+      name: Ikapati_5
       rect:
         serializedVersion: 2
         x: 160
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d9a047e0a4d8c549a99b6194541d0a2
-      internalID: -1028359429
+      spriteID: ee8a62fd22026b64f90bfb3b77231e04
+      internalID: 743689736
       vertices: []
       indices: 
       edges: []
@@ -241,12 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Andrew_0: -476174776
-      Andrew_1: -1491492761
-      Andrew_2: -1000919343
-      Andrew_3: 178065304
-      Andrew_4: 1113176401
-      Andrew_5: -1028359429
+      Ikapati_0: 1690993292
+      Ikapati_1: -5667865
+      Ikapati_2: -1694820723
+      Ikapati_3: 369702269
+      Ikapati_4: -264235323
+      Ikapati_5: 743689736
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
