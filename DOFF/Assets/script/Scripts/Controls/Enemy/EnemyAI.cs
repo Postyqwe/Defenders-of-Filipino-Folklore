@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
+    [Header("Stats")]
     [Tooltip("Damage Amount")]
     public int damage = 1;//damage
     [Tooltip("Higher value = slower, Lower value = faster")]
@@ -21,11 +22,18 @@ public class EnemyAI : MonoBehaviour
     public float bulletSpeed = 0.2f;//higher is fast, lower is slow
     public GameObject bullet;
 
+    [Header("BossType")]
+    [Header("Kapre Stats")]
+    public bool isKapre = false;
+    public int stompDamage;
+    public int logDamage;
+
     [Header("Debugging")]
     public bool isDead = false;
 
     private Rigidbody rb;
-    
+
+    private Collider col;
     private Transform shootDirection;
     private Transform player;
     private Animator animator;
@@ -37,7 +45,8 @@ public class EnemyAI : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
-        
+        col = GetComponent<Collider>();
+
         attackTimer = atkSpeed;
     }
 
@@ -117,10 +126,32 @@ public class EnemyAI : MonoBehaviour
         {
             if (!isAttacking && attackTimer >= atkSpeed)
             {
-                health.GetHit(damage, transform.root.gameObject);
-                isAttacking = true;
-                animator.SetTrigger("attack");
-                attackTimer = 0f;
+                int rand = Random.Range(0, 2);
+                if (isKapre)
+                {
+                    if (rand == 0)
+                    {
+                        isAttacking = true;
+                        animator.SetTrigger("stomp");
+                        attackTimer = 0f;
+                    }
+                    else if (rand == 1)
+                    {
+                        isAttacking = true;
+                        animator.SetTrigger("log");
+                        attackTimer = 0f;
+                    }
+                    else
+                    {
+                        Debug.Log("Randomized error");
+                    }
+                }
+                else
+                {
+                    isAttacking = true;
+                    animator.SetTrigger("attack");
+                    attackTimer = 0f;
+                }
             }
         }
         else
@@ -128,6 +159,19 @@ public class EnemyAI : MonoBehaviour
             // Increase the attackTimer when no attack is performed
             isAttacking = false;
         }
+    }
+
+    public void logActtack()
+    {
+        health.GetHit(logDamage, transform.root.gameObject);
+    }
+    public void stompAttack()
+    {
+        health.GetHit(logDamage, transform.root.gameObject);
+    }
+    public void normalDamge()
+    {
+        health.GetHit(damage, transform.root.gameObject);
     }
 
     void RangedEnemyBehavior(float distanceToPlayer)

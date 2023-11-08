@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77c55e75cefb3534f96334f8414a55bd
+guid: 4164629e8d1b7a645ac92e091faa1e4e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -90,7 +90,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Server
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -102,11 +102,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kapre_Boss-Sheet-AttackStomp_0
+      name: Final_Boss-Walk_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 140
-        height: 112
+        width: 144
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a551e725fb36d94eac3fd95f1b42b03
-      internalID: 1739650902
+      spriteID: 85d55034bd21f114595e52398f34528d
+      internalID: 1242439378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kapre_Boss-Sheet-AttackStomp_1
+      name: Final_Boss-Walk_1
       rect:
         serializedVersion: 2
-        x: 140
+        x: 144
         y: 0
-        width: 140
-        height: 112
+        width: 144
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0191ad491308da9408f420cb853f6b9e
-      internalID: -289126319
+      spriteID: 9d87eb70422005a429c8467f94e0ed80
+      internalID: -746208518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kapre_Boss-Sheet-AttackStomp_2
+      name: Final_Boss-Walk_2
       rect:
         serializedVersion: 2
-        x: 280
+        x: 288
         y: 0
-        width: 140
-        height: 112
+        width: 144
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8065044e755f2cd488ed515196d79a64
-      internalID: 1050411030
+      spriteID: 56535a0d5a0a12246b2655ea56e89fb4
+      internalID: 810441983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kapre_Boss-Sheet-AttackStomp_3
+      name: Final_Boss-Walk_3
       rect:
         serializedVersion: 2
-        x: 420
+        x: 432
         y: 0
-        width: 140
-        height: 112
+        width: 144
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db03000c98bd13e44847614bb3483a6a
-      internalID: -407866881
+      spriteID: ce509e3a4d813f5438ab68d4ca0c3d17
+      internalID: -378755805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kapre_Boss-Sheet-AttackStomp_4
+      name: Final_Boss-Walk_4
       rect:
         serializedVersion: 2
-        x: 560
+        x: 576
         y: 0
-        width: 140
-        height: 112
+        width: 144
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39577f3443f12a7488fcfbf3d174c512
-      internalID: -1398785090
+      spriteID: cd56ac390dbc56d4ab3f93548db9b859
+      internalID: 1817585958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kapre_Boss-Sheet-AttackStomp_5
+      name: Final_Boss-Walk_5
       rect:
         serializedVersion: 2
-        x: 700
+        x: 720
         y: 0
-        width: 140
-        height: 112
+        width: 144
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65cb5f84c9ec9a04583dbd7dc2a0ea85
-      internalID: 276022655
+      spriteID: d7f4a29d203b557468ea90251c408496
+      internalID: 1885950468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kapre_Boss-Sheet-AttackStomp_6
+      name: Final_Boss-Walk_6
       rect:
         serializedVersion: 2
-        x: 840
+        x: 864
         y: 0
-        width: 140
-        height: 112
+        width: 144
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f95462da90f840f4390f8c31d792a7b0
-      internalID: 838060976
+      spriteID: a2c02d3ed6b2ce444a0a9139f648b0aa
+      internalID: 1309093908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kapre_Boss-Sheet-AttackStomp_7
+      name: Final_Boss-Walk_7
       rect:
         serializedVersion: 2
-        x: 980
+        x: 1008
         y: 0
-        width: 140
-        height: 112
+        width: 144
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +278,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fed6905c679b7c45ba6f19444aa9982
-      internalID: -449322661
+      spriteID: 5d1aec0d492a7f247b7a1b8d4e8567ba
+      internalID: 787180634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kapre_Boss-Sheet-AttackStomp_8
+      name: Final_Boss-Walk_8
       rect:
         serializedVersion: 2
-        x: 1120
+        x: 1152
         y: 0
-        width: 140
-        height: 112
+        width: 144
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,20 +299,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08278ada75a9a2043ba2736e636ab26d
-      internalID: -1786787378
+      spriteID: 8bb0948edabd01244b68e7df0b965360
+      internalID: -1801190735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kapre_Boss-Sheet-AttackStomp_9
+      name: Final_Boss-Walk_9
       rect:
         serializedVersion: 2
-        x: 1260
+        x: 1296
         y: 0
-        width: 140
-        height: 112
+        width: 144
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,8 +320,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 390580d1858726246a68ec28d027ff8f
-      internalID: -1903092852
+      spriteID: 7c9077223c026fc4fa1f50f42f6a8213
+      internalID: 1236651929
       vertices: []
       indices: 
       edges: []
@@ -337,16 +337,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Kapre_Boss-Sheet-AttackStomp_0: 1739650902
-      Kapre_Boss-Sheet-AttackStomp_1: -289126319
-      Kapre_Boss-Sheet-AttackStomp_2: 1050411030
-      Kapre_Boss-Sheet-AttackStomp_3: -407866881
-      Kapre_Boss-Sheet-AttackStomp_4: -1398785090
-      Kapre_Boss-Sheet-AttackStomp_5: 276022655
-      Kapre_Boss-Sheet-AttackStomp_6: 838060976
-      Kapre_Boss-Sheet-AttackStomp_7: -449322661
-      Kapre_Boss-Sheet-AttackStomp_8: -1786787378
-      Kapre_Boss-Sheet-AttackStomp_9: -1903092852
+      Final_Boss-Walk_0: 1242439378
+      Final_Boss-Walk_1: -746208518
+      Final_Boss-Walk_2: 810441983
+      Final_Boss-Walk_3: -378755805
+      Final_Boss-Walk_4: 1817585958
+      Final_Boss-Walk_5: 1885950468
+      Final_Boss-Walk_6: 1309093908
+      Final_Boss-Walk_7: 787180634
+      Final_Boss-Walk_8: -1801190735
+      Final_Boss-Walk_9: 1236651929
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

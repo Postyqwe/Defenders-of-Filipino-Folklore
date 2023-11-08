@@ -12,15 +12,14 @@ public class Healthbar : MonoBehaviour, IDataPersistence
     private GameObject player;
     private Health health;
     private PlayerMovement playerMovement;
-    private bool lvl1, lvl2, lvl3, lvl4, lvl5, lvl6, lvl7;
+
     private int bonusHp;
+    private float speedLevel;
     private float bonusSpd;
 
     private void Start()
     {
-        bonusHp += (lvl1 ? 5 : 0) + (lvl2 ? 5 : 0) + (lvl3 ? 5 : 0) + (lvl4 ? 5 : 0) + (lvl5 ? 5 : 0) + (lvl6 ? 5 : 0) + (lvl7 ? 5 : 0);
-        bonusSpd = (lvl1 ? 0.3f : 0.0f) + (lvl2 ? 0.3f : 0.0f) + (lvl3 ? 0.3f : 0.0f) + (lvl4 ? 0.3f : 00.0f) + (lvl5 ? 0.3f : 0.0f) + (lvl6 ? 0.3f : 0.0f) + (lvl7 ? 0.3f : 0.0f);
-        
+        bonusSpd = speedLevel * 0.1f;
     }
 
     private void Update()
@@ -44,13 +43,8 @@ public class Healthbar : MonoBehaviour, IDataPersistence
 
     public void LoadData(GameData data)
     {
-        lvl1 = data.lvl1;
-        lvl2 = data.lvl2;
-        lvl3 = data.lvl3;
-        lvl4 = data.lvl4;
-        lvl5 = data.lvl5;
-        lvl6 = data.lvl6;
-        lvl7 = data.lvl7;
+        bonusHp = data.healthLevel;
+        speedLevel = data.speedLevel;
     }
 
     public void SaveData(GameData data)

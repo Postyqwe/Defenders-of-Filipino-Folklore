@@ -8,6 +8,10 @@ public class GameData
     public long lastUpdated;
     public bool isTutorialFinished;
 
+    //level
+    public int healthLevel;
+    public int speedLevel;
+
     //coins
     public int coins;
 
@@ -84,6 +88,9 @@ public class GameData
 
     public GameData()
     {
+        this.healthLevel = 0;
+        this.speedLevel = 0;
+
         this.coins = 0;
 
         this.isTutorialFinished = false;

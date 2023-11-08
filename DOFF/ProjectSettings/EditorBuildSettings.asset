@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LVL 1 TIYANAK/TestLevel.unity
     guid: 332c46d155238724eaf5f5c7663d54ef
   - enabled: 0
-    path: Assets/Scenes/LVL 1 TIYANAK/LVL 1.0.unity
+    path: Assets/Scenes/LVL 1/LVL 1.0.unity
     guid: bd7a6a08fbe4b864b811a87855524bde
   - enabled: 1
     path: Assets/Scenes/PUZZLE 3.unity

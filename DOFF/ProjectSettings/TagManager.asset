@@ -23,7 +23,7 @@ TagManager:
   - Terrain
   - MiniMap
   - HidetoMinimap
-  - 
+  - IgnorePlayerCollision
   - 
   - 
   - 

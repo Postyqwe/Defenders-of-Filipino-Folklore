@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
 
     Weapon weapon;
-
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -73,5 +72,4 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("walking", isWalking);
     }
-
 }

@@ -30,8 +30,12 @@ public class FoodBuff : MonoBehaviour
 
     private void Collect()
     {
-        health.maxHealth += healthAmount;
-        health.currentHealth += healthAmount;
-        Destroy(gameObject);
+        if (health.currentHealth < health.maxHealth)
+        {
+            // Calculate the amount to heal while respecting the max health
+            int healAmount = Mathf.Min(healthAmount, health.maxHealth - health.currentHealth);
+            health.currentHealth += healAmount;
+            Destroy(gameObject);
+        }
     }
 }
