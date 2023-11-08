@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
     private string currentLanguage;
     private bool isReceived = false;
+    private bool isSpawned = false;
     void Start()
     {
         sentences = new Queue<string>();
@@ -79,6 +80,15 @@ public class DialogueManager : MonoBehaviour
                 Instantiate(coin, transform.position, Quaternion.identity);
                 isReceived = true;
             }
+        }
+    }
+
+    public void Cutscene(bool isRewarded, GameObject toSpawn)
+    {
+        if (isRewarded && !isSpawned)
+        {
+            Instantiate(toSpawn, transform.position, Quaternion.identity);
+            isReceived = true;
         }
     }
 }
