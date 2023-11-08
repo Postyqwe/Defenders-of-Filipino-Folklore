@@ -16,6 +16,10 @@ public class DialogueTrigger : MonoBehaviour
     public bool isCoinGiver;
     public int amount;
 
+    [Header("Cutscene")]
+    public bool isCutScene;
+    public GameObject SceneTrigger;
+
     Collider col;
     bool isClose = false;
 
@@ -48,6 +52,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
         FindObjectOfType<DialogueManager>().Rewarder(isCoinGiver, amount);
+        FindObjectOfType<DialogueManager>().Cutscene(isCutScene, SceneTrigger);
     }
 
     private void OnTriggerEnter(Collider other)
