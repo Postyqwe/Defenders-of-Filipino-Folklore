@@ -93,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4575380435453586190}
   - component: {fileID: 3183893022763531693}
+  - component: {fileID: 7328887932158709592}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -177,6 +178,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &7328887932158709592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2681574968963071177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd5c102d9b12af34aa46725986e1527a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Light: {fileID: 3183893022763531693}
+  MinTime: 0.1
+  MaxTime: 1
+  Timer: 0
+  AS: {fileID: 0}
+  LightAudio: {fileID: 0}
 --- !u!1 &7551255838408228061
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,3 +242,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd5c102d9b12af34aa46725986e1527a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Light: {fileID: 0}
+  MinTime: 0
+  MaxTime: 0
+  Timer: 0
+  AS: {fileID: 0}
+  LightAudio: {fileID: 0}
