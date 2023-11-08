@@ -136,17 +136,11 @@ MonoBehaviour:
   dialogue:
     name: Chichi
     englishSentence:
-    - 'Help! help. '
-    - 'Mister we need help, there are groups of tyanak that attack and terrorize
-      our village. '
-    - There are a lot of casualties already and furthermore there are a lot of lives
-      that've been taken.
+    - Where is my sibling? Has anyone seen my little sibling?
+    - Please, for the love of God, tell me where my sibling is!
     tagalogSentence:
-    - Tulong! tulong.
-    - 'Mister kailangan namin ng tulong bigla na lamang umatake ang grupo ng mga
-      tyanak. '
-    - Madaming arariaan ang nasira at marami na ring buhay ang nasawi. Kailangan
-      na kailangan na namin ang tulong.
+    - Asan na ang kapatid ko? May nakakita ba sa maliit kong kapatid?
+    - Parang awa nyo na sabihin nyo kung nasan ang kapatid ko!
   interactAction:
     m_Name: Interact
     m_Type: 0

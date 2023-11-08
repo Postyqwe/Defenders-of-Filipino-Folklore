@@ -137,14 +137,14 @@ MonoBehaviour:
     name: Tanteng
     englishSentence:
     - 'Help! help. '
-    - 'Mister we need help, there are groups of tyanak that attack and terrorize
+    - 'Mister we need help, there are groups of monster that attack and terrorize
       our village. '
     - There are a lot of casualties already and furthermore there are a lot of lives
       that've been taken.
     tagalogSentence:
     - Tulong! tulong.
-    - 'Mister kailangan namin ng tulong bigla na lamang umatake ang grupo ng mga
-      tyanak. '
+    - 'Ginoo, kailangan namin ng tulong bigla na lamang umatake ang grupo ng mga
+      halimaw. '
     - Madaming arariaan ang nasira at marami na ring buhay ang nasawi. Kailangan
       na kailangan na namin ang tulong.
   interactAction:

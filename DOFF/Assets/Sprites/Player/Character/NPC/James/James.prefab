@@ -136,17 +136,17 @@ MonoBehaviour:
   dialogue:
     name: James
     englishSentence:
-    - 'Help! help. '
-    - 'Mister we need help, there are groups of tyanak that attack and terrorize
-      our village. '
-    - There are a lot of casualties already and furthermore there are a lot of lives
-      that've been taken.
+    - I don't know what to do! The monsters are everywhere, and I'm lost!
+    - Somebody, please help! I'm in a total panic, and I can't figure out how to
+      handle this monster situation!
+    - I'm lost and terrified! The monsters are attacking, and I'm at my wits' end!
     tagalogSentence:
-    - Tulong! tulong.
-    - 'Mister kailangan namin ng tulong bigla na lamang umatake ang grupo ng mga
-      tyanak. '
-    - Madaming arariaan ang nasira at marami na ring buhay ang nasawi. Kailangan
-      na kailangan na namin ang tulong.
+    - Hindi ko alam kung anong gagawin! Ang mga halimaw ay nasa paligid, at nawawala
+      ako!
+    - Pakiusap, tulong! Ako'y sobrang naguguluhan, at hindi ko alam kung paano haharapin
+      ang sitwasyon na ito.
+    - 'Ako''y nawawala at takot na takot! Ang mga halimaw ay sumasalakay, at wala
+      na akong malalapitan!    '
   interactAction:
     m_Name: Interact
     m_Type: 0
