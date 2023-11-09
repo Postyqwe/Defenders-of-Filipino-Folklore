@@ -27,9 +27,11 @@ public class First : MonoBehaviour,IDataPersistence
     {
         if (!level1)
         {
+            float volume = PlayerPrefs.GetFloat("sfxVolume");
             audioMixer.SetFloat("music", Mathf.Lerp(-80.0f, 0.0f, Mathf.Clamp01(0)));
             display.SetActive(true);
             player.Play();
+            player.SetDirectAudioVolume(0, volume);
             StartCoroutine(WaitForVideoToFinish());
             isVideoPlaying = true;
             Debug.Log("Playing");
