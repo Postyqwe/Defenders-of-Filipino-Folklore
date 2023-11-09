@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: The Monstrous Mananangal
   m_EditorClassIdentifier: 
   type: 2
-  beastName: The Monstrous Mananangal
+  beastName: Monstrous Mananangal
   beastDescription: It said to be that one night a farmer caught glimpse of a giant
     bird without knowing that what the farmer saw was the leader of the mananangal.
   beastImage: {fileID: 1353568919, guid: 0ddd01abc3162fa46ad6bf60509a646c, type: 3}
