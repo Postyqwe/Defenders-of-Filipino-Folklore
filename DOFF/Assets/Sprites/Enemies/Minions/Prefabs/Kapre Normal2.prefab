@@ -157,12 +157,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   atkSpeed: 7
-  followRange: 5
+  followRange: 4
   moveSpeed: 1
   attackRange: 1
   isRangedEnemy: 0
   bulletSpeed: 0.2
   bullet: {fileID: 0}
+  isKapre: 0
+  stompDamage: 0
+  logDamage: 0
   isDead: 0
 --- !u!114 &8003223184044178987
 MonoBehaviour:

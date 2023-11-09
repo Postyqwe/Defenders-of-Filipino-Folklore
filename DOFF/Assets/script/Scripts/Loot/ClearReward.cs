@@ -78,7 +78,7 @@ public class ClearReward : MonoBehaviour,IDataPersistence
                     }
                     else
                     {
-                        label.text = "Rewards: \n" + coinReward + " Coins\n" + "Can add " + statsAmount;
+                        label.text = "Rewards: \n" + coinReward + " Coins\n" + "Stat Points: " + statsAmount;
                         rewardUI.SetActive(true);
                         clearedUI.SetActive(false);
                         notClearedUI.SetActive(true);
@@ -98,7 +98,7 @@ public class ClearReward : MonoBehaviour,IDataPersistence
                     }
                     else
                     {
-                        label.text = "Rewards: \n" + coinReward + " Coins\n" + "Can add " + statsAmount;
+                        label.text = "Rewards: \n" + coinReward + " Coins\n" + "Stat Points: " + statsAmount;
                         rewardUI.SetActive(true);
                         clearedUI.SetActive(false);
                         notClearedUI.SetActive(true);
@@ -118,7 +118,7 @@ public class ClearReward : MonoBehaviour,IDataPersistence
                     }
                     else
                     {
-                        label.text = "Rewards: \n" + coinReward + " Coins\n" + "Can add " + statsAmount;
+                        label.text = "Rewards: \n" + coinReward + " Coins\n" + "Stat Points: " + statsAmount;
                         rewardUI.SetActive(true);
                         clearedUI.SetActive(false);
                         notClearedUI.SetActive(true);
@@ -138,7 +138,7 @@ public class ClearReward : MonoBehaviour,IDataPersistence
                     }
                     else
                     {
-                        label.text = "Rewards: \n" + coinReward + " Coins\n" + "Can add " + statsAmount;
+                        label.text = "Rewards: \n" + coinReward + " Coins\n" + "Stat Points: " + statsAmount;
                         rewardUI.SetActive(true);
                         clearedUI.SetActive(false);
                         notClearedUI.SetActive(true);
@@ -158,7 +158,7 @@ public class ClearReward : MonoBehaviour,IDataPersistence
                     }
                     else
                     {
-                        label.text = "Rewards: \n" + coinReward + " Coins\n" + "Can add " + statsAmount;
+                        label.text = "Rewards: \n" + coinReward + " Coins\n" + "Stat Points: " + statsAmount;
                         rewardUI.SetActive(true);
                         clearedUI.SetActive(false);
                         notClearedUI.SetActive(true);
@@ -178,7 +178,7 @@ public class ClearReward : MonoBehaviour,IDataPersistence
                     }
                     else
                     {
-                        label.text = "Rewards: \n" + coinReward + " Coins\n" + "Can add " + statsAmount;
+                        label.text = "Rewards: \n" + coinReward + " Coins\n" + "Stat Points: " + statsAmount;
                         rewardUI.SetActive(true);
                         clearedUI.SetActive(false);
                         notClearedUI.SetActive(true);
@@ -198,7 +198,7 @@ public class ClearReward : MonoBehaviour,IDataPersistence
                     }
                     else
                     {
-                        label.text = "Rewards: \n" + coinReward + " Coins\n" + "Can add " + statsAmount;
+                        label.text = "Rewards: \n" + coinReward + " Coins\n" + "Stat Points: " + statsAmount;
                         rewardUI.SetActive(true);
                         clearedUI.SetActive(false);
                         notClearedUI.SetActive(true);
