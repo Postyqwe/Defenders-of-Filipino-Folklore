@@ -129,4 +129,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthAmount: 1
-  followSpeed: 5
+  followSpeed: 3
