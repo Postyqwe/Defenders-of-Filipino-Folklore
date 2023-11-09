@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7128093460164928675}
   m_Layer: 8
   m_Name: Multo Boss
-  m_TagString: Enemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,8 +159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80cc666e3494faf44802bf17881ba0cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 60
-  currentHealth: 60
+  maxHealth: 40
+  currentHealth: 40
   name: 
   OnHitWithReference:
     m_PersistentCalls:

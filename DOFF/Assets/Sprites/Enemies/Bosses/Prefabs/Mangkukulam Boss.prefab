@@ -440,6 +440,9 @@ MonoBehaviour:
   isRangedEnemy: 1
   bulletSpeed: 5
   bullet: {fileID: 8153903107819547951, guid: 2e287e48e0b4fe949a197a0c18074266, type: 3}
+  isKapre: 0
+  stompDamage: 0
+  logDamage: 0
   isDead: 0
 --- !u!114 &941528691023974497
 MonoBehaviour:
@@ -453,8 +456,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80cc666e3494faf44802bf17881ba0cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 25
-  currentHealth: 25
+  maxHealth: 20
+  currentHealth: 20
   name: Papa Mangkukulam
   OnHitWithReference:
     m_PersistentCalls:

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 787266773174742036}
   - component: {fileID: 787266773174742033}
   - component: {fileID: 787266773174742034}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FinalBoss
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -150,8 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80cc666e3494faf44802bf17881ba0cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
-  currentHealth: 1
+  maxHealth: 50
+  currentHealth: 50
   name: Kapre Boss
   OnHitWithReference:
     m_PersistentCalls:
