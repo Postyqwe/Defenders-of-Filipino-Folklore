@@ -15,6 +15,9 @@ public class DialogueManager : MonoBehaviour
     private string currentLanguage;
     private bool isReceived = false;
     private bool isSpawned = false;
+    private bool isCutscene = false;
+
+    private GameObject cs;
     void Start()
     {
         sentences = new Queue<string>();
@@ -69,6 +72,10 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", false);
         Debug.Log("End of conversation");
+        if (isCutscene)
+        {
+            cs.SetActive(true);
+        } 
     }
 
     public void Rewarder(bool isRewarded, int amount)
@@ -85,10 +92,7 @@ public class DialogueManager : MonoBehaviour
 
     public void Cutscene(bool isRewarded, GameObject toSpawn)
     {
-        if (isRewarded && !isSpawned)
-        {
-            Instantiate(toSpawn, transform.position, Quaternion.identity);
-            isReceived = true;
-        }
+        isCutscene = isRewarded;
+        cs = toSpawn;
     }
 }

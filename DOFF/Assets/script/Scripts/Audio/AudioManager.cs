@@ -27,9 +27,9 @@ public class AudioManager : MonoBehaviour
     public AudioClip slingshot;
     public AudioClip monsterHit;
     public AudioClip changeScene;
-
-
-
+    public AudioClip dexterDeath;
+    public AudioClip dexterHit;
+    public AudioClip dexterAttack;
 
     #region Keep Audio Manager
     private static AudioManager instance;
@@ -143,4 +143,16 @@ public class AudioManager : MonoBehaviour
         SFXSrouce.PlayOneShot(changeScene);
     }
 
+    public void playerDexterAttack()
+    {
+        SFXSrouce.PlayOneShot(dexterAttack);
+    }
+    public void playerDexterHit()
+    {
+        SFXSrouce.PlayOneShot(dexterHit);
+    }
+    public void playDexterDeath()
+    {
+        SFXSrouce.PlayOneShot(dexterDeath);
+    }
 }

@@ -67,5 +67,16 @@ public class SfxPlayer : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().playchangeScene();
     }
-
+    public void playDexterAttack()
+    {
+        FindObjectOfType<AudioManager>().playchangeScene();
+    }
+    public void playDexterHit()
+    {
+        FindObjectOfType<AudioManager>().playerDexterHit();
+    }
+    public void playDexterDeath()
+    {
+        FindObjectOfType<AudioManager>().playPlayerDeath();
+    }
 }

@@ -320,3 +320,6 @@ MonoBehaviour:
   slingshot: {fileID: 0}
   monsterHit: {fileID: 8300000, guid: 4fe57c6c72848f64ea03de6ff223254f, type: 3}
   changeScene: {fileID: 0}
+  dexterDeath: {fileID: 0}
+  dexterHit: {fileID: 8300000, guid: 8864ed3855035164b83d70b9d2b5d8f3, type: 3}
+  dexterAttack: {fileID: 8300000, guid: 1fa09a2be8aa71d43adf2b0f4ebd55c5, type: 3}
