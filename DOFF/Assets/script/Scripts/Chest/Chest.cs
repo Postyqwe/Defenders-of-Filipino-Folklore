@@ -23,10 +23,12 @@ public class Chest : MonoBehaviour
     bool isChestOpen = false;
     bool isClose = false;
 
+    AudioManager audioManager;
     private void Start()
     {
         animator = GetComponent<Animator>();
         col = GetComponent<Collider>();
+        audioManager = FindObjectOfType<AudioManager>();
 
         if (interactAction != null)
         {
@@ -43,6 +45,7 @@ public class Chest : MonoBehaviour
     {
         if (!isChestOpen && isClose)
         {
+            audioManager.playOpenChest();
             OpenChest();
         }
     }

@@ -10,10 +10,12 @@ public class Coin : MonoBehaviour
 
     Transform target;
     CoinBar coinBar;
+    AudioManager audioManager;
     private void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         coinBar = GameObject.FindGameObjectWithTag("CoinCount").GetComponent<CoinBar>();
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     private void Update()
@@ -32,6 +34,7 @@ public class Coin : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            audioManager.playcoinObtain();
             Collect();
         }
     }

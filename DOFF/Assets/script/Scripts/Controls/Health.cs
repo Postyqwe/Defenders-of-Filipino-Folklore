@@ -16,9 +16,10 @@ public class Health : MonoBehaviour
     public GameObject hitParticle;
     public bool isDead = false;
     private Animator animator;
-
+    AudioManager audioManager;
     private void Start()
     {
+        audioManager = FindObjectOfType<AudioManager>();
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
     }
@@ -32,11 +33,19 @@ public class Health : MonoBehaviour
     }
     public void GetHit(int damage, GameObject sender)
     {
+        if (CompareTag("Player"))
+        {
+            audioManager.playPlayerHit();
+        }
         Instantiate(hitParticle, transform.position, Quaternion.identity);
         currentHealth -= damage;
         OnHitWithReference?.Invoke(sender);
         if (currentHealth <= 0)
         {
+            if (CompareTag("Player"))
+            {
+                audioManager.playPlayerDeath();
+            }
             currentHealth = 0;
             OnDeathWithReference?.Invoke(sender);
             isDead = true;
