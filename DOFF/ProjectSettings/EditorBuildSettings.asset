@@ -11,22 +11,22 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MENU.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TUTORIAL SCENE.unity
     guid: 0886c0bceacc26649b452801e6df9af7
-  - enabled: 1
-    path: Assets/Scenes/Map.unity
-    guid: 90d348a4178af4f47a8d6d0f8a3decdb
   - enabled: 1
     path: Assets/Scenes/CharSelect.unity
     guid: a18a9a0c74159b84b8d896d5a2d86b52
   - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: 90d348a4178af4f47a8d6d0f8a3decdb
+  - enabled: 0
     path: Assets/Scenes/LVL 1 TIYANAK/TestLevel.unity
     guid: 332c46d155238724eaf5f5c7663d54ef
   - enabled: 0
     path: Assets/Scenes/LVL 1/LVL 1.0.unity
     guid: bd7a6a08fbe4b864b811a87855524bde
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PUZZLE 3.unity
     guid: 0fe79c0fa2a357f45adad00098fff3d1
   - enabled: 1
