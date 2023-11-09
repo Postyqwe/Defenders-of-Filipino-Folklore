@@ -128,5 +128,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6f5351ae3734142b2ddc378e37b2d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthAmount: 6
+  healthAmount: 1
   followSpeed: 5
