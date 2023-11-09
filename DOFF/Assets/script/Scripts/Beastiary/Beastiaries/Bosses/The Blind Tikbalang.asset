@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: The Blind Tikbalang
   m_EditorClassIdentifier: 
   type: 2
-  beastName: The Blind Tikbalang
+  beastName: Blind Tikbalang
   beastDescription: 'Due to its condition the blind tikbalang harness his potential
     doing rigurous training every night and day. '
   beastImage: {fileID: -1776136173, guid: 9325697582c88f34da39edd407b54891, type: 3}

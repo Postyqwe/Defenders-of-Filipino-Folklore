@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Papa Mangkukulam
   m_EditorClassIdentifier: 
   type: 2
-  beastName: Infant Tyanak
-  beastDescription: Papa Mangkukulam
+  beastName: Papa Mangkukulam
+  beastDescription: The mentor of both Janet and Robert, it said to be that the temper
+    of this mangkukulam is short strawed.
   beastImage: {fileID: 564673597, guid: 7c0ec7842ecd64943b7be18497b90988, type: 3}

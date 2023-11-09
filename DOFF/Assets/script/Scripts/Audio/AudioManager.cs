@@ -70,90 +70,77 @@ public class AudioManager : MonoBehaviour
     }
     public void playButton()
     {
-        SFXSrouce.clip = buttonSound;
-        SFXSrouce.Play();
+        SFXSrouce.PlayOneShot(buttonSound);
     }
+
     public void playWeaponAttack()
     {
-        SFXSrouce.clip = Attack;
-        SFXSrouce.Play();
+        SFXSrouce.PlayOneShot(Attack);
     }
+
     public void playPlayerHit()
     {
-        SFXSrouce.clip = playerHit;
-        SFXSrouce.Play();
+        SFXSrouce.PlayOneShot(playerHit);
     }
+
     public void playPlayerDeath()
     {
-        SFXSrouce.clip = playerDeath;
-        SFXSrouce.Play();
+        SFXSrouce.PlayOneShot(playerDeath);
     }
 
     public void playMonsterDeath()
     {
-        SFXSrouce.clip = monsterDeath;
-        SFXSrouce.Play();
+        SFXSrouce.PlayOneShot(monsterDeath);
     }
 
     public void playOpenChest()
     {
-        SFXSrouce.clip = OpenChest;
-        SFXSrouce.Play();
+        SFXSrouce.PlayOneShot(OpenChest);
     }
 
     public void playcoinObtain()
     {
-        SFXSrouce.clip = coinObtain;
-        SFXSrouce.Play();
+        SFXSrouce.PlayOneShot(coinObtain);
     }
 
     public void playbuyWeapon()
     {
-        SFXSrouce.clip = buyWeapon;
-        SFXSrouce.Play();
+        SFXSrouce.PlayOneShot(buyWeapon);
     }
 
     public void playmonsterAttack()
     {
-        SFXSrouce.clip = monsterAttack;
-        SFXSrouce.Play();
+        SFXSrouce.PlayOneShot(monsterAttack);
     }
 
     public void playdarkMagic()
     {
-        SFXSrouce.clip = darkMagic;
-        SFXSrouce.Play();
+        SFXSrouce.PlayOneShot(darkMagic);
     }
-
 
     public void playbuff()
     {
-        SFXSrouce.clip = buff;
-        SFXSrouce.Play();
+        SFXSrouce.PlayOneShot(buff);
     }
 
     public void playslingshot()
     {
-        SFXSrouce.clip = slingshot;
-        SFXSrouce.Play();
+        SFXSrouce.PlayOneShot(slingshot);
     }
 
     public void playambience()
     {
-        SFXSrouce.clip = ambience;
-        SFXSrouce.Play();
+        SFXSrouce.PlayOneShot(ambience);
     }
 
     public void playmonsterHit()
     {
-        SFXSrouce.clip = monsterHit;
-        SFXSrouce.Play();
+        SFXSrouce.PlayOneShot(monsterHit);
     }
 
     public void playchangeScene()
     {
-        SFXSrouce.clip = changeScene;
-        SFXSrouce.Play();
+        SFXSrouce.PlayOneShot(changeScene);
     }
 
 }

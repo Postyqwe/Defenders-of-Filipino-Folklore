@@ -57,13 +57,14 @@ public class BeastiaryManager : MonoBehaviour, IDataPersistence
     public bool antique;
     public bool siquijor;
     public bool baleteDrive;
+    public bool cebu;
     #endregion
 
     private void Update()
     {
         SetButtonInteractable(minionButtons, smallTyanak, bigBrotherTyanak, ponyTikbalang, stallionTikbalang, mananangal, janetTheMangkukulam, robertTheMangkukulam, childWhiteLady, teenagerWhiteLady, grayHairedKapre, redEyeKapre);
         SetButtonInteractable(bossButtons, infantTyanak, theBlindTikbalang, theMonstrousMananangal, papaMangkukulam, theMalevolentWhiteLady, theBigBossKapre, juanPusong);
-        SetButtonInteractable(locationButtons, davao, rizal, panay, antique, siquijor, baleteDrive);
+        SetButtonInteractable(locationButtons, davao, rizal, panay, antique, siquijor, baleteDrive, cebu);
     }
     private void SetButtonInteractable(Button[] buttons, params bool[] values)
     {
@@ -117,6 +118,7 @@ public class BeastiaryManager : MonoBehaviour, IDataPersistence
         antique = data.antique;
         siquijor = data.siquijor;
         baleteDrive = data.baleteDrive;
+        cebu = data.cebu;
     }
 
     public void SaveData(GameData data)

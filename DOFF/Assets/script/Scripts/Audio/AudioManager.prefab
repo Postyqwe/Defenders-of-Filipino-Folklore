@@ -305,7 +305,7 @@ MonoBehaviour:
   musicSource: {fileID: 6477101405340186379}
   SFXSrouce: {fileID: 9016626478538813726}
   mainMenuBGM: {fileID: 8300000, guid: 89ec441fe608cc840b31f12a9bb90ab8, type: 3}
-  ambience: {fileID: 0}
+  ambience: {fileID: 8300000, guid: 612e99a4f028d8d4b8a32e8e0c6466be, type: 3}
   buttonSound: {fileID: 8300000, guid: 20067e355b501b94db7aa6dab40f7502, type: 3}
   Attack: {fileID: 8300000, guid: 7db88245b7c505d448e7915d8bc45ed4, type: 3}
   playerHit: {fileID: 8300000, guid: 87b21adebc9b7e44aab06613d074c1ea, type: 3}
@@ -314,9 +314,9 @@ MonoBehaviour:
   OpenChest: {fileID: 8300000, guid: 60420f27292b1e74ca1bb8a2bf01d465, type: 3}
   coinObtain: {fileID: 8300000, guid: 4fcf41bb572372442b70a1806bd343f6, type: 3}
   buyWeapon: {fileID: 8300000, guid: 603b7ec60baeb7645997e42b1d1fb693, type: 3}
-  monsterAttack: {fileID: 0}
+  monsterAttack: {fileID: 8300000, guid: 4d3f915db01d95c41b9cc31f23b92388, type: 3}
   darkMagic: {fileID: 0}
   buff: {fileID: 0}
   slingshot: {fileID: 0}
-  monsterHit: {fileID: 0}
+  monsterHit: {fileID: 8300000, guid: 4fe57c6c72848f64ea03de6ff223254f, type: 3}
   changeScene: {fileID: 0}

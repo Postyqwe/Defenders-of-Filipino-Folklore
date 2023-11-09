@@ -41,11 +41,15 @@ public class EnemyAI : MonoBehaviour
     private float attackTimer = 0f;
     private bool isAttacking = false;
     private float shootTimer = 0f;
+
+    private bool hasPlayedAttackSound = false;
+    AudioManager audioManager;
     private void Awake()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         col = GetComponent<Collider>();
+        audioManager = FindObjectOfType<AudioManager>();
 
         attackTimer = atkSpeed;
     }
@@ -122,11 +126,16 @@ public class EnemyAI : MonoBehaviour
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
         attackTimer += Time.fixedDeltaTime;
+
         if (distanceToPlayer <= attackRange)
         {
             if (!isAttacking && attackTimer >= atkSpeed)
             {
+                // Reset the flag for each melee attack
+                hasPlayedAttackSound = false;
+
                 int rand = Random.Range(0, 2);
+
                 if (isKapre)
                 {
                     if (rand == 0)
@@ -134,12 +143,14 @@ public class EnemyAI : MonoBehaviour
                         isAttacking = true;
                         animator.SetTrigger("stomp");
                         attackTimer = 0f;
+                        logActtack();
                     }
                     else if (rand == 1)
                     {
                         isAttacking = true;
                         animator.SetTrigger("log");
                         attackTimer = 0f;
+                        stompAttack();
                     }
                     else
                     {
@@ -151,6 +162,7 @@ public class EnemyAI : MonoBehaviour
                     isAttacking = true;
                     animator.SetTrigger("attack");
                     attackTimer = 0f;
+                    normalDamge();
                 }
             }
         }
@@ -163,14 +175,37 @@ public class EnemyAI : MonoBehaviour
 
     public void logActtack()
     {
+        // Play the sound only if it hasn't been played yet
+        if (!hasPlayedAttackSound)
+        {
+            audioManager.playmonsterAttack();
+            hasPlayedAttackSound = true;
+        }
+
         health.GetHit(logDamage, transform.root.gameObject);
     }
+
     public void stompAttack()
     {
+        // Play the sound only if it hasn't been played yet
+        if (!hasPlayedAttackSound)
+        {
+            audioManager.playmonsterAttack();
+            hasPlayedAttackSound = true;
+        }
+
         health.GetHit(logDamage, transform.root.gameObject);
     }
+
     public void normalDamge()
     {
+        // Play the sound only if it hasn't been played yet
+        if (!hasPlayedAttackSound)
+        {
+            audioManager.playmonsterAttack();
+            hasPlayedAttackSound = true;
+        }
+
         health.GetHit(damage, transform.root.gameObject);
     }
 
@@ -185,15 +220,32 @@ public class EnemyAI : MonoBehaviour
 
     void Shoot()
     {
-        animator.SetTrigger("attack");
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
         shootTimer += Time.fixedDeltaTime;
-        if (shootTimer >= atkSpeed)
-        {
 
-            Vector3 directionToPlayer = (player.position - transform.position).normalized;
-            GameObject newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
-            newBullet.GetComponent<Rigidbody>().velocity = directionToPlayer * bulletSpeed;
-            shootTimer = 0f;
+        if (distanceToPlayer <= attackRange)
+        {
+            if (shootTimer >= atkSpeed)
+            {
+                if (!hasPlayedAttackSound)
+                {
+                    audioManager.playmonsterAttack();
+                    hasPlayedAttackSound = true;
+                }
+                // Reset the flag for each shot
+                hasPlayedAttackSound = false;
+
+                animator.SetTrigger("attack");
+                Vector3 directionToPlayer = (player.position - transform.position).normalized;
+                GameObject newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+                newBullet.GetComponent<Rigidbody>().velocity = directionToPlayer * bulletSpeed;
+                shootTimer = 0f;
+            }
+        }
+        else
+        {
+            // Increase the shootTimer when no shot is performed
+            shootTimer = atkSpeed;
         }
 
         shootTimer += Time.fixedDeltaTime;

@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b3b670e3726595428021b5be84289a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minionList: 9
+  minionList: 6
 --- !u!1 &4665995996497563111
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +292,9 @@ MonoBehaviour:
   isRangedEnemy: 0
   bulletSpeed: 0.2
   bullet: {fileID: 0}
+  isKapre: 0
+  stompDamage: 0
+  logDamage: 0
   isDead: 0
 --- !u!114 &3299141090884460729
 MonoBehaviour:

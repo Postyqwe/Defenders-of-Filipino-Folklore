@@ -67,6 +67,7 @@ public class GameData
     public bool antique;
     public bool siquijor;
     public bool baleteDrive;
+    public bool cebu;
 
     //shop items
     //Melee
@@ -148,6 +149,7 @@ public class GameData
         this.antique = false;
         this.siquijor = false;
         this.baleteDrive = false;
+        this.cebu = false;
 
         //Shop
         this.hasMoroBarong = false;

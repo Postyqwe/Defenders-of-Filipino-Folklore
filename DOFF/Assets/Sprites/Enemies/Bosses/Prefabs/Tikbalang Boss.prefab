@@ -143,6 +143,9 @@ MonoBehaviour:
   isRangedEnemy: 0
   bulletSpeed: 0.2
   bullet: {fileID: 0}
+  isKapre: 0
+  stompDamage: 0
+  logDamage: 0
   isDead: 0
 --- !u!114 &773792564565098745
 MonoBehaviour:
@@ -245,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d4f7cb224286d49bc68cbad3ef652b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossList: 4
+  bossList: 2
 --- !u!1 &3017572327331058891
 GameObject:
   m_ObjectHideFlags: 0
