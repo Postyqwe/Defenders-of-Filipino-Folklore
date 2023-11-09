@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7128093460164928675}
   m_Layer: 8
   m_Name: Multo Boss
-  m_TagString: Enemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,6 +143,9 @@ MonoBehaviour:
   isRangedEnemy: 1
   bulletSpeed: 5
   bullet: {fileID: 8153903107819547951, guid: a060045b615899043bf607b46657c149, type: 3}
+  isKapre: 0
+  stompDamage: 0
+  logDamage: 0
   isDead: 0
 --- !u!114 &5898083215299286020
 MonoBehaviour:
@@ -156,8 +159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80cc666e3494faf44802bf17881ba0cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 60
-  currentHealth: 60
+  maxHealth: 40
+  currentHealth: 40
   name: 
   OnHitWithReference:
     m_PersistentCalls:

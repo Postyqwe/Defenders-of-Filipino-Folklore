@@ -158,9 +158,9 @@ GameObject:
   - component: {fileID: 8213744139815905582}
   - component: {fileID: 2073387633890484155}
   - component: {fileID: 1982620592112663242}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mananagal Boss
-  m_TagString: Enemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -286,6 +286,9 @@ MonoBehaviour:
   isRangedEnemy: 0
   bulletSpeed: 0.2
   bullet: {fileID: 0}
+  isKapre: 0
+  stompDamage: 0
+  logDamage: 0
   isDead: 0
 --- !u!114 &2073387633890484155
 MonoBehaviour:
@@ -299,8 +302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80cc666e3494faf44802bf17881ba0cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 25
-  currentHealth: 25
+  maxHealth: 30
+  currentHealth: 30
   name: 
   OnHitWithReference:
     m_PersistentCalls:
