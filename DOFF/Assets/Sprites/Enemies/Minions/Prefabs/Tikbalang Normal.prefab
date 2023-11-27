@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 3514055129061941757}
   - component: {fileID: 525691522994147690}
   - component: {fileID: 2968364917397434723}
+  - component: {fileID: -7192427903904582520}
   m_Layer: 8
   m_Name: Tikbalang Normal
   m_TagString: Enemy
@@ -430,3 +431,16 @@ MonoBehaviour:
   deathParticle: {fileID: 6715000993775492479, guid: 12e53ad2948ac0c4790401477ffbd0df, type: 3}
   hitParticle: {fileID: 6715000993775492479, guid: 33d719be09fe0754a97fa01ecb80e24d, type: 3}
   isDead: 0
+--- !u!114 &-7192427903904582520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8548123955954966092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa88e8416db3384c86e14793b466807, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaknesses: 00000000

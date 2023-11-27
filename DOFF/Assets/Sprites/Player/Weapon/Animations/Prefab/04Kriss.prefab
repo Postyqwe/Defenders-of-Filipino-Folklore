@@ -133,7 +133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71870bcb5a4a91f429a573ed9669a32d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  strengths: 01000000
+  baseDamage: 0
   isRange: 0
   bulletPrefab: {fileID: 0}
   bulletLifeTime: 2

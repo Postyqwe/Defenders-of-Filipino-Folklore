@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3828198502227380}
   - component: {fileID: 5898083215299286020}
   - component: {fileID: 7128093460164928675}
+  - component: {fileID: 6901989509455357425}
   m_Layer: 8
   m_Name: Multo Boss
   m_TagString: Boss
@@ -204,6 +205,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6901989509455357425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593065111932876022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa88e8416db3384c86e14793b466807, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaknesses: 04000000
 --- !u!1 &3268289664915328871
 GameObject:
   m_ObjectHideFlags: 0

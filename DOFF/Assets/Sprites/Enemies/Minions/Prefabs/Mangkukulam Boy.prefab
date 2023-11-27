@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5001750868468412186}
   - component: {fileID: 4994668995291863749}
   - component: {fileID: 3382496462285342949}
+  - component: {fileID: 7627222147073808415}
   m_Layer: 8
   m_Name: Mangkukulam Boy
   m_TagString: Enemy
@@ -203,6 +204,19 @@ MonoBehaviour:
   deathParticle: {fileID: 6715000993775492479, guid: 12e53ad2948ac0c4790401477ffbd0df, type: 3}
   hitParticle: {fileID: 6715000993775492479, guid: 33d719be09fe0754a97fa01ecb80e24d, type: 3}
   isDead: 0
+--- !u!114 &7627222147073808415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3460494734749829958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa88e8416db3384c86e14793b466807, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaknesses: 03000000
 --- !u!1 &7864196695624300172
 GameObject:
   m_ObjectHideFlags: 0

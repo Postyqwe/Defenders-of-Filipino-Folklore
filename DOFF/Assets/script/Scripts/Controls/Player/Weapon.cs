@@ -3,9 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+public enum WeaponStrength
+{
+    Tikbalang,
+    Mananangal,
+    Tyanak,
+    Mangkukulam,
+    WhiteLady,
+    Kapre
+}
+
 public class Weapon : MonoBehaviour
 {
-    public int damage;
+    public List<WeaponStrength> strengths;
+    public int baseDamage;
 
     [Header("Range")]
     public bool isRange = false;
@@ -20,7 +31,7 @@ public class Weapon : MonoBehaviour
 
     private void Awake()
     {
-        animator = GetComponent <Animator>();
+        animator = GetComponent<Animator>();
         nextFireTime = Time.time;
     }
 
@@ -43,9 +54,24 @@ public class Weapon : MonoBehaviour
             if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Boss"))
             {
                 Health health;
+                EnemyWeakness enemyWeakness;
+
                 if (health = other.gameObject.GetComponent<Health>())
                 {
-                    Debug.Log("Hit");
+                    // Get the EnemyWeakness component
+                    enemyWeakness = other.gameObject.GetComponent<EnemyWeakness>();
+
+                    // Initialize damage with the base damage
+                    int damage = baseDamage;
+
+                    // Check if the enemy has a weakness to the selected type
+                    if (enemyWeakness != null && enemyWeakness.HasWeakness(strengths))
+                    {
+                        // Multiply the damage for the weakness
+                        damage *= 2;
+                    }
+
+                    // Deal damage to the enemy
                     health.GetHit(damage, transform.root.gameObject);
                 }
             }
@@ -77,7 +103,7 @@ public class Weapon : MonoBehaviour
         {
             GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             Bullet bulletScript = bullet.GetComponent<Bullet>();
-            bulletScript.Shoot(nearestEnemy, damage, bulletLifeTime);
+            bulletScript.Shoot(nearestEnemy, baseDamage, bulletLifeTime);
 
             nextFireTime = Time.time + 1f / fireRate;
         }

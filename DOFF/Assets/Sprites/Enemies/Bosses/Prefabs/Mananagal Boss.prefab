@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 8213744139815905582}
   - component: {fileID: 2073387633890484155}
   - component: {fileID: 1982620592112663242}
+  - component: {fileID: -5188310638316140395}
   m_Layer: 8
   m_Name: Mananagal Boss
   m_TagString: Boss
@@ -347,6 +348,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-5188310638316140395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5026673108258936128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa88e8416db3384c86e14793b466807, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaknesses: 01000000
 --- !u!1 &5636002552566262005
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 787266773174742036}
   - component: {fileID: 787266773174742033}
   - component: {fileID: 787266773174742034}
+  - component: {fileID: -4860921816343199612}
   m_Layer: 8
   m_Name: FinalBoss
   m_TagString: Boss
@@ -204,6 +205,19 @@ CapsuleCollider:
   m_Height: 5.1818647
   m_Direction: 1
   m_Center: {x: 0.1165936, y: -1.3905568, z: 0.17366269}
+--- !u!114 &-4860921816343199612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787266773174742040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa88e8416db3384c86e14793b466807, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaknesses: 
 --- !u!1 &815504107406064739
 GameObject:
   m_ObjectHideFlags: 0
