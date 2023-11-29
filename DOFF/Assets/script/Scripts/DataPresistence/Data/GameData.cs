@@ -86,6 +86,20 @@ public class GameData
     public bool hasMagicWand;
     public bool hasMagicOrb;
 
+    public int lvlMoroBarong;
+    public int lvlKriss;
+    public int lvlBolo;
+    public int lvlTaga;
+    public int lvlHanger;
+    public int lvlWalisTambo;
+    //Range
+    public int lvlHandgun;
+    public int lvlSlingShot;
+    public int lvlBakya;
+    public int lvlDyaryo;
+    //Magic
+    public int lvlMagicWand;
+    public int lvlMagicOrb;
 
     public GameData()
     {
@@ -164,5 +178,20 @@ public class GameData
         this.hasDyaryo = false;
         this.hasMagicWand = false;
         this.hasMagicOrb = false;
+
+        //Upgrades
+        this.lvlMoroBarong = 1;
+        this.lvlKriss = 1;
+        this.lvlBolo = 1;
+        this.lvlTaga = 1;
+        this.lvlHanger = 1;
+        this.lvlHanger = 1;
+        this.lvlWalisTambo = 1;
+        this.lvlHandgun = 1;
+        this.lvlSlingShot = 1;
+        this.lvlBakya = 1;
+        this.lvlDyaryo = 1;
+        this.lvlMagicWand = 1;
+        this.lvlMagicOrb = 1;
     }
 }

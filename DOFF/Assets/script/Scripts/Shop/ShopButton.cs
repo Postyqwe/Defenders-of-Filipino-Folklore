@@ -10,6 +10,10 @@ public class ShopButton : MonoBehaviour
     public ShopItemsSO shopItemData;
     public ShopManager shopManager;
 
+    Button upgradeButton;
+    TMP_Text upPrice;
+    TMP_Text levelWeapon;
+
     Button buyButton;
     TMP_Text priceText;
     
@@ -19,6 +23,7 @@ public class ShopButton : MonoBehaviour
     GameObject locker;
     private string lvl;
 
+    int levelcounter;
     private void Start()
     {
         locker = transform.Find("Locker").gameObject;
@@ -26,11 +31,18 @@ public class ShopButton : MonoBehaviour
 
         TMP_Text nameText = transform.Find("Name").GetComponent<TMP_Text>();
         Image itemImage = transform.Find("Image").GetComponent<Image>();
+
+        Transform upgrade = transform.Find("Upgrade");
+        levelWeapon = upgrade.Find("Level").GetComponent<TMP_Text>();
+        upgradeButton = upgrade.Find("Button").GetComponent<Button>();
+        upPrice = upgradeButton.GetComponentInChildren<TMP_Text>();
+
         buyButton = transform.Find("Buy").GetComponent<Button>();
         priceText = buyButton.transform.Find("Price").GetComponent<TMP_Text>();
         coinImg = buyButton.transform.Find("Coin").GetComponent<Image>();
         lockImg = buyButton.transform.Find("Lock").GetComponent<Image>();
 
+        levelcounter = shopManager.GetUpgradeLevel(shopItemData.itemID);
         int isUnlocked = CheckUnlock(shopItemData);
 
 
@@ -45,13 +57,19 @@ public class ShopButton : MonoBehaviour
                 locker.SetActive(false);
                 coinImg.enabled = false;
                 lockImg.enabled = false;
+                levelWeapon.text = "+" + levelcounter.ToString();
+                upPrice.text = (10 * levelcounter).ToString();
                 priceText.text = "Equip";
+                upgradeButton.onClick.AddListener(() => OnUpgrade(shopItemData.itemID));
                 buyButton.onClick.AddListener(() => OnEquipItem(shopItemData.itemID));
             }
             else
             {
                 if (itemLevel > 0)
                 {
+                    levelWeapon.text = "";
+                    upPrice.text = "";
+                    upgradeButton.interactable = false;
                     locker.SetActive(false);
                     priceText.text = shopItemData.price.ToString();
                     buyButton.onClick.AddListener(() => OnBuyItem(shopItemData));
@@ -60,6 +78,9 @@ public class ShopButton : MonoBehaviour
                 }
                 else
                 {
+                    levelWeapon.text = "";
+                    upPrice.text = "";
+                    upgradeButton.interactable = false;
                     lockerTxt.text = "Unlock after " + lvl;
                     priceText.text = "Locked";
                     buyButton.interactable = false;
@@ -169,26 +190,52 @@ public class ShopButton : MonoBehaviour
         }
     }
 
+    public void OnUpgrade(int shopItems)
+    {
+        shopManager.PurchaseUpgrade(shopItems);
+        upPrice.text = (10 * shopManager.GetUpgradeLevel(shopItems)).ToString();
+        levelWeapon.text = "+" + shopManager.GetUpgradeLevel(shopItems).ToString();
+    }
     public void OnEquipItem(int index)
     {
-        PlayerPrefs.SetInt("SelectedWeaponIndex", index);
+        int currentSlot = PlayerPrefs.GetInt("SelectedSlot", 1); // Default to Slot 1
+
+        if (currentSlot == 1)
+        {
+            PlayerPrefs.SetInt("SelectedSlot1", index);
+            PlayerPrefs.SetInt("SelectedSlot", 2); // Switch to Slot 2
+        }
+        else
+        {
+            PlayerPrefs.SetInt("SelectedSlot2", index);
+            PlayerPrefs.SetInt("SelectedSlot", 1); // Switch to Slot 1
+        }
+
         PlayerPrefs.Save();
 
-        Debug.Log("Equipped item with ID: " + index);
+        Debug.Log("Equipped item with ID: " + index + " in Slot " + PlayerPrefs.GetInt("SelectedSlot"));
     }
 
     private void Update()
     {
-
-        if(PlayerPrefs.HasKey("SelectedWeaponIndex"))
+        if (PlayerPrefs.HasKey("SelectedSlot"))
         {
-            int itemUnlock = CheckUnlock(shopItemData);
+            int currentSlot = PlayerPrefs.GetInt("SelectedSlot");
+
+            int itemUnlock = CheckUnlock(shopItemData); // You need to define the CheckUnlock method
             if (itemUnlock == 1)
             {
-                int index = PlayerPrefs.GetInt("SelectedWeaponIndex");
-                if (index == shopItemData.itemID)
+                int indexSlot1 = PlayerPrefs.GetInt("SelectedSlot1");
+                int indexSlot2 = PlayerPrefs.GetInt("SelectedSlot2");
+
+                if (indexSlot1 == shopItemData.itemID && currentSlot == 1)
                 {
-                    priceText.text = "Equipped";
+                    priceText.text = "Equipped Slot 1";
+                    buyButton.interactable = false;
+                }
+                else if (indexSlot2 == shopItemData.itemID && currentSlot == 2)
+                {
+                    priceText.text = "Equipped Slot 2";
                     buyButton.interactable = false;
                 }
                 else
@@ -200,7 +247,7 @@ public class ShopButton : MonoBehaviour
         }
         else
         {
-            PlayerPrefs.SetInt("SelectedWeaponIndex", 6);
+            PlayerPrefs.SetInt("SelectedSlot", 1);
             PlayerPrefs.Save();
         }
     }

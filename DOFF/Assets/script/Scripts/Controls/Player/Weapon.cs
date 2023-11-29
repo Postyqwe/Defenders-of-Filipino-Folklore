@@ -28,9 +28,11 @@ public class Weapon : MonoBehaviour
     private Animator animator;
     private bool isAttacking;
     private float nextFireTime;
+    private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         nextFireTime = Time.time;
     }

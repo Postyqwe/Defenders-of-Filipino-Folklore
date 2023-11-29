@@ -13,6 +13,7 @@ TagManager:
   - CoinCount
   - Weapon
   - BossHp
+  - WeaponHolder
   layers:
   - Default
   - TransparentFX

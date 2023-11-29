@@ -1,81 +1,79 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WeaponSwitch : MonoBehaviour
 {
-    public List<GameObject> slot1Weapons;
-    public List<GameObject> slot2Weapons;
+    [SerializeField] private PlayerWeapons playerWeapons;
+    [SerializeField] private Button slot1;
+    [SerializeField] private Button slot2;
 
-    private List<GameObject> currentWeapons;
+    private int Slot1 = 1; // Default to Slot 1
+    private int Slot2 = 1;
+    bool check = false;
 
-    void Start()
+    private void Start()
     {
-        SwitchSlot(1); // Start with Slot 1
-    }
-
-    // Call these methods when the corresponding buttons are pressed
-
-    public void OnSlot1ButtonPressed()
-    {
-        SwitchSlot(1);
-    }
-
-    public void OnSlot2ButtonPressed()
-    {
-        SwitchSlot(2);
-    }
-
-    // Example: Call this method when a weapon button in the UI is pressed
-    public void OnWeaponButtonPressed(int weaponIndex)
-    {
-        EquipWeapon(weaponIndex);
-    }
-
-    void SwitchSlot(int slotIndex)
-    {
-        // Deactivate all current weapons
-        DeactivateWeapons();
-
-        // Set current weapons based on the slot index
-        currentWeapons = (slotIndex == 1) ? slot1Weapons : slot2Weapons;
-
-        // Activate the default weapon in the current slot
-        if (currentWeapons.Count > 0)
+        // Load the selected slot from PlayerPrefs
+        if (PlayerPrefs.HasKey("SelectedSlot1"))
         {
-            currentWeapons[0].SetActive(true);
+            Slot1 = PlayerPrefs.GetInt("SelectedSlot1");
         }
 
-        // Example: Print a message indicating the current slot
-        Debug.Log("Switched to Slot " + slotIndex);
-    }
-
-    void EquipWeapon(int weaponIndex)
-    {
-        // Ensure the index is within bounds
-        if (weaponIndex >= 0 && weaponIndex < currentWeapons.Count)
+        if (PlayerPrefs.HasKey("SelectedSlot2"))
         {
-            // Deactivate all weapons
-            DeactivateWeapons();
-
-            // Activate the selected weapon
-            currentWeapons[weaponIndex].SetActive(true);
-
-            // Example: Print a message indicating the equipped weapon
-            Debug.Log("Equipped " + currentWeapons[weaponIndex].name);
+            Slot2 = PlayerPrefs.GetInt("SelectedSlot2");
         }
-        else
+
+        // Add listeners to the UI buttons
+        if (slot1 != null)
         {
-            Debug.LogWarning("Invalid weapon index: " + weaponIndex);
+            slot1.onClick.AddListener(SwitchToSlot1);
+        }
+
+        if (slot2 != null)
+        {
+            slot2.onClick.AddListener(SwitchToSlot2);
+        }
+    }
+    private void Update()
+    {
+        playerWeapons = GameObject.FindGameObjectWithTag("WeaponHolder")?.GetComponent<PlayerWeapons>();
+        if (playerWeapons != null && !check)
+        {
+            SwitchToSlot1();
+            SwitchToSlot2();
+            check = true;
         }
     }
 
-    void DeactivateWeapons()
+    private void SwitchToSlot1()
     {
-        // Deactivate all current weapons
-        foreach (var weapon in currentWeapons)
+        if (playerWeapons != null)
         {
-            weapon.SetActive(false);
+            playerWeapons.EquipWeapon(Slot1);
+            UpdateButtonImage(slot1, Slot1, playerWeapons);
+        }
+    }
+
+    private void SwitchToSlot2()
+    {
+        if (playerWeapons != null)
+        {
+            playerWeapons.EquipWeapon(Slot2);
+            UpdateButtonImage(slot2, Slot2, playerWeapons);
+        }
+    }
+
+    private void UpdateButtonImage(Button button, int slot, PlayerWeapons playerWeapons)
+    {
+        Image buttonImage = button?.transform.Find("Image").GetComponentInChildren<Image>();
+        Sprite weaponSprite = playerWeapons?.GetCurrentWeaponSprite();
+
+        if (buttonImage != null && weaponSprite != null)
+        {
+            buttonImage.sprite = weaponSprite;
         }
     }
 }
